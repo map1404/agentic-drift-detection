@@ -1,0 +1,2 @@
+n_groq_success_trials,fixed_wrong_to_right,broke_right_to_wrong,both_right,both_wrong,fix_rate,break_rate,net_fixed_minus_broken
+240,8,0,48,184,0.03333333333333333,0.0,8

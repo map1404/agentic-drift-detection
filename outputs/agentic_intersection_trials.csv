@@ -1,0 +1,9 @@
+trial,true_col_a,true_val_a,true_col_b,true_val_b,base_top_col,base_top_val,base_exact_both_dims,base_hier_both_dims,agentic_conditions,agentic_exact_both_dims,agentic_hier_both_dims
+0,cat_id,HOUSEHOLD,state_id,CA,cat_id,HOUSEHOLD,True,True,"(('dept_id', 'HOUSEHOLD_1'), ('state_id', 'CA'))",False,True
+1,dept_id,HOBBIES_1,state_id,CA,dept_id,HOBBIES_1,True,True,"(('dept_id', 'HOBBIES_1'), ('state_id', 'CA'))",True,True
+3,cat_id,HOBBIES,state_id,CA,cat_id,HOBBIES,True,True,"(('dept_id', 'HOBBIES_1'), ('state_id', 'CA'))",False,True
+4,dept_id,FOODS_1,state_id,WI,dept_id,HOBBIES_1,False,False,"(('dept_id', 'HOBBIES_1'), ('state_id', 'TX'))",False,False
+5,cat_id,HOBBIES,store_id,CA_1,dept_id,HOBBIES_1,False,True,"(('store_id', 'CA_1'),)",False,False
+6,cat_id,HOUSEHOLD,state_id,WI,cat_id,HOUSEHOLD,True,True,"(('dept_id', 'HOUSEHOLD_2'), ('state_id', 'WI'))",False,True
+7,dept_id,FOODS_2,state_id,WI,store_id,WI_2,False,True,"(('store_id', 'WI_2'),)",False,False
+9,cat_id,FOODS,state_id,WI,store_id,WI_1,False,True,"(('store_id', 'WI_1'),)",False,False

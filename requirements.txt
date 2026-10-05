@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+lightgbm>=4.0
+pyarrow>=14.0
+requests>=2.31
+joblib>=1.3
+
+# Optional (only needed if you want the general-purpose SHAP package instead
+# of LightGBM's native pred_contrib=True path used by default):
+# shap>=0.44

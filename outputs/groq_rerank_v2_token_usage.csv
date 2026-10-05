@@ -1,0 +1,2 @@
+n_attempted_calls,n_successful_calls,total_prompt_tokens,total_completion_tokens,mean_prompt_tokens_per_call,mean_completion_tokens_per_call,mean_latency_s,n_rate_limit_errors,n_timeout_errors,n_network_errors,n_malformed_responses,n_auth_errors,n_http_errors
+202,202,186144,25385,921.5049504950495,125.66831683168317,0.7219609647694201,0,0,0,0,0,0

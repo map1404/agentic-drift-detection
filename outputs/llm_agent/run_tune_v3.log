@@ -1,0 +1,17 @@
+seed=7 sudden       t= 0 true=dept_id=FOODS_3        agent=Y pipe=Y calls=10 tok=37194 246s [dept_id=FOODS_3|store_id=WI_2|item_id=FOODS_3_296]
+seed=7 sudden       t= 1 true=store_id=WI_2          agent=. pipe=Y calls=9 tok=38937 245s [item_id=FOODS_3_764|item_id=HOUSEHOLD_1_011|item_id=FOODS_1_078]
+seed=7 sudden       t= 2 true=cat_id=HOUSEHOLD       agent=. pipe=. calls=10 tok=40747 270s [dept_id=HOUSEHOLD_1|item_id=FOODS_3_150|store_id=WI_2]
+seed=7 sudden       t= 3 true=state_id=WI            agent=. pipe=. calls=9 tok=44089 267s [store_id=WI_1|dept_id=HOBBIES_2|dept_id=FOODS_1]
+seed=7 sudden       t= 4 true=cat_id=HOBBIES         agent=. pipe=. calls=9 tok=40540 269s [dept_id=HOBBIES_1|item_id=HOBBIES_2_121|item_id=FOODS_3_764]
+seed=7 gradual      t= 0 true=cat_id=HOUSEHOLD       agent=. pipe=. calls=10 tok=42536 270s [item_id=FOODS_3_150|dept_id=HOUSEHOLD_1|store_id=WI_2]
+seed=7 gradual      t= 1 true=state_id=WI            agent=. pipe=. calls=8 tok=32941 220s [item_id=FOODS_3_764|dept_id=FOODS_3|store_id=WI_1]
+seed=7 gradual      t= 2 true=item_id=HOUSEHOLD_1_079 agent=. pipe=. calls=10 tok=41411 269s [store_id=WI_2|item_id=FOODS_2_128|dept_id=FOODS_3]
+seed=7 gradual      t= 3 true=dept_id=FOODS_1        agent=Y pipe=. calls=9 tok=35953 244s [dept_id=FOODS_1|dept_id=HOBBIES_2|item_id=FOODS_1_078]
+seed=7 gradual      t= 4 true=store_id=WI_3          agent=Y pipe=. calls=10 tok=41990 269s [store_id=WI_3|item_id=FOODS_3_764|store_id=CA_1]
+seed=7 intermittent t= 0 true=item_id=FOODS_2_267    agent=. pipe=. calls=9 tok=43026 3029s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+seed=7 intermittent t= 1 true=item_id=FOODS_3_715    agent=. pipe=. calls=9 tok=40615 335s [item_id=HOBBIES_2_121|dept_id=HOBBIES_2|dept_id=FOODS_1]
+seed=7 intermittent t= 2 true=item_id=HOUSEHOLD_1_458 agent=. pipe=. calls=9 tok=44349 268s [dept_id=FOODS_1|dept_id=HOBBIES_2|item_id=FOODS_3_152]
+seed=7 intermittent t= 3 true=item_id=HOBBIES_1_386  agent=. pipe=. calls=9 tok=32227 245s [item_id=FOODS_3_646|item_id=FOODS_3_276|item_id=FOODS_2_128]
+seed=7 intermittent t= 4 true=item_id=FOODS_2_059    agent=. pipe=. calls=9 tok=47851 269s [item_id=FOODS_1_078|dept_id=FOODS_1|store_id=WI_1]
+STOP (completed). 15 new trials written to outputs/llm_agent/trials_tune_v3.csv
+exit=0

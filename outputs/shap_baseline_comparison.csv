@@ -1,0 +1,23 @@
+drift_type,trial,investigator_strict,investigator_hier,shap_strict,shap_hier,n_detected,investigator_strict_rate,investigator_strict_ci,investigator_hier_rate,investigator_hier_ci,shap_strict_rate,shap_strict_ci,shap_hier_rate,shap_hier_ci
+sudden,0.0,False,False,False,False,,,,,,,,,
+sudden,1.0,True,True,False,True,,,,,,,,,
+sudden,2.0,False,True,False,False,,,,,,,,,
+sudden,3.0,True,True,False,False,,,,,,,,,
+sudden,4.0,True,True,False,False,,,,,,,,,
+sudden,5.0,False,True,False,False,,,,,,,,,
+sudden,6.0,False,True,False,False,,,,,,,,,
+sudden,7.0,False,True,False,False,,,,,,,,,
+sudden,8.0,True,True,False,False,,,,,,,,,
+sudden,9.0,False,False,False,False,,,,,,,,,
+sudden_SUMMARY,,,,,,10.0,0.4,"(np.float64(0.16818032970623614), np.float64(0.6873262302663417))",0.8,"(np.float64(0.49016247153664183), np.float64(0.9433178485456247))",0.0,"(0.0, np.float64(0.2775327998628892))",0.1,"(np.float64(0.017876213095072896), np.float64(0.4041500267952385))"
+gradual,0.0,False,False,False,False,,,,,,,,,
+gradual,1.0,True,True,False,False,,,,,,,,,
+gradual,2.0,True,True,False,True,,,,,,,,,
+gradual,3.0,True,True,False,True,,,,,,,,,
+gradual,4.0,True,True,False,False,,,,,,,,,
+gradual,5.0,False,True,False,False,,,,,,,,,
+gradual,6.0,False,False,False,False,,,,,,,,,
+gradual,7.0,False,True,False,False,,,,,,,,,
+gradual,8.0,False,False,False,False,,,,,,,,,
+gradual,9.0,False,False,False,True,,,,,,,,,
+gradual_SUMMARY,,,,,,10.0,0.4,"(np.float64(0.16818032970623614), np.float64(0.6873262302663417))",0.6,"(np.float64(0.31267376973365824), np.float64(0.8318196702937638))",0.0,"(0.0, np.float64(0.2775327998628892))",0.3,"(np.float64(0.10779126740630099), np.float64(0.6032218525388546))"

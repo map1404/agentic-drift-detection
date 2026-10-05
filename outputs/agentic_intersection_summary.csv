@@ -1,0 +1,5 @@
+metric,n,rate,ci_lo,ci_hi
+base_investigator_exact_both_dims,8,0.5,0.21521606221387757,0.7847839377861224
+agentic_investigator_exact_both_dims,8,0.125,0.02241749145005667,0.4708881822128535
+base_investigator_hier_both_dims,8,0.875,0.5291118177871464,0.9775825085499433
+agentic_investigator_hier_both_dims,8,0.5,0.21521606221387757,0.7847839377861224

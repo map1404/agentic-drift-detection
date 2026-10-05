@@ -1,0 +1,121 @@
+seed=42 sudden       t= 0 true=store_id=CA_2          pipe=Y
+seed=42 sudden       t= 1 true=state_id=CA            pipe=.
+seed=42 sudden       t= 2 true=state_id=WI            pipe=.
+seed=42 sudden       t= 3 true=cat_id=HOUSEHOLD       pipe=.
+seed=42 sudden       t= 4 true=dept_id=FOODS_1        pipe=Y
+seed=42 sudden       t= 5 true=cat_id=HOUSEHOLD       pipe=.
+seed=42 sudden       t= 6 true=store_id=WI_2          pipe=Y
+seed=42 sudden       t= 7 true=item_id=HOUSEHOLD_1_458 pipe=.
+seed=42 sudden       t= 8 true=item_id=FOODS_3_051    pipe=.
+seed=42 sudden       t= 9 true=state_id=TX            pipe=.
+seed=42 sudden       t=10 true=state_id=TX            pipe=.
+seed=42 sudden       t=11 true=cat_id=FOODS           pipe=.
+seed=42 sudden       t=12 true=item_id=HOUSEHOLD_2_294 pipe=.
+seed=42 sudden       t=13 true=item_id=HOBBIES_2_071  pipe=.
+seed=42 sudden       t=14 true=item_id=FOODS_2_380    pipe=.
+seed=42 sudden       t=15 true=dept_id=HOBBIES_1      pipe=Y
+seed=42 sudden       t=16 true=dept_id=FOODS_1        pipe=Y
+seed=42 sudden       t=17 true=state_id=WI            pipe=.
+seed=42 sudden       t=18 true=cat_id=HOBBIES         pipe=.
+seed=42 sudden       t=19 true=store_id=TX_1          pipe=Y
+seed=42 gradual      t= 0 true=state_id=TX            pipe=.
+seed=42 gradual      t= 1 true=item_id=HOUSEHOLD_1_458 pipe=.
+seed=42 gradual      t= 2 true=cat_id=HOBBIES         pipe=.
+seed=42 gradual      t= 3 true=state_id=WI            pipe=.
+seed=42 gradual      t= 4 true=store_id=TX_1          pipe=Y
+seed=42 gradual      t= 5 true=state_id=CA            pipe=.
+seed=42 gradual      t= 6 true=item_id=HOBBIES_1_230  pipe=.
+seed=42 gradual      t= 7 true=dept_id=HOUSEHOLD_2    pipe=Y
+seed=42 gradual      t= 8 true=dept_id=HOUSEHOLD_1    pipe=.
+seed=42 gradual      t= 9 true=dept_id=FOODS_2        pipe=Y
+seed=42 gradual      t=10 true=state_id=TX            pipe=.
+seed=42 gradual      t=11 true=state_id=CA            pipe=.
+seed=42 gradual      t=12 true=state_id=TX            pipe=.
+seed=42 gradual      t=13 true=cat_id=FOODS           pipe=.
+seed=42 gradual      t=14 true=item_id=FOODS_3_017    pipe=.
+seed=42 gradual      t=15 true=item_id=HOBBIES_1_217  pipe=.
+seed=42 gradual      t=16 true=item_id=HOBBIES_1_373  pipe=.
+seed=42 gradual      t=17 true=dept_id=HOUSEHOLD_1    pipe=Y
+seed=42 gradual      t=18 true=store_id=WI_1          pipe=.
+seed=42 gradual      t=19 true=store_id=CA_4          pipe=.
+seed=42 intermittent t= 0 true=item_id=HOUSEHOLD_2_450 pipe=.
+seed=42 intermittent t= 1 true=item_id=HOUSEHOLD_1_313 pipe=.
+seed=42 intermittent t= 2 true=item_id=FOODS_3_093    pipe=Y
+seed=42 intermittent t= 3 true=item_id=HOBBIES_2_028  pipe=.
+seed=42 intermittent t= 4 true=item_id=HOUSEHOLD_2_018 pipe=.
+seed=42 intermittent t= 5 true=item_id=HOBBIES_2_117  pipe=.
+seed=42 intermittent t= 6 true=item_id=HOUSEHOLD_2_373 pipe=.
+seed=42 intermittent t= 7 true=item_id=HOBBIES_1_399  pipe=.
+seed=42 intermittent t= 8 true=item_id=HOUSEHOLD_1_011 pipe=Y
+seed=42 intermittent t= 9 true=item_id=HOBBIES_1_031  pipe=.
+seed=42 intermittent t=10 true=item_id=FOODS_3_131    pipe=.
+seed=42 intermittent t=11 true=item_id=HOUSEHOLD_2_216 pipe=.
+seed=42 intermittent t=12 true=item_id=HOUSEHOLD_2_324 pipe=.
+seed=42 intermittent t=13 true=item_id=FOODS_2_046    pipe=.
+seed=42 intermittent t=14 true=item_id=HOBBIES_1_109  pipe=.
+seed=42 intermittent t=15 true=item_id=HOUSEHOLD_1_090 pipe=.
+seed=42 intermittent t=16 true=item_id=HOBBIES_1_123  pipe=.
+seed=42 intermittent t=17 true=item_id=HOBBIES_1_056  pipe=.
+seed=42 intermittent t=18 true=item_id=HOUSEHOLD_2_450 pipe=.
+seed=42 intermittent t=19 true=item_id=FOODS_2_147    pipe=.
+seed=123 sudden       t= 0 true=state_id=TX            pipe=.
+seed=123 sudden       t= 1 true=cat_id=HOBBIES         pipe=.
+seed=123 sudden       t= 2 true=dept_id=HOUSEHOLD_2    pipe=Y
+seed=123 sudden       t= 3 true=item_id=HOBBIES_1_003  pipe=.
+seed=123 sudden       t= 4 true=cat_id=HOBBIES         pipe=.
+seed=123 sudden       t= 5 true=state_id=CA            pipe=.
+seed=123 sudden       t= 6 true=store_id=CA_1          pipe=Y
+seed=123 sudden       t= 7 true=store_id=WI_1          pipe=Y
+seed=123 sudden       t= 8 true=state_id=WI            pipe=.
+seed=123 sudden       t= 9 true=state_id=TX            pipe=.
+seed=123 sudden       t=10 true=dept_id=FOODS_1        pipe=Y
+seed=123 sudden       t=11 true=state_id=WI            pipe=.
+seed=123 sudden       t=12 true=item_id=FOODS_1_069    pipe=.
+seed=123 sudden       t=13 true=store_id=CA_4          pipe=Y
+seed=123 sudden       t=14 true=cat_id=HOUSEHOLD       pipe=.
+seed=123 sudden       t=15 true=cat_id=HOBBIES         pipe=.
+seed=123 sudden       t=16 true=dept_id=FOODS_1        pipe=Y
+seed=123 sudden       t=17 true=item_id=HOUSEHOLD_1_328 pipe=.
+seed=123 sudden       t=18 true=store_id=CA_2          pipe=Y
+seed=123 sudden       t=19 true=item_id=HOBBIES_2_139  pipe=.
+seed=123 gradual      t= 0 true=item_id=FOODS_3_296    pipe=.
+seed=123 gradual      t= 1 true=dept_id=HOUSEHOLD_1    pipe=Y
+seed=123 gradual      t= 2 true=item_id=FOODS_1_069    pipe=.
+seed=123 gradual      t= 3 true=store_id=TX_3          pipe=Y
+seed=123 gradual      t= 4 true=state_id=CA            pipe=.
+seed=123 gradual      t= 5 true=dept_id=FOODS_2        pipe=.
+seed=123 gradual      t= 6 true=item_id=FOODS_2_247    pipe=.
+seed=123 gradual      t= 7 true=dept_id=HOUSEHOLD_1    pipe=.
+seed=123 gradual      t= 8 true=dept_id=FOODS_3        pipe=Y
+seed=123 gradual      t= 9 true=item_id=HOBBIES_1_085  pipe=.
+seed=123 gradual      t=10 true=state_id=TX            pipe=.
+seed=123 gradual      t=11 true=item_id=FOODS_3_304    pipe=.
+seed=123 gradual      t=12 true=item_id=HOUSEHOLD_2_180 pipe=.
+seed=123 gradual      t=13 true=cat_id=HOUSEHOLD       pipe=.
+seed=123 gradual      t=14 true=dept_id=FOODS_2        pipe=.
+seed=123 gradual      t=15 true=cat_id=HOBBIES         pipe=.
+seed=123 gradual      t=16 true=item_id=HOUSEHOLD_2_460 pipe=.
+seed=123 gradual      t=17 true=cat_id=FOODS           pipe=.
+seed=123 gradual      t=18 true=cat_id=FOODS           pipe=.
+seed=123 gradual      t=19 true=state_id=WI            pipe=.
+seed=123 intermittent t= 0 true=item_id=FOODS_3_017    pipe=Y
+seed=123 intermittent t= 1 true=item_id=HOBBIES_1_386  pipe=.
+seed=123 intermittent t= 2 true=item_id=HOBBIES_1_011  pipe=.
+seed=123 intermittent t= 3 true=item_id=FOODS_3_131    pipe=.
+seed=123 intermittent t= 4 true=item_id=FOODS_3_724    pipe=.
+seed=123 intermittent t= 5 true=item_id=HOUSEHOLD_1_189 pipe=Y
+seed=123 intermittent t= 6 true=item_id=HOUSEHOLD_1_434 pipe=.
+seed=123 intermittent t= 7 true=item_id=HOUSEHOLD_2_211 pipe=.
+seed=123 intermittent t= 8 true=item_id=HOUSEHOLD_2_373 pipe=.
+seed=123 intermittent t= 9 true=item_id=FOODS_3_150    pipe=.
+seed=123 intermittent t=10 true=item_id=HOUSEHOLD_2_064 pipe=.
+seed=123 intermittent t=11 true=item_id=FOODS_3_006    pipe=.
+seed=123 intermittent t=12 true=item_id=HOBBIES_1_011  pipe=.
+seed=123 intermittent t=13 true=item_id=HOBBIES_2_028  pipe=.
+seed=123 intermittent t=14 true=item_id=HOBBIES_1_216  pipe=.
+seed=123 intermittent t=15 true=item_id=FOODS_3_544    pipe=.
+seed=123 intermittent t=16 true=item_id=HOBBIES_2_138  pipe=.
+seed=123 intermittent t=17 true=item_id=HOUSEHOLD_2_018 pipe=.
+seed=123 intermittent t=18 true=item_id=HOBBIES_2_117  pipe=.
+seed=123 intermittent t=19 true=item_id=HOBBIES_1_246  pipe=.
+STOP (completed). 120 new trials written to outputs/llm_agent/trials_val_pipeline.csv
