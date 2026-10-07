@@ -405,3 +405,32 @@ checked after the first run. Client behavior is covered by
   battery, not the API. Run validation plugged in, under `caffeinate -i`.
 - Validation plan: --tag val_v2, seed 42 on 2026-10-05, seed 123 on
   2026-10-06, no changes in between.
+
+### Task 6 VALIDATION RESULT (completed 2026-10-07): the LLM agent does NOT beat the pipeline
+
+Frozen v2 config (SHA-256 verified before every attempt), Cerebras
+gpt-oss-120b, temp 0, seeds 42+123, n=20/type/seed = 120 trials. 118 answered
+by the agent; 2 fallbacks (both `no_tool_call`, intermittent), excluded from
+agent results. 6 additional trials hit a DNS/network outage mid-run and were
+rerun under a pre-stated outcome-blind rule (network-error fallbacks only);
+originals kept in outputs/llm_agent/excluded_network_failures_val_v2.csv.
+
+Paired on the same 118 trials (agent vs pipeline, exact McNemar):
+- strict top-1: 22 vs 24 (19% vs 20%), p=0.85 -- tie
+- hier top-1:   40 vs 60 (34% vs 51%), p=0.0008 -- agent WORSE
+- strict top-3: 43 vs 57 (36% vs 48%), p=0.04 -- agent worse
+- hier top-3:   70 vs 72 (59% vs 61%), p=0.82 -- tie
+Driven by sudden (hier top-1 45% vs 80%, 0 agent-only vs 14 pipeline-only
+wins). Gradual about equal; intermittent nominally better for the agent
+(strict top-1 6 vs 4, strict top-3 11 vs 8), not significant.
+Mechanism: the agent ranks an item first in 73/118 trials (pipeline 27; truth
+is an item in 59). On non-item truths it still picks an item 26/59 times
+(pipeline 6/59) -- mostly organically volatile items (FOODS_3_150 22x,
+FOODS_2_128 17x) that recur across unrelated trials.
+Cost: ~5.0M total tokens (2.3M uncached+completion), ~9.1 tool calls/trial,
+35/120 hit the 10-call budget (forced submit), ~4.7 min/trial.
+Full output: outputs/llm_agent/summary_val_v2.md, metrics_val_v2.csv,
+traces_val_v2.md (14 traces: first 2 correct + first 2 wrong per type, plus
+both fallbacks). Local gemma4:12b via Ollama was tried (launcher
+src/evaluation/evaluate_llm_agent_ollama.py): protocol works, but on a 16 GB M2
+it swapped and stalled; no trials completed.

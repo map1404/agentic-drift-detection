@@ -1,0 +1,4 @@
+resuming outputs/llm_agent/trials_val_v2.csv: 57 trials already done
+seed=42 intermittent t=17 true=item_id=HOBBIES_1_056  agent=. pipe=. calls=9 tok=38715 246s [item_id=FOODS_3_764|item_id=HOUSEHOLD_1_011|item_id=HOBBIES_1_056]
+STOP (daily_quota: only 2752 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+exit=3

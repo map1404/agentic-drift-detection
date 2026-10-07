@@ -1,0 +1,465 @@
+[2026-10-06 01:34:14] attempt 1: 58/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 58 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 04:19:48] attempt 2: 58/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 58 trials already done
+seed=42 intermittent t=18 true=item_id=HOUSEHOLD_2_450 agent=. pipe=. calls=10 tok=39553 247s [dept_id=HOBBIES_2|item_id=HOBBIES_2_121|item_id=HOUSEHOLD_1_052]
+seed=42 intermittent t=19 true=item_id=FOODS_2_147    agent=. pipe=. calls=9 tok=42453 268s [item_id=FOODS_3_764|item_id=FOODS_2_147|item_id=FOODS_1_069]
+seed=123 sudden       t= 0 true=state_id=TX            agent=Y pipe=. calls=10 tok=40304 269s [state_id=TX|dept_id=FOODS_3|dept_id=HOBBIES_1]
+seed=123 sudden       t= 1 true=cat_id=HOBBIES         agent=. pipe=. calls=9 tok=49456 293s [dept_id=HOBBIES_1|store_id=CA_1|item_id=HOBBIES_1_084]
+seed=123 sudden       t= 2 true=dept_id=HOUSEHOLD_2    agent=. pipe=Y calls=9 tok=36310 245s [dept_id=HOBBIES_2|dept_id=HOUSEHOLD_2|item_id=HOBBIES_2_121]
+seed=123 sudden       t= 3 true=item_id=HOBBIES_1_003  agent=. pipe=. calls=10 tok=46275 292s [item_id=FOODS_3_276|item_id=FOODS_3_152|item_id=FOODS_3_646]
+STOP (daily_quota: only 12884 daily tokens left (< 25000); not starting a trial that would likely be cut off). 6 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 05:16:49] attempt 3: 64/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 64 trials already done
+seed=123 sudden       t= 4 true=cat_id=HOBBIES         agent=. pipe=. calls=9 tok=41016 270s [dept_id=HOBBIES_1|item_id=HOBBIES_1_158|store_id=CA_1]
+STOP (daily_quota: only 15460 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 05:51:21] attempt 4: 65/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 65 trials already done
+seed=123 sudden       t= 5 true=state_id=CA            agent=. pipe=. calls=10 tok=37188 246s [item_id=FOODS_3_764|item_id=FOODS_2_128|dept_id=FOODS_3]
+STOP (daily_quota: only 20506 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 06:25:29] attempt 5: 66/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 66 trials already done
+seed=123 sudden       t= 6 true=store_id=CA_1          agent=Y pipe=Y calls=10 tok=45263 270s [store_id=CA_1|state_id=CA|dept_id=FOODS_2]
+STOP (daily_quota: only 16199 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 07:00:02] attempt 6: 67/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 67 trials already done
+seed=123 sudden       t= 7 true=store_id=WI_1          agent=. pipe=Y calls=9 tok=46835 246s [item_id=FOODS_3_150|dept_id=FOODS_3|state_id=WI]
+STOP (daily_quota: only 18715 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 07:34:09] attempt 7: 68/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 68 trials already done
+seed=123 sudden       t= 8 true=state_id=WI            agent=Y pipe=. calls=9 tok=47330 246s [state_id=WI|dept_id=FOODS_3|item_id=FOODS_1_069]
+STOP (daily_quota: only 22851 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 08:08:18] attempt 8: 69/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 69 trials already done
+seed=123 sudden       t= 9 true=state_id=TX            agent=. pipe=. calls=9 tok=40377 246s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=TX_2]
+STOP (daily_quota: only 23079 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 08:35:59] attempt 1: 70/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 70 trials already done
+seed=123 sudden       t=10 true=dept_id=FOODS_1        agent=. pipe=Y calls=8 tok=39773 248s [item_id=HOUSEHOLD_1_052|item_id=FOODS_3_406|dept_id=HOBBIES_2]
+STOP (daily_quota: only 23009 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 08:50:09] attempt 2: 71/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 71 trials already done
+seed=123 sudden       t=11 true=state_id=WI            agent=. pipe=. calls=8 tok=28034 197s [item_id=FOODS_3_764|dept_id=FOODS_3|state_id=WI]
+STOP (daily_quota: only 21226 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 09:03:28] attempt 3: 72/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 72 trials already done
+seed=123 sudden       t=12 true=item_id=FOODS_1_069    agent=. pipe=. calls=10 tok=38811 246s [item_id=FOODS_2_128|item_id=FOODS_3_646|dept_id=FOODS_2]
+STOP (daily_quota: only 17317 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 09:17:36] attempt 4: 73/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 73 trials already done
+seed=123 sudden       t=13 true=store_id=CA_4          agent=. pipe=Y calls=9 tok=45469 246s [dept_id=HOBBIES_2|store_id=CA_4|item_id=HOBBIES_2_121]
+STOP (daily_quota: only 5791 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 09:31:45] attempt 5: 74/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 74 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 09:44:39] attempt 6: 74/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 74 trials already done
+seed=123 sudden       t=14 true=cat_id=HOUSEHOLD       agent=. pipe=. calls=9 tok=42736 246s [dept_id=HOUSEHOLD_1|item_id=FOODS_3_150|item_id=HOUSEHOLD_1_011]
+STOP (daily_quota: only 419 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 09:58:47] attempt 7: 75/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 75 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 10:11:16] attempt 8: 75/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 75 trials already done
+seed=123 sudden       t=15 true=cat_id=HOBBIES         agent=. pipe=. calls=8 tok=28346 198s [dept_id=HOBBIES_1|dept_id=HOBBIES_2|cat_id=HOBBIES]
+STOP (daily_quota: only 1648 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 10:24:35] attempt 9: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 10:36:40] attempt 10: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 10:50:47] attempt 11: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 11:04:54] attempt 12: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 11:19:02] attempt 13: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 11:33:37] attempt 14: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 11:48:08] attempt 15: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 12:02:40] attempt 16: 76/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 76 trials already done
+seed=123 sudden       t=16 true=dept_id=FOODS_1        agent=. pipe=Y calls=9 tok=52935 271s [item_id=FOODS_2_128|dept_id=FOODS_2|item_id=FOODS_1_078]
+STOP (daily_quota: only 4250 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 12:17:13] attempt 17: 77/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 77 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 12:30:56] attempt 18: 77/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 77 trials already done
+seed=123 sudden       t=17 true=item_id=HOUSEHOLD_1_328 agent=. pipe=. calls=9 tok=31895 222s [item_id=FOODS_3_150|item_id=FOODS_3_093|dept_id=HOBBIES_2]
+STOP (daily_quota: only 7545 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 12:44:39] attempt 19: 78/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 78 trials already done
+seed=123 sudden       t=18 true=store_id=CA_2          agent=. pipe=Y calls=9 tok=45867 246s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+STOP (daily_quota: only 155 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 12:58:47] attempt 20: 79/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 79 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 13:10:27] attempt 21: 79/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 79 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 13:23:46] attempt 22: 79/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 79 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 13:37:54] attempt 23: 79/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 79 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 13:52:01] attempt 24: 79/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 79 trials already done
+seed=123 sudden       t=19 true=item_id=HOBBIES_2_139  agent=. pipe=. calls=9 tok=43538 246s [item_id=HOUSEHOLD_1_052|dept_id=HOBBIES_2|item_id=FOODS_1_069]
+STOP (daily_quota: only 2297 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 14:06:09] attempt 25: 80/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 80 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 14:19:28] attempt 26: 80/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 80 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 14:33:36] attempt 27: 80/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 80 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 14:47:43] attempt 28: 80/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 80 trials already done
+seed=123 gradual      t= 0 true=item_id=FOODS_3_296    agent=. pipe=. calls=9 tok=38490 247s [item_id=HOUSEHOLD_1_011|item_id=FOODS_3_764|item_id=FOODS_2_128]
+STOP (daily_quota: only 5138 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 15:01:52] attempt 29: 81/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 81 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 15:15:35] attempt 30: 81/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 81 trials already done
+seed=123 gradual      t= 1 true=dept_id=HOUSEHOLD_1    agent=. pipe=Y calls=9 tok=38213 246s [item_id=FOODS_3_150|dept_id=FOODS_3|cat_id=HOUSEHOLD]
+STOP (daily_quota: only 3049 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 15:29:43] attempt 31: 82/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 82 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 15:42:37] attempt 32: 82/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 82 trials already done
+seed=123 gradual      t= 2 true=item_id=FOODS_1_069    agent=. pipe=. calls=9 tok=31607 226s [item_id=FOODS_3_764|item_id=HOUSEHOLD_1_011|item_id=FOODS_2_128]
+STOP (daily_quota: only 3266 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 15:56:25] attempt 33: 83/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 83 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 16:08:55] attempt 34: 83/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 83 trials already done
+seed=123 gradual      t= 3 true=store_id=TX_3          agent=Y pipe=Y calls=9 tok=38747 222s [store_id=TX_3|dept_id=HOUSEHOLD_2|item_id=HOUSEHOLD_2_216]
+STOP (daily_quota: only 1 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 16:22:39] attempt 35: 84/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 84 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 16:35:08] attempt 36: 84/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 84 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 16:49:15] attempt 37: 84/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 84 trials already done
+seed=123 gradual      t= 4 true=state_id=CA            agent=Y pipe=. calls=10 tok=36452 246s [state_id=CA|dept_id=HOBBIES_1|item_id=FOODS_3_764]
+STOP (daily_quota: only 2502 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 17:03:23] attempt 38: 85/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 85 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 17:16:41] attempt 39: 85/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 85 trials already done
+seed=123 gradual      t= 5 true=dept_id=FOODS_2        agent=. pipe=. calls=10 tok=35278 246s [item_id=FOODS_3_764|store_id=WI_1|dept_id=FOODS_3]
+STOP (daily_quota: only 1472 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 17:30:50] attempt 40: 86/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 86 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 17:42:54] attempt 41: 86/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 86 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 17:56:12] attempt 42: 86/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 86 trials already done
+seed=123 gradual      t= 6 true=item_id=FOODS_2_247    agent=. pipe=. calls=9 tok=45620 246s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+STOP (daily_quota: only 826 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 18:10:19] attempt 43: 87/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 87 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 18:22:24] attempt 44: 87/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 87 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 18:34:54] attempt 45: 87/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 87 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 18:48:38] attempt 46: 87/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 87 trials already done
+seed=123 gradual      t= 7 true=dept_id=HOUSEHOLD_1    agent=FALLBACK:retries_exhausted:network_error pipe=. calls=6 tok=15698 476s []
+STOP (daily_quota: only 607 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 19:06:36] attempt 47: 88/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 88 trials already done
+seed=123 gradual      t= 8 true=dept_id=FOODS_3        agent=FALLBACK:retries_exhausted:network_error pipe=Y calls=0 tok=0 329s []
+seed=123 gradual      t= 9 true=item_id=HOBBIES_1_085  agent=FALLBACK:retries_exhausted:network_error pipe=. calls=0 tok=0 329s []
+seed=123 gradual      t=10 true=state_id=TX            agent=FALLBACK:retries_exhausted:network_error pipe=. calls=0 tok=0 329s []
+seed=123 gradual      t=11 true=item_id=FOODS_3_304    agent=FALLBACK:retries_exhausted:network_error pipe=. calls=0 tok=0 329s []
+seed=123 gradual      t=12 true=item_id=HOUSEHOLD_2_180 agent=FALLBACK:retries_exhausted:network_error pipe=. calls=0 tok=0 329s []
+seed=123 gradual      t=13 true=cat_id=HOUSEHOLD       agent=. pipe=. calls=10 tok=42964 553s [dept_id=HOUSEHOLD_2|dept_id=HOUSEHOLD_1|item_id=HOUSEHOLD_2_490]
+STOP (daily_quota: only 23239 daily tokens left (< 25000); not starting a trial that would likely be cut off). 6 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 19:53:19] attempt 48: 94/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 94 trials already done
+seed=123 gradual      t=14 true=dept_id=FOODS_2        agent=. pipe=. calls=8 tok=29980 198s [dept_id=HOBBIES_2|dept_id=FOODS_2|item_id=HOBBIES_2_121]
+STOP (daily_quota: only 17815 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 20:06:40] attempt 49: 95/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 95 trials already done
+seed=123 gradual      t=15 true=cat_id=HOBBIES         agent=. pipe=. calls=9 tok=44514 246s [dept_id=HOBBIES_1|store_id=WI_2|item_id=FOODS_3_150]
+STOP (daily_quota: only 4528 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 20:20:48] attempt 50: 96/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 96 trials already done
+seed=123 gradual      t=16 true=item_id=HOUSEHOLD_2_460 agent=. pipe=. calls=9 tok=33454 436s [item_id=FOODS_2_128|dept_id=FOODS_2|store_id=WI_1]
+STOP (daily_quota: only 2499 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 20:38:06] attempt 51: 97/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 97 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 20:58:15] attempt 52: 97/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 97 trials already done
+seed=123 gradual      t=17 true=cat_id=FOODS           agent=. pipe=. calls=9 tok=47155 246s [dept_id=FOODS_3|store_id=WI_2|dept_id=FOODS_2]
+STOP (daily_quota: only 4807 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 21:12:24] attempt 53: 98/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 98 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 21:25:17] attempt 54: 98/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 98 trials already done
+seed=123 gradual      t=18 true=cat_id=FOODS           agent=. pipe=. calls=8 tok=28567 197s [item_id=FOODS_3_406|item_id=FOODS_3_288|dept_id=FOODS_3]
+STOP (daily_quota: only 2487 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 21:38:36] attempt 55: 93/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 93 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 21:50:17] attempt 56: 93/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 93 trials already done
+STOP (daily_quota: {"message":"Tokens per day limit exceeded - too many tokens processed.","type":"too_many_tokens_error","param":"quota","code":"token_quota_exceeded"} | headers={'retry-after': '86400'}). 0 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 22:04:24] attempt 57: 93/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 93 trials already done
+seed=123 gradual      t= 7 true=dept_id=HOUSEHOLD_1    agent=. pipe=. calls=9 tok=41572 246s [item_id=HOUSEHOLD_1_328|dept_id=HOUSEHOLD_1|cat_id=HOUSEHOLD]
+STOP (daily_quota: only 2803 daily tokens left (< 25000); not starting a trial that would likely be cut off). 1 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-06 22:18:33] attempt 58: 94/120 trials done
+src/agents/llm_investigator_agent.py: OK
+src/evaluation/evaluate_llm_agent.py: OK
+docs/agent_prompt_and_tools.md: OK
+resuming outputs/llm_agent/trials_val_v2.csv: 94 trials already done
+seed=123 gradual      t= 8 true=dept_id=FOODS_3        agent=. pipe=Y calls=9 tok=42714 246s [item_id=FOODS_2_128|dept_id=FOODS_3|store_id=WI_2]
+seed=123 gradual      t= 9 true=item_id=HOBBIES_1_085  agent=. pipe=. calls=8 tok=39138 244s [item_id=HOBBIES_2_028|dept_id=HOBBIES_2|store_id=WI_3]
+seed=123 gradual      t=10 true=state_id=TX            agent=Y pipe=. calls=10 tok=34714 270s [state_id=TX|dept_id=HOBBIES_1|item_id=FOODS_3_764]
+seed=123 gradual      t=11 true=item_id=FOODS_3_304    agent=. pipe=. calls=10 tok=49095 292s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+seed=123 gradual      t=12 true=item_id=HOUSEHOLD_2_180 agent=. pipe=. calls=9 tok=39957 268s [item_id=FOODS_3_764|store_id=WI_1|dept_id=HOBBIES_2]
+seed=123 gradual      t=19 true=state_id=WI            agent=Y pipe=. calls=9 tok=48391 269s [state_id=WI|store_id=WI_2|dept_id=FOODS_3]
+seed=123 intermittent t= 0 true=item_id=FOODS_3_017    agent=. pipe=Y calls=9 tok=51467 293s [item_id=FOODS_2_128|item_id=HOUSEHOLD_1_011|item_id=FOODS_3_764]
+seed=123 intermittent t= 1 true=item_id=HOBBIES_1_386  agent=. pipe=. calls=9 tok=36643 245s [dept_id=FOODS_3|item_id=FOODS_3_764|item_id=FOODS_3_150]
+seed=123 intermittent t= 2 true=item_id=HOBBIES_1_011  agent=. pipe=. calls=9 tok=49390 293s [dept_id=FOODS_3|store_id=TX_1|item_id=FOODS_3_150]
+seed=123 intermittent t= 3 true=item_id=FOODS_3_131    agent=. pipe=. calls=7 tok=30527 220s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+seed=123 intermittent t= 4 true=item_id=FOODS_3_724    agent=. pipe=. calls=10 tok=37186 1955s [item_id=FOODS_3_150|dept_id=HOBBIES_2|item_id=FOODS_3_093]
+seed=123 intermittent t= 5 true=item_id=HOUSEHOLD_1_189 agent=Y pipe=Y calls=9 tok=36247 244s [item_id=HOUSEHOLD_1_189|item_id=FOODS_3_646|dept_id=HOUSEHOLD_2]
+seed=123 intermittent t= 6 true=item_id=HOUSEHOLD_1_434 agent=. pipe=. calls=9 tok=41886 269s [dept_id=HOBBIES_2|item_id=HOBBIES_2_121|item_id=FOODS_1_069]
+seed=123 intermittent t= 7 true=item_id=HOUSEHOLD_2_211 agent=. pipe=. calls=9 tok=43054 269s [dept_id=HOBBIES_2|item_id=HOBBIES_2_121|dept_id=FOODS_1]
+seed=123 intermittent t= 8 true=item_id=HOUSEHOLD_2_373 agent=. pipe=. calls=9 tok=34887 245s [dept_id=HOBBIES_2|item_id=HOBBIES_2_121|dept_id=FOODS_1]
+seed=123 intermittent t= 9 true=item_id=FOODS_3_150    agent=. pipe=. calls=9 tok=48661 269s [item_id=HOUSEHOLD_1_328|item_id=FOODS_3_150|store_id=TX_1]
+seed=123 intermittent t=10 true=item_id=HOUSEHOLD_2_064 agent=. pipe=. calls=9 tok=44788 294s [item_id=FOODS_3_150|dept_id=FOODS_3|dept_id=HOBBIES_2]
+seed=123 intermittent t=11 true=item_id=FOODS_3_006    agent=FALLBACK:no_tool_call pipe=. calls=9 tok=52604 293s []
+seed=123 intermittent t=12 true=item_id=HOBBIES_1_011  agent=. pipe=. calls=8 tok=35945 245s [item_id=FOODS_3_150|dept_id=HOBBIES_2|store_id=WI_2]
+seed=123 intermittent t=13 true=item_id=HOBBIES_2_028  agent=Y pipe=. calls=9 tok=42291 269s [item_id=HOBBIES_2_028|dept_id=HOBBIES_2|cat_id=HOBBIES]
+seed=123 intermittent t=14 true=item_id=HOBBIES_1_216  agent=. pipe=. calls=8 tok=30331 220s [item_id=FOODS_2_128|store_id=WI_2|dept_id=FOODS_2]
+seed=123 intermittent t=15 true=item_id=FOODS_3_544    agent=. pipe=. calls=9 tok=51074 293s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+seed=123 intermittent t=16 true=item_id=HOBBIES_2_138  agent=. pipe=. calls=10 tok=44725 270s [item_id=FOODS_1_078|item_id=FOODS_2_128|dept_id=FOODS_2]
+seed=123 intermittent t=17 true=item_id=HOUSEHOLD_2_018 agent=. pipe=. calls=10 tok=57610 317s [item_id=FOODS_3_150|dept_id=FOODS_3|store_id=WI_2]
+seed=123 intermittent t=18 true=item_id=HOBBIES_2_117  agent=Y pipe=. calls=9 tok=46398 269s [item_id=HOBBIES_2_117|item_id=FOODS_2_128|store_id=WI_1]
+seed=123 intermittent t=19 true=item_id=HOBBIES_1_246  agent=. pipe=. calls=9 tok=38437 245s [dept_id=HOBBIES_2|item_id=HOBBIES_1_246|store_id=WI_3]
+STOP (completed). 26 new trials written to outputs/llm_agent/trials_val_v2.csv
+[2026-10-07 00:42:18] COMPLETE
