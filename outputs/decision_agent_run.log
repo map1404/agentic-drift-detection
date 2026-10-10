@@ -1,0 +1,521 @@
+A seed=42 sudden           t= 0 -> retrain
+B seed=42 sudden           t= 0 -> retrain
+A seed=42 sudden           t= 1 -> retrain
+B seed=42 sudden           t= 1 -> retrain
+A seed=42 sudden           t= 2 -> retrain
+B seed=42 sudden           t= 2 -> retrain
+A seed=42 sudden           t= 3 -> retrain
+B seed=42 sudden           t= 3 -> retrain
+A seed=42 sudden           t= 4 -> ignore
+B seed=42 sudden           t= 4 -> ignore
+A seed=42 sudden           t= 5 -> retrain
+B seed=42 sudden           t= 5 -> retrain
+A seed=42 sudden           t= 6 -> retrain
+B seed=42 sudden           t= 6 -> ignore
+A seed=42 sudden           t= 7 -> retrain
+B seed=42 sudden           t= 7 -> ignore
+A seed=42 sudden           t= 8 -> ignore
+B seed=42 sudden           t= 8 -> retrain
+A seed=42 sudden           t= 9 -> retrain
+B seed=42 sudden           t= 9 -> retrain
+A seed=42 sudden           t=10 -> retrain
+B seed=42 sudden           t=10 -> ignore
+A seed=42 sudden           t=11 -> retrain
+B seed=42 sudden           t=11 -> retrain
+A seed=42 sudden           t=12 -> ignore
+B seed=42 sudden           t=12 -> ignore
+A seed=42 sudden           t=13 -> ignore
+B seed=42 sudden           t=13 -> ignore
+A seed=42 sudden           t=14 -> ignore
+B seed=42 sudden           t=14 -> ignore
+A seed=42 sudden           t=15 -> retrain
+B seed=42 sudden           t=15 -> retrain
+A seed=42 sudden           t=16 -> ignore
+B seed=42 sudden           t=16 -> ignore
+A seed=42 sudden           t=17 -> retrain
+B seed=42 sudden           t=17 -> retrain
+A seed=42 sudden           t=18 -> retrain
+B seed=42 sudden           t=18 -> retrain
+A seed=42 sudden           t=19 -> ignore
+B seed=42 sudden           t=19 -> retrain
+A seed=42 gradual          t= 0 -> retrain
+B seed=42 gradual          t= 0 -> ignore
+A seed=42 gradual          t= 1 -> ignore
+B seed=42 gradual          t= 1 -> ignore
+A seed=42 gradual          t= 2 -> retrain
+B seed=42 gradual          t= 2 -> ignore
+A seed=42 gradual          t= 3 -> retrain
+B seed=42 gradual          t= 3 -> retrain
+A seed=42 gradual          t= 4 -> retrain
+B seed=42 gradual          t= 4 -> retrain
+A seed=42 gradual          t= 5 -> retrain
+B seed=42 gradual          t= 5 -> ignore
+A seed=42 gradual          t= 6 -> ignore
+B seed=42 gradual          t= 6 -> ignore
+A seed=42 gradual          t= 7 -> retrain
+B seed=42 gradual          t= 7 -> retrain
+A seed=42 gradual          t= 8 -> retrain
+B seed=42 gradual          t= 8 -> ignore
+A seed=42 gradual          t= 9 -> retrain
+B seed=42 gradual          t= 9 -> retrain
+A seed=42 gradual          t=10 -> retrain
+B seed=42 gradual          t=10 -> retrain
+A seed=42 gradual          t=11 -> retrain
+B seed=42 gradual          t=11 -> retrain
+A seed=42 gradual          t=12 -> retrain
+B seed=42 gradual          t=12 -> ignore
+A seed=42 gradual          t=13 -> retrain
+B seed=42 gradual          t=13 -> retrain
+A seed=42 gradual          t=14 -> ignore
+B seed=42 gradual          t=14 -> retrain
+A seed=42 gradual          t=15 -> retrain
+B seed=42 gradual          t=15 -> retrain
+A seed=42 gradual          t=16 -> ignore
+B seed=42 gradual          t=16 -> ignore
+A seed=42 gradual          t=17 -> retrain
+B seed=42 gradual          t=17 -> retrain
+A seed=42 gradual          t=18 -> retrain
+B seed=42 gradual          t=18 -> ignore
+A seed=42 gradual          t=19 -> retrain
+B seed=42 gradual          t=19 -> ignore
+A seed=42 intermittent     t= 0 -> ignore
+B seed=42 intermittent     t= 0 -> ignore
+A seed=42 intermittent     t= 1 -> ignore
+B seed=42 intermittent     t= 1 -> ignore
+A seed=42 intermittent     t= 2 -> ignore
+B seed=42 intermittent     t= 2 -> ignore
+A seed=42 intermittent     t= 3 -> retrain
+B seed=42 intermittent     t= 3 -> retrain
+A seed=42 intermittent     t= 4 -> ignore
+B seed=42 intermittent     t= 4 -> ignore
+A seed=42 intermittent     t= 5 -> ignore
+B seed=42 intermittent     t= 5 -> ignore
+A seed=42 intermittent     t= 6 -> ignore
+B seed=42 intermittent     t= 6 -> retrain
+A seed=42 intermittent     t= 7 -> retrain
+B seed=42 intermittent     t= 7 -> ignore
+A seed=42 intermittent     t= 8 -> ignore
+B seed=42 intermittent     t= 8 -> ignore
+A seed=42 intermittent     t= 9 -> retrain
+B seed=42 intermittent     t= 9 -> ignore
+A seed=42 intermittent     t=10 -> ignore
+B seed=42 intermittent     t=10 -> ignore
+A seed=42 intermittent     t=11 -> ignore
+B seed=42 intermittent     t=11 -> retrain
+A seed=42 intermittent     t=12 -> retrain
+B seed=42 intermittent     t=12 -> retrain
+A seed=42 intermittent     t=13 -> ignore
+B seed=42 intermittent     t=13 -> ignore
+A seed=42 intermittent     t=14 -> ignore
+B seed=42 intermittent     t=14 -> retrain
+A seed=42 intermittent     t=15 -> ignore
+B seed=42 intermittent     t=15 -> ignore
+A seed=42 intermittent     t=16 -> retrain
+B seed=42 intermittent     t=16 -> ignore
+A seed=42 intermittent     t=17 -> ignore
+B seed=42 intermittent     t=17 -> ignore
+A seed=42 intermittent     t=18 -> ignore
+B seed=42 intermittent     t=18 -> retrain
+A seed=42 intermittent     t=19 -> ignore
+B seed=42 intermittent     t=19 -> ignore
+A seed=42 covariate_price  t= 0 -> ignore
+B seed=42 covariate_price  t= 0 -> retrain
+A seed=42 covariate_price  t= 1 -> ignore
+B seed=42 covariate_price  t= 1 -> ignore
+A seed=42 covariate_price  t= 2 -> ignore
+B seed=42 covariate_price  t= 2 -> ignore
+A seed=42 covariate_price  t= 3 -> ignore
+B seed=42 covariate_price  t= 3 -> ignore
+A seed=42 covariate_price  t= 4 -> ignore
+B seed=42 covariate_price  t= 4 -> ignore
+A seed=42 covariate_price  t= 5 -> ignore
+B seed=42 covariate_price  t= 5 -> ignore
+A seed=42 covariate_price  t= 6 -> retrain
+B seed=42 covariate_price  t= 6 -> retrain
+A seed=42 covariate_price  t= 7 -> ignore
+B seed=42 covariate_price  t= 7 -> ignore
+A seed=42 covariate_price  t= 8 -> ignore
+B seed=42 covariate_price  t= 8 -> ignore
+A seed=42 covariate_price  t= 9 -> ignore
+B seed=42 covariate_price  t= 9 -> ignore
+A seed=42 covariate_price  t=10 -> ignore
+B seed=42 covariate_price  t=10 -> ignore
+A seed=42 covariate_price  t=11 -> ignore
+B seed=42 covariate_price  t=11 -> retrain
+A seed=42 covariate_price  t=12 -> ignore
+B seed=42 covariate_price  t=12 -> ignore
+A seed=42 covariate_price  t=13 -> ignore
+B seed=42 covariate_price  t=13 -> retrain
+A seed=42 covariate_price  t=14 -> ignore
+B seed=42 covariate_price  t=14 -> ignore
+A seed=42 covariate_price  t=15 -> ignore
+B seed=42 covariate_price  t=15 -> ignore
+A seed=42 covariate_price  t=16 -> ignore
+B seed=42 covariate_price  t=16 -> ignore
+A seed=42 covariate_price  t=17 -> ignore
+B seed=42 covariate_price  t=17 -> retrain
+A seed=42 covariate_price  t=18 -> ignore
+B seed=42 covariate_price  t=18 -> retrain
+A seed=42 covariate_price  t=19 -> ignore
+B seed=42 covariate_price  t=19 -> ignore
+A seed=42 drift_free       t= 0 -> ignore
+B seed=42 drift_free       t= 0 -> ignore
+A seed=42 drift_free       t= 1 -> retrain
+B seed=42 drift_free       t= 1 -> retrain
+A seed=42 drift_free       t= 2 -> ignore
+B seed=42 drift_free       t= 2 -> ignore
+A seed=42 drift_free       t= 3 -> ignore
+B seed=42 drift_free       t= 3 -> ignore
+A seed=42 drift_free       t= 4 -> ignore
+B seed=42 drift_free       t= 4 -> ignore
+A seed=42 drift_free       t= 5 -> ignore
+B seed=42 drift_free       t= 5 -> retrain
+A seed=42 drift_free       t= 6 -> ignore
+B seed=42 drift_free       t= 6 -> ignore
+A seed=42 drift_free       t= 7 -> ignore
+B seed=42 drift_free       t= 7 -> retrain
+A seed=42 drift_free       t= 8 -> ignore
+B seed=42 drift_free       t= 8 -> retrain
+A seed=42 drift_free       t= 9 -> retrain
+B seed=42 drift_free       t= 9 -> retrain
+A seed=42 drift_free       t=10 -> ignore
+B seed=42 drift_free       t=10 -> ignore
+A seed=42 drift_free       t=11 -> ignore
+B seed=42 drift_free       t=11 -> ignore
+A seed=42 drift_free       t=12 -> ignore
+B seed=42 drift_free       t=12 -> ignore
+A seed=42 drift_free       t=13 -> ignore
+B seed=42 drift_free       t=13 -> ignore
+A seed=42 drift_free       t=14 -> retrain
+B seed=42 drift_free       t=14 -> retrain
+A seed=42 drift_free       t=15 -> ignore
+B seed=42 drift_free       t=15 -> ignore
+A seed=42 drift_free       t=16 -> retrain
+B seed=42 drift_free       t=16 -> retrain
+A seed=42 drift_free       t=17 -> ignore
+B seed=42 drift_free       t=17 -> retrain
+A seed=42 drift_free       t=18 -> ignore
+B seed=42 drift_free       t=18 -> retrain
+A seed=42 drift_free       t=19 -> ignore
+B seed=42 drift_free       t=19 -> retrain
+A seed=42 drift_free       t=20 -> ignore
+B seed=42 drift_free       t=20 -> ignore
+A seed=42 drift_free       t=21 -> retrain
+B seed=42 drift_free       t=21 -> retrain
+A seed=42 drift_free       t=22 -> retrain
+B seed=42 drift_free       t=22 -> retrain
+A seed=42 drift_free       t=23 -> ignore
+B seed=42 drift_free       t=23 -> ignore
+A seed=42 drift_free       t=24 -> ignore
+B seed=42 drift_free       t=24 -> retrain
+A seed=42 drift_free       t=25 -> ignore
+B seed=42 drift_free       t=25 -> ignore
+A seed=42 drift_free       t=26 -> retrain
+B seed=42 drift_free       t=26 -> retrain
+A seed=42 drift_free       t=27 -> ignore
+B seed=42 drift_free       t=27 -> retrain
+A seed=42 drift_free       t=28 -> ignore
+B seed=42 drift_free       t=28 -> retrain
+A seed=42 drift_free       t=29 -> ignore
+B seed=42 drift_free       t=29 -> retrain
+A seed=42 drift_free       t=30 -> ignore
+B seed=42 drift_free       t=30 -> ignore
+A seed=42 drift_free       t=31 -> ignore
+B seed=42 drift_free       t=31 -> retrain
+A seed=42 drift_free       t=32 -> retrain
+B seed=42 drift_free       t=32 -> retrain
+A seed=42 drift_free       t=33 -> ignore
+B seed=42 drift_free       t=33 -> retrain
+A seed=42 drift_free       t=34 -> ignore
+B seed=42 drift_free       t=34 -> ignore
+A seed=42 drift_free       t=35 -> ignore
+B seed=42 drift_free       t=35 -> ignore
+A seed=42 drift_free       t=36 -> ignore
+B seed=42 drift_free       t=36 -> retrain
+A seed=42 drift_free       t=37 -> ignore
+B seed=42 drift_free       t=37 -> ignore
+A seed=42 drift_free       t=38 -> ignore
+B seed=42 drift_free       t=38 -> ignore
+A seed=42 drift_free       t=39 -> ignore
+B seed=42 drift_free       t=39 -> retrain
+A seed=42 drift_free       t=40 -> ignore
+B seed=42 drift_free       t=40 -> retrain
+A seed=42 drift_free       t=41 -> ignore
+B seed=42 drift_free       t=41 -> ignore
+A seed=42 drift_free       t=42 -> ignore
+B seed=42 drift_free       t=42 -> ignore
+A seed=42 drift_free       t=43 -> ignore
+B seed=42 drift_free       t=43 -> ignore
+A seed=42 drift_free       t=44 -> retrain
+B seed=42 drift_free       t=44 -> ignore
+A seed=42 drift_free       t=45 -> ignore
+B seed=42 drift_free       t=45 -> retrain
+A seed=42 drift_free       t=46 -> ignore
+B seed=42 drift_free       t=46 -> ignore
+A seed=42 drift_free       t=47 -> ignore
+B seed=42 drift_free       t=47 -> ignore
+A seed=42 drift_free       t=48 -> ignore
+B seed=42 drift_free       t=48 -> ignore
+A seed=42 drift_free       t=49 -> ignore
+B seed=42 drift_free       t=49 -> retrain
+A seed=123 sudden           t= 0 -> retrain
+B seed=123 sudden           t= 0 -> retrain
+A seed=123 sudden           t= 1 -> retrain
+B seed=123 sudden           t= 1 -> retrain
+A seed=123 sudden           t= 2 -> ignore
+B seed=123 sudden           t= 2 -> retrain
+A seed=123 sudden           t= 3 -> ignore
+B seed=123 sudden           t= 3 -> retrain
+A seed=123 sudden           t= 4 -> retrain
+B seed=123 sudden           t= 4 -> retrain
+A seed=123 sudden           t= 5 -> retrain
+B seed=123 sudden           t= 5 -> retrain
+A seed=123 sudden           t= 6 -> retrain
+B seed=123 sudden           t= 6 -> retrain
+A seed=123 sudden           t= 7 -> retrain
+B seed=123 sudden           t= 7 -> ignore
+A seed=123 sudden           t= 8 -> retrain
+B seed=123 sudden           t= 8 -> retrain
+A seed=123 sudden           t= 9 -> retrain
+B seed=123 sudden           t= 9 -> retrain
+A seed=123 sudden           t=10 -> ignore
+B seed=123 sudden           t=10 -> retrain
+A seed=123 sudden           t=11 -> retrain
+B seed=123 sudden           t=11 -> retrain
+A seed=123 sudden           t=12 -> ignore
+B seed=123 sudden           t=12 -> ignore
+A seed=123 sudden           t=13 -> ignore
+B seed=123 sudden           t=13 -> ignore
+A seed=123 sudden           t=14 -> retrain
+B seed=123 sudden           t=14 -> retrain
+A seed=123 sudden           t=15 -> retrain
+B seed=123 sudden           t=15 -> retrain
+A seed=123 sudden           t=16 -> ignore
+B seed=123 sudden           t=16 -> ignore
+A seed=123 sudden           t=17 -> ignore
+B seed=123 sudden           t=17 -> ignore
+A seed=123 sudden           t=18 -> retrain
+B seed=123 sudden           t=18 -> retrain
+A seed=123 sudden           t=19 -> ignore
+B seed=123 sudden           t=19 -> ignore
+A seed=123 gradual          t= 0 -> ignore
+B seed=123 gradual          t= 0 -> ignore
+A seed=123 gradual          t= 1 -> retrain
+B seed=123 gradual          t= 1 -> retrain
+A seed=123 gradual          t= 2 -> ignore
+B seed=123 gradual          t= 2 -> ignore
+A seed=123 gradual          t= 3 -> retrain
+B seed=123 gradual          t= 3 -> retrain
+A seed=123 gradual          t= 4 -> retrain
+B seed=123 gradual          t= 4 -> retrain
+A seed=123 gradual          t= 5 -> ignore
+B seed=123 gradual          t= 5 -> ignore
+A seed=123 gradual          t= 6 -> ignore
+B seed=123 gradual          t= 6 -> retrain
+A seed=123 gradual          t= 7 -> retrain
+B seed=123 gradual          t= 7 -> ignore
+A seed=123 gradual          t= 8 -> retrain
+B seed=123 gradual          t= 8 -> retrain
+A seed=123 gradual          t= 9 -> ignore
+B seed=123 gradual          t= 9 -> retrain
+A seed=123 gradual          t=10 -> retrain
+B seed=123 gradual          t=10 -> retrain
+A seed=123 gradual          t=11 -> ignore
+B seed=123 gradual          t=11 -> ignore
+A seed=123 gradual          t=12 -> ignore
+B seed=123 gradual          t=12 -> ignore
+A seed=123 gradual          t=13 -> retrain
+B seed=123 gradual          t=13 -> retrain
+A seed=123 gradual          t=14 -> retrain
+B seed=123 gradual          t=14 -> retrain
+A seed=123 gradual          t=15 -> retrain
+B seed=123 gradual          t=15 -> retrain
+A seed=123 gradual          t=16 -> ignore
+B seed=123 gradual          t=16 -> ignore
+A seed=123 gradual          t=17 -> retrain
+B seed=123 gradual          t=17 -> retrain
+A seed=123 gradual          t=18 -> retrain
+B seed=123 gradual          t=18 -> retrain
+A seed=123 gradual          t=19 -> retrain
+B seed=123 gradual          t=19 -> retrain
+A seed=123 intermittent     t= 0 -> ignore
+B seed=123 intermittent     t= 0 -> ignore
+A seed=123 intermittent     t= 1 -> ignore
+B seed=123 intermittent     t= 1 -> ignore
+A seed=123 intermittent     t= 2 -> retrain
+B seed=123 intermittent     t= 2 -> retrain
+A seed=123 intermittent     t= 3 -> retrain
+B seed=123 intermittent     t= 3 -> retrain
+A seed=123 intermittent     t= 4 -> ignore
+B seed=123 intermittent     t= 4 -> retrain
+A seed=123 intermittent     t= 5 -> ignore
+B seed=123 intermittent     t= 5 -> ignore
+A seed=123 intermittent     t= 6 -> ignore
+B seed=123 intermittent     t= 6 -> ignore
+A seed=123 intermittent     t= 7 -> ignore
+B seed=123 intermittent     t= 7 -> retrain
+A seed=123 intermittent     t= 8 -> ignore
+B seed=123 intermittent     t= 8 -> retrain
+A seed=123 intermittent     t= 9 -> retrain
+B seed=123 intermittent     t= 9 -> ignore
+A seed=123 intermittent     t=10 -> ignore
+B seed=123 intermittent     t=10 -> ignore
+A seed=123 intermittent     t=11 -> ignore
+B seed=123 intermittent     t=11 -> retrain
+A seed=123 intermittent     t=12 -> ignore
+B seed=123 intermittent     t=12 -> retrain
+A seed=123 intermittent     t=13 -> ignore
+B seed=123 intermittent     t=13 -> ignore
+A seed=123 intermittent     t=14 -> ignore
+B seed=123 intermittent     t=14 -> ignore
+A seed=123 intermittent     t=15 -> retrain
+B seed=123 intermittent     t=15 -> ignore
+A seed=123 intermittent     t=16 -> ignore
+B seed=123 intermittent     t=16 -> ignore
+A seed=123 intermittent     t=17 -> ignore
+B seed=123 intermittent     t=17 -> retrain
+A seed=123 intermittent     t=18 -> ignore
+B seed=123 intermittent     t=18 -> ignore
+A seed=123 intermittent     t=19 -> ignore
+B seed=123 intermittent     t=19 -> ignore
+A seed=123 covariate_price  t= 0 -> ignore
+B seed=123 covariate_price  t= 0 -> ignore
+A seed=123 covariate_price  t= 1 -> ignore
+B seed=123 covariate_price  t= 1 -> ignore
+A seed=123 covariate_price  t= 2 -> ignore
+B seed=123 covariate_price  t= 2 -> ignore
+A seed=123 covariate_price  t= 3 -> retrain
+B seed=123 covariate_price  t= 3 -> retrain
+A seed=123 covariate_price  t= 4 -> ignore
+B seed=123 covariate_price  t= 4 -> ignore
+A seed=123 covariate_price  t= 5 -> ignore
+B seed=123 covariate_price  t= 5 -> retrain
+A seed=123 covariate_price  t= 6 -> ignore
+B seed=123 covariate_price  t= 6 -> ignore
+A seed=123 covariate_price  t= 7 -> ignore
+B seed=123 covariate_price  t= 7 -> ignore
+A seed=123 covariate_price  t= 8 -> ignore
+B seed=123 covariate_price  t= 8 -> ignore
+A seed=123 covariate_price  t= 9 -> ignore
+B seed=123 covariate_price  t= 9 -> ignore
+A seed=123 covariate_price  t=10 -> ignore
+B seed=123 covariate_price  t=10 -> retrain
+A seed=123 covariate_price  t=11 -> ignore
+B seed=123 covariate_price  t=11 -> retrain
+A seed=123 covariate_price  t=12 -> ignore
+B seed=123 covariate_price  t=12 -> ignore
+A seed=123 covariate_price  t=13 -> ignore
+B seed=123 covariate_price  t=13 -> ignore
+A seed=123 covariate_price  t=14 -> ignore
+B seed=123 covariate_price  t=14 -> retrain
+A seed=123 covariate_price  t=15 -> ignore
+B seed=123 covariate_price  t=15 -> retrain
+A seed=123 covariate_price  t=16 -> ignore
+B seed=123 covariate_price  t=16 -> ignore
+A seed=123 covariate_price  t=17 -> ignore
+B seed=123 covariate_price  t=17 -> ignore
+A seed=123 covariate_price  t=18 -> retrain
+B seed=123 covariate_price  t=18 -> ignore
+A seed=123 covariate_price  t=19 -> ignore
+B seed=123 covariate_price  t=19 -> ignore
+A seed=123 drift_free       t= 0 -> ignore
+B seed=123 drift_free       t= 0 -> ignore
+A seed=123 drift_free       t= 1 -> ignore
+B seed=123 drift_free       t= 1 -> retrain
+A seed=123 drift_free       t= 2 -> ignore
+B seed=123 drift_free       t= 2 -> ignore
+A seed=123 drift_free       t= 3 -> ignore
+B seed=123 drift_free       t= 3 -> ignore
+A seed=123 drift_free       t= 4 -> ignore
+B seed=123 drift_free       t= 4 -> retrain
+A seed=123 drift_free       t= 5 -> ignore
+B seed=123 drift_free       t= 5 -> ignore
+A seed=123 drift_free       t= 6 -> ignore
+B seed=123 drift_free       t= 6 -> retrain
+A seed=123 drift_free       t= 7 -> ignore
+B seed=123 drift_free       t= 7 -> retrain
+A seed=123 drift_free       t= 8 -> retrain
+B seed=123 drift_free       t= 8 -> retrain
+A seed=123 drift_free       t= 9 -> ignore
+B seed=123 drift_free       t= 9 -> ignore
+A seed=123 drift_free       t=10 -> ignore
+B seed=123 drift_free       t=10 -> ignore
+A seed=123 drift_free       t=11 -> ignore
+B seed=123 drift_free       t=11 -> ignore
+A seed=123 drift_free       t=12 -> ignore
+B seed=123 drift_free       t=12 -> ignore
+A seed=123 drift_free       t=13 -> ignore
+B seed=123 drift_free       t=13 -> ignore
+A seed=123 drift_free       t=14 -> retrain
+B seed=123 drift_free       t=14 -> retrain
+A seed=123 drift_free       t=15 -> ignore
+B seed=123 drift_free       t=15 -> ignore
+A seed=123 drift_free       t=16 -> retrain
+B seed=123 drift_free       t=16 -> retrain
+A seed=123 drift_free       t=17 -> ignore
+B seed=123 drift_free       t=17 -> ignore
+A seed=123 drift_free       t=18 -> retrain
+B seed=123 drift_free       t=18 -> retrain
+A seed=123 drift_free       t=19 -> ignore
+B seed=123 drift_free       t=19 -> retrain
+A seed=123 drift_free       t=20 -> ignore
+B seed=123 drift_free       t=20 -> ignore
+A seed=123 drift_free       t=21 -> ignore
+B seed=123 drift_free       t=21 -> ignore
+A seed=123 drift_free       t=22 -> ignore
+B seed=123 drift_free       t=22 -> ignore
+A seed=123 drift_free       t=23 -> ignore
+B seed=123 drift_free       t=23 -> ignore
+A seed=123 drift_free       t=24 -> ignore
+B seed=123 drift_free       t=24 -> ignore
+A seed=123 drift_free       t=25 -> retrain
+B seed=123 drift_free       t=25 -> ignore
+A seed=123 drift_free       t=26 -> retrain
+B seed=123 drift_free       t=26 -> retrain
+A seed=123 drift_free       t=27 -> ignore
+B seed=123 drift_free       t=27 -> retrain
+A seed=123 drift_free       t=28 -> ignore
+B seed=123 drift_free       t=28 -> ignore
+A seed=123 drift_free       t=29 -> ignore
+B seed=123 drift_free       t=29 -> ignore
+A seed=123 drift_free       t=30 -> ignore
+B seed=123 drift_free       t=30 -> retrain
+A seed=123 drift_free       t=31 -> ignore
+B seed=123 drift_free       t=31 -> ignore
+A seed=123 drift_free       t=32 -> ignore
+B seed=123 drift_free       t=32 -> ignore
+A seed=123 drift_free       t=33 -> ignore
+B seed=123 drift_free       t=33 -> retrain
+A seed=123 drift_free       t=34 -> ignore
+B seed=123 drift_free       t=34 -> ignore
+A seed=123 drift_free       t=35 -> ignore
+B seed=123 drift_free       t=35 -> ignore
+A seed=123 drift_free       t=36 -> ignore
+B seed=123 drift_free       t=36 -> ignore
+A seed=123 drift_free       t=37 -> retrain
+B seed=123 drift_free       t=37 -> retrain
+A seed=123 drift_free       t=38 -> ignore
+B seed=123 drift_free       t=38 -> retrain
+A seed=123 drift_free       t=39 -> ignore
+B seed=123 drift_free       t=39 -> ignore
+A seed=123 drift_free       t=40 -> ignore
+B seed=123 drift_free       t=40 -> retrain
+A seed=123 drift_free       t=41 -> retrain
+B seed=123 drift_free       t=41 -> retrain
+A seed=123 drift_free       t=42 -> ignore
+B seed=123 drift_free       t=42 -> ignore
+A seed=123 drift_free       t=43 -> ignore
+B seed=123 drift_free       t=43 -> ignore
+A seed=123 drift_free       t=44 -> ignore
+B seed=123 drift_free       t=44 -> ignore
+A seed=123 drift_free       t=45 -> ignore
+B seed=123 drift_free       t=45 -> ignore
+A seed=123 drift_free       t=46 -> ignore
+B seed=123 drift_free       t=46 -> retrain
+A seed=123 drift_free       t=47 -> ignore
+B seed=123 drift_free       t=47 -> ignore
+A seed=123 drift_free       t=48 -> ignore
+B seed=123 drift_free       t=48 -> ignore
+A seed=123 drift_free       t=49 -> ignore
+B seed=123 drift_free       t=49 -> ignore
+COMPLETE

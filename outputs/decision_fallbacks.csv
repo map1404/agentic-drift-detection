@@ -1,0 +1,11 @@
+regime,drift_type,n,fallbacks
+A,covariate_price,40,0
+A,drift_free,100,0
+A,gradual,40,0
+A,intermittent,40,0
+A,sudden,40,0
+B,covariate_price,40,0
+B,drift_free,100,0
+B,gradual,40,0
+B,intermittent,40,0
+B,sudden,40,0

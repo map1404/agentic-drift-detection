@@ -1,0 +1,3 @@
+rule,threshold,seed7_balanced_acc,label
+A: current/reference MAE ratio,1.0663555799850641,0.9864864864864865,hidden_harmful_1.05
+B: top divergence x top slice share,0.001269745583695102,0.7318634423897581,hidden_harmful_1.05

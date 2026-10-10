@@ -458,3 +458,61 @@ Consequential changes (mine, applied with the amendment, before any run):
   payload (the slice's mean-sales change is computed from them, and the
   drift was detected on them). Reworded to "You are NOT shown the model's
   error on the current window".
+
+### Results (2026-10-10)
+
+520 agent decisions (260 validation trials x 2 regimes), gpt-oss-120b on
+Cerebras, temperature 0, seed 0; **0 fallbacks**. Baselines fit on seed 7 at
+the primary label (1.05): regime A rule = retrain iff current/reference MAE
+>= 1.066 (seed-7 balanced accuracy 0.99); regime B rule = retrain iff top
+divergence x top slice share >= 0.00127 (seed 7: 0.73).
+
+Correction to the amendment's power note: the validation set has **41**
+harmful trials at 1.05 (sudden 11+9, gradual 11+10), not ~53 (my estimate
+from rounded shares was wrong).
+
+Primary results (label 1.05, seeds 42+123, n=260 paired, 41 harmful):
+
+| regime | method | balanced acc. [95% bootstrap CI] | retrain recall | unnecessary retrains | missed harmful | McNemar p vs best baseline |
+|---|---|---|---|---|---|---|
+| A | always retrain | 0.50 | 1.00 | 219 | 0 | |
+| A | always ignore | 0.50 | 0.00 | 0 | 41 | |
+| A | **MAE-ratio threshold (best)** | **0.95 [0.92, 0.98]** | 0.98 | 15 | 1 | |
+| A | agent | 0.91 [0.88, 0.93] | 1.00 | 41 | 0 | **4e-7 (agent worse: 1 vs 26 discordant)** |
+| B | always retrain | 0.50 | 1.00 | 219 | 0 | |
+| B | always ignore | 0.50 | 0.00 | 0 | 41 | |
+| B | **divergence x share rule (best)** | 0.71 [0.63, 0.78] | 0.73 | 69 | 11 | |
+| B | agent | 0.72 [0.65, 0.78] | 0.83 | 84 | 7 | 0.42 (72 vs 83 discordant) |
+
+**Verdict: NOT SUPPORTED.** Regime B: the agent does not beat the best
+baseline (0.72 vs 0.71, p=0.42) -- a tie, and per the amendment's power note
+inconclusive rather than evidence of equivalence. Regime A: the agent is
+significantly WORSE than the simple MAE-ratio threshold (0.91 vs 0.95; the
+rule is right on 26 trials the agent gets wrong, the reverse on 1).
+
+What the agent does: it is retrain-happy. In regime A it never misses a
+harmful drift (recall 1.00) but orders 41 unnecessary retrains vs the rule's
+15 -- including 17/100 drift-free windows (rule 3/100). In regime B it catches
+more harmful drifts than the rule (34 vs 30 of 41) at the cost of more false
+retrains (84 vs 69), 43 of them on the 100 drift-free windows (rule 26).
+Specificity by stratum (label 1.05; drift-free, intermittent and covariate are
+all-benign): regime A agent 0.83 / 0.78 / 0.93 vs rule 0.97 / 0.88 / 0.97;
+regime B agent 0.57 / 0.65 / 0.70 vs rule 0.74 / 0.72 / 0.70.
+
+Sensitivity: at 1.10 (19 harmful) the picture is the same -- regime A agent
+0.87 vs rule 0.93 (p=1.5e-8), regime B agent 0.74 vs rule 0.66 (p=0.42; the
+discordant counts are identical to 1.05 by coincidence: the 8 discordant
+trials that change label split 4/4, verified). At 1.20 there are no harmful
+trials, so only false-retrain rates are defined: agent 82 (A) / 118 (B)
+unnecessary retrains vs rule 55 / 99; "always ignore" is trivially perfect.
+
+Caveats: one model and one dataset (M5); harm is built into sales
+injections (the model has no sales features); the model's training window is
+unknown; temperature 0, one run per trial; the regime B rule is a single
+product feature fit on 60 seed-7 trials.
+
+Outputs: outputs/decision_trials.csv (payloads, MAEs, hidden labels),
+decision_class_balance.csv, decision_agent.csv, decision_agent_raw.jsonl
+(full reasoning), decision_baseline_fit.csv, decision_metrics.csv,
+decision_by_drift_type.csv, decision_mcnemar.csv, decision_fallbacks.csv,
+decision_summary.csv; code in src/decision/ and src/drift/inject_covariate.py.
