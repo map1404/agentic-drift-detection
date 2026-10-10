@@ -1,0 +1,261 @@
+seed=7 sudden           t= 0 ratio=1.138 harmful@1.10=True top=dept_id=FOODS_3
+seed=7 sudden           t= 1 ratio=1.030 harmful@1.10=False top=store_id=WI_2
+seed=7 sudden           t= 2 ratio=1.105 harmful@1.10=True top=dept_id=HOUSEHOLD_1
+seed=7 sudden           t= 3 ratio=1.102 harmful@1.10=True top=store_id=WI_1
+seed=7 sudden           t= 4 ratio=1.096 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=7 sudden           t= 5 ratio=1.229 harmful@1.10=True top=dept_id=FOODS_2
+seed=7 sudden           t= 6 ratio=1.068 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 sudden           t= 7 ratio=1.108 harmful@1.10=True top=store_id=TX_2
+seed=7 sudden           t= 8 ratio=1.028 harmful@1.10=False top=dept_id=HOUSEHOLD_2
+seed=7 sudden           t= 9 ratio=1.092 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=7 sudden           t=10 ratio=1.110 harmful@1.10=True top=store_id=TX_2
+seed=7 sudden           t=11 ratio=1.038 harmful@1.10=False top=store_id=TX_2
+seed=7 sudden           t=12 ratio=1.079 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=7 sudden           t=13 ratio=1.009 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 sudden           t=14 ratio=1.079 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=7 sudden           t=15 ratio=1.009 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 sudden           t=16 ratio=1.175 harmful@1.10=True top=store_id=CA_2
+seed=7 sudden           t=17 ratio=1.093 harmful@1.10=False top=store_id=WI_1
+seed=7 sudden           t=18 ratio=1.038 harmful@1.10=False top=store_id=WI_1
+seed=7 sudden           t=19 ratio=1.049 harmful@1.10=False top=store_id=CA_2
+seed=7 gradual          t= 0 ratio=1.084 harmful@1.10=False top=dept_id=HOUSEHOLD_1
+seed=7 gradual          t= 1 ratio=1.082 harmful@1.10=False top=store_id=WI_1
+seed=7 gradual          t= 2 ratio=1.003 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 gradual          t= 3 ratio=1.017 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t= 4 ratio=1.023 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 gradual          t= 5 ratio=1.040 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 gradual          t= 6 ratio=1.081 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t= 7 ratio=1.002 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t= 8 ratio=1.018 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 gradual          t= 9 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t=10 ratio=1.006 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t=11 ratio=1.022 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t=12 ratio=1.086 harmful@1.10=False top=dept_id=HOUSEHOLD_1
+seed=7 gradual          t=13 ratio=1.026 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t=14 ratio=1.004 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 gradual          t=15 ratio=1.001 harmful@1.10=False top=item_id=FOODS_3_646
+seed=7 gradual          t=16 ratio=1.047 harmful@1.10=False top=store_id=CA_3
+seed=7 gradual          t=17 ratio=1.202 harmful@1.10=True top=dept_id=FOODS_2
+seed=7 gradual          t=18 ratio=1.087 harmful@1.10=False top=store_id=TX_2
+seed=7 gradual          t=19 ratio=1.041 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t= 0 ratio=1.018 harmful@1.10=False top=item_id=FOODS_1_069
+seed=7 intermittent     t= 1 ratio=1.007 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 intermittent     t= 2 ratio=1.006 harmful@1.10=False top=item_id=FOODS_3_152
+seed=7 intermittent     t= 3 ratio=1.006 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t= 4 ratio=1.020 harmful@1.10=False top=item_id=FOODS_3_152
+seed=7 intermittent     t= 5 ratio=1.010 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 intermittent     t= 6 ratio=1.008 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t= 7 ratio=0.998 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 intermittent     t= 8 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 intermittent     t= 9 ratio=1.008 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 intermittent     t=10 ratio=1.004 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 intermittent     t=11 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 intermittent     t=12 ratio=1.009 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t=13 ratio=1.011 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 intermittent     t=14 ratio=1.006 harmful@1.10=False top=item_id=FOODS_3_646
+seed=7 intermittent     t=15 ratio=1.003 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t=16 ratio=1.005 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 intermittent     t=17 ratio=1.005 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 intermittent     t=18 ratio=1.006 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 intermittent     t=19 ratio=1.006 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t= 0 ratio=0.999 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 covariate_price  t= 1 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 covariate_price  t= 2 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 covariate_price  t= 3 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 covariate_price  t= 4 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t= 5 ratio=1.002 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t= 6 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 covariate_price  t= 7 ratio=1.003 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t= 8 ratio=1.001 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 covariate_price  t= 9 ratio=1.001 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 covariate_price  t=10 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 covariate_price  t=11 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=7 covariate_price  t=12 ratio=1.004 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t=13 ratio=0.999 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 covariate_price  t=14 ratio=1.004 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t=15 ratio=0.999 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 covariate_price  t=16 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 covariate_price  t=17 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 covariate_price  t=18 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 covariate_price  t=19 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t= 0 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t= 1 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t= 2 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t= 3 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t= 4 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 drift_free       t= 5 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_646
+seed=7 drift_free       t= 6 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t= 7 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t= 8 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t= 9 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=10 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=11 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 drift_free       t=12 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=13 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t=14 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=15 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=16 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t=17 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=18 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=19 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=20 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=21 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=22 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t=23 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=24 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 drift_free       t=25 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=26 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=27 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=28 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=29 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=30 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=7 drift_free       t=31 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=32 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=33 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=34 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=7 drift_free       t=35 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=7 drift_free       t=36 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=37 ratio=1.000 harmful@1.10=False top=item_id=FOODS_1_069
+seed=7 drift_free       t=38 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=39 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=40 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=41 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t=42 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=43 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=7 drift_free       t=44 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=45 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=7 drift_free       t=46 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=7 drift_free       t=47 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=48 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=7 drift_free       t=49 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 sudden           t= 0 ratio=1.092 harmful@1.10=False top=store_id=TX_2
+seed=123 sudden           t= 1 ratio=1.079 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=123 sudden           t= 2 ratio=1.028 harmful@1.10=False top=dept_id=HOUSEHOLD_2
+seed=123 sudden           t= 3 ratio=1.001 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 sudden           t= 4 ratio=1.094 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=123 sudden           t= 5 ratio=1.166 harmful@1.10=True top=store_id=CA_2
+seed=123 sudden           t= 6 ratio=1.041 harmful@1.10=False top=store_id=CA_1
+seed=123 sudden           t= 7 ratio=1.043 harmful@1.10=False top=store_id=WI_1
+seed=123 sudden           t= 8 ratio=1.115 harmful@1.10=True top=store_id=WI_1
+seed=123 sudden           t= 9 ratio=1.102 harmful@1.10=True top=store_id=TX_2
+seed=123 sudden           t=10 ratio=1.016 harmful@1.10=False top=dept_id=FOODS_1
+seed=123 sudden           t=11 ratio=1.098 harmful@1.10=False top=store_id=WI_2
+seed=123 sudden           t=12 ratio=1.004 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 sudden           t=13 ratio=1.027 harmful@1.10=False top=store_id=CA_4
+seed=123 sudden           t=14 ratio=1.099 harmful@1.10=False top=dept_id=HOUSEHOLD_1
+seed=123 sudden           t=15 ratio=1.094 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=123 sudden           t=16 ratio=1.019 harmful@1.10=False top=dept_id=FOODS_1
+seed=123 sudden           t=17 ratio=1.003 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 sudden           t=18 ratio=1.049 harmful@1.10=False top=store_id=CA_2
+seed=123 sudden           t=19 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t= 0 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t= 1 ratio=1.064 harmful@1.10=False top=dept_id=HOUSEHOLD_1
+seed=123 gradual          t= 2 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t= 3 ratio=1.032 harmful@1.10=False top=store_id=TX_3
+seed=123 gradual          t= 4 ratio=1.131 harmful@1.10=True top=store_id=CA_2
+seed=123 gradual          t= 5 ratio=1.041 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t= 6 ratio=1.004 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 gradual          t= 7 ratio=1.065 harmful@1.10=False top=item_id=FOODS_3_646
+seed=123 gradual          t= 8 ratio=1.120 harmful@1.10=True top=dept_id=FOODS_3
+seed=123 gradual          t= 9 ratio=1.002 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 gradual          t=10 ratio=1.080 harmful@1.10=False top=store_id=TX_2
+seed=123 gradual          t=11 ratio=1.002 harmful@1.10=False top=item_id=FOODS_3_150
+seed=123 gradual          t=12 ratio=1.001 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t=13 ratio=1.089 harmful@1.10=False top=dept_id=HOUSEHOLD_1
+seed=123 gradual          t=14 ratio=1.048 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 gradual          t=15 ratio=1.073 harmful@1.10=False top=dept_id=HOBBIES_1
+seed=123 gradual          t=16 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 gradual          t=17 ratio=1.190 harmful@1.10=True top=dept_id=FOODS_2
+seed=123 gradual          t=18 ratio=1.139 harmful@1.10=True top=dept_id=FOODS_3
+seed=123 gradual          t=19 ratio=1.108 harmful@1.10=True top=store_id=WI_2
+seed=123 intermittent     t= 0 ratio=1.007 harmful@1.10=False top=item_id=FOODS_3_017
+seed=123 intermittent     t= 1 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t= 2 ratio=1.004 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 intermittent     t= 3 ratio=1.011 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 intermittent     t= 4 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t= 5 ratio=1.006 harmful@1.10=False top=item_id=HOUSEHOLD_1_189
+seed=123 intermittent     t= 6 ratio=1.014 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t= 7 ratio=1.004 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t= 8 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t= 9 ratio=1.050 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 intermittent     t=10 ratio=1.006 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t=11 ratio=1.008 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 intermittent     t=12 ratio=1.007 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t=13 ratio=1.010 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t=14 ratio=1.005 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 intermittent     t=15 ratio=1.006 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 intermittent     t=16 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 intermittent     t=17 ratio=1.004 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 intermittent     t=18 ratio=1.007 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 intermittent     t=19 ratio=1.005 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 covariate_price  t= 0 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 covariate_price  t= 1 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 covariate_price  t= 2 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 covariate_price  t= 3 ratio=0.999 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 covariate_price  t= 4 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t= 5 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t= 6 ratio=0.999 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t= 7 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=123 covariate_price  t= 8 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 covariate_price  t= 9 ratio=0.996 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t=10 ratio=0.998 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 covariate_price  t=11 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 covariate_price  t=12 ratio=1.001 harmful@1.10=False top=item_id=FOODS_3_152
+seed=123 covariate_price  t=13 ratio=1.001 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 covariate_price  t=14 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 covariate_price  t=15 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 covariate_price  t=16 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t=17 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 covariate_price  t=18 ratio=1.001 harmful@1.10=False top=item_id=FOODS_2_128
+seed=123 covariate_price  t=19 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t= 0 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t= 1 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t= 2 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t= 3 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t= 4 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t= 5 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t= 6 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t= 7 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t= 8 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t= 9 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=10 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=11 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=12 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=123 drift_free       t=13 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=14 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=15 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=16 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=17 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=123 drift_free       t=18 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=19 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=20 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=21 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=22 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=123 drift_free       t=23 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=24 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=25 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=123 drift_free       t=26 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=27 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=28 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_152
+seed=123 drift_free       t=29 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=30 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=31 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=32 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=33 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=34 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=35 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=36 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=37 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=38 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=39 ratio=1.000 harmful@1.10=False top=item_id=FOODS_2_128
+seed=123 drift_free       t=40 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=41 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=42 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=43 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+seed=123 drift_free       t=44 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=45 ratio=1.000 harmful@1.10=False top=dept_id=HOBBIES_2
+seed=123 drift_free       t=46 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_3
+seed=123 drift_free       t=47 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=48 ratio=1.000 harmful@1.10=False top=dept_id=FOODS_2
+seed=123 drift_free       t=49 ratio=1.000 harmful@1.10=False top=item_id=FOODS_3_764
+exit=0

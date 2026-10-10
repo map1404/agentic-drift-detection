@@ -433,3 +433,23 @@ partly built in; temperature-0 repeats are identical, one run per trial.
   (incl. drift-free). Class balance per seed and drift type is reported
   before any agent call; the run stops if either class is below 15% for any
   injected drift type (drift-free is 100% benign by design and exempt).
+
+#### AMENDMENT (2026-10-10, before any agent/baseline run; made after viewing label balance)
+Primary harm threshold changed from 1.10 to 1.05 because only 19/260 trials
+were harmful at 1.10. 1.10 and 1.20 remain as sensitivity checks.
+Intermittent, covariate and drift-free strata are all-benign by measurement
+and are scored as specificity (false-retrain rate) only.
+Label is "measurably degraded", not "requires retraining".
+Power note: ~53 positives; a non-significant result is inconclusive.
+Finding recorded: at 1.10, 3 of 4 drift types are never harmful to this model
+(intermittent <= 1.050; price shift 0.996-1.004).
+
+Consequential changes (mine, applied with the amendment, before any run):
+- Baselines are fit on seed 7 at the new primary threshold (1.05) instead of
+  1.10; the same fitted rules are scored against 1.10 and 1.20.
+- The decision agent's prompt now defines "retrain" at the same level it is
+  scored on ("measurably degraded": whole-window MAE at least 5% higher than
+  without the drift). It had said 10%; no agent call had been made.
+- Class balance (outputs/decision_class_balance.csv), seeds 42/123 at 1.05:
+  sudden 55%/45%, gradual 55%/50% harmful; intermittent, covariate and
+  drift-free 0%. Seed 7 (tuning): sudden 65%, gradual 30%, others 0%.

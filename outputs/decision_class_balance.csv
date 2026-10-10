@@ -1,0 +1,16 @@
+seed,drift_type,n,harmful_share_1.05,harmful_share_1.10,harmful_share_1.20
+7,covariate_price,20,0.0,0.0,0.0
+7,drift_free,50,0.0,0.0,0.0
+7,gradual,20,0.3,0.05,0.05
+7,intermittent,20,0.0,0.0,0.0
+7,sudden,20,0.65,0.35,0.05
+42,covariate_price,20,0.0,0.0,0.0
+42,drift_free,50,0.0,0.0,0.0
+42,gradual,20,0.55,0.2,0.0
+42,intermittent,20,0.0,0.0,0.0
+42,sudden,20,0.55,0.35,0.0
+123,covariate_price,20,0.0,0.0,0.0
+123,drift_free,50,0.0,0.0,0.0
+123,gradual,20,0.5,0.25,0.0
+123,intermittent,20,0.0,0.0,0.0
+123,sudden,20,0.45,0.15,0.0
