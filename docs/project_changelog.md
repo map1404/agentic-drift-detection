@@ -200,3 +200,75 @@ favorita_mcnemar.csv, favorita_tuning_grid_seed7.csv,
 favorita_tuning_changes.csv, favorita_retuned_config.json,
 favorita_false_alarm_summary.csv, favorita_false_alarm_windows.csv,
 favorita_panel_report.json.
+
+## Phase 8 — Can an LLM agent draft a dataset adapter config? (Favorita)
+
+### Pre-registration (written and committed 2026-10-10, BEFORE any run)
+
+Measures configuration effort, not drift-localisation accuracy. The drift
+pipeline, thresholds, agent prompts and the M5/Favorita adapters
+(load_m5.py, load_favorita.py, hierarchy.py) are not modified.
+
+SUPPORTED if: hierarchy edge F1 >= 0.9 in BOTH conditions (named and
+obscured); correct bin path chosen in >= 4 of 5 repeats; downstream drift
+accuracy within CI overlap of the hand-written config; manual edits needed to
+convert the config <= 3.
+REFUTED if: hierarchy F1 < 0.9 in the named condition, or downstream accuracy
+clearly worse than the hand-written config.
+INTERPRETATION: a pass in the named condition alone is not evidence of
+inference (the model may have seen Favorita). Only a pass in the obscured
+condition counts, and even then it is partial evidence, since value
+distributions can still be recognised.
+LIMITATION: Favorita is a public Kaggle dataset that may appear in the model's
+training data, so results cannot fully separate inference from recall. Time
+to build the hand-written adapter was not measured; effort is reported as
+manual edit count only.
+
+#### Addendum: operational definitions (fixed before any run)
+- Model/provider: gpt-oss-120b on Cerebras, as for the frozen investigator
+  agent; temperature 0, seed = repeat index (0-4), reasoning_effort medium.
+  Run-to-run agreement at temperature 0 partly reflects decoding determinism,
+  not only robustness.
+- Tools: the eleven listed tools, each taking a `file` argument (the raw data
+  is several files), plus `list_files` and a `submit_config` tool for the
+  strict-JSON answer. Tools read only the condition's sandbox directory.
+- Obscured condition: every distinct original column name maps to one opaque
+  code across all files (so join keys still share a name, as in real data);
+  family, city, state values and holiday descriptions/locale names map to
+  opaque codes; files renamed file_1..file_5.
+- Reference (scorer only), from load_favorita.py: ground-truth hierarchy
+  edges family->item and state->store. family->perishable (cat_id) is a DESIGN
+  JUDGEMENT: excluded from scoring, listed for human rating, as are true
+  dependencies the adapter does not use (class, city, store type/cluster).
+- Edge F1: predicted and reference edges are compared on transitive closure,
+  restricted to {item, family, store, state}; a predicted path item->class->
+  family therefore counts as item->family. "Hierarchy F1 >= 0.9 in a
+  condition" = mean F1 over its 5 repeats.
+- Flags: zero_inflated reference = True (zero-sales days are omitted from the
+  raw file; the panel is 62% zeros once filled); fractional_sales = True.
+- Bin path: the path the frozen Sentinel's adaptive_bin_edges takes for
+  `sales` on the hand-written panel (computed in the scorer). "Correct in >= 4
+  of 5 repeats" is judged per condition.
+- Known data-quality issues for recall: negative sales, omitted zero-sales
+  days, absent prices. Matched by pre-declared keyword rules; every match is
+  written to a CSV for human audit.
+- Conversion: a fixed, pre-written converter maps a config to the panel:
+  dept_id = immediate parent of the item key, cat_id = parent of dept_id,
+  state_id = immediate parent of the store key (after transitive reduction);
+  negative-sales issue -> clip at 0; omitted-days issue -> zero-fill;
+  sell_price=1.0, snap=0 and event_flag=0 always (not used by the drift
+  pipeline's localisation). Obscured configs are translated back to original
+  names by the scorer's private mapping (mechanical, not counted as an edit).
+  Anything the converter cannot resolve (missing or ambiguous level, a
+  claimed edge that is not a true hierarchy) needs a manual edit; each is
+  logged and counted. Same item sample and window as the hand-written panel.
+- Downstream: frozen pipeline, seed 42, n=20 per drift type, Wilson 95% CIs;
+  hand-written panel on the same seed. "Within CI overlap" and "clearly worse"
+  are judged on pooled strict top-1 and pooled hier top-1; "clearly worse" =
+  the config's CI lies entirely below the hand-written CI on either.
+- KNOWN WEAKNESS of the downstream criterion: the hand-written config scores
+  only 2.5% strict / 13% hier top-1 on Favorita (Phase 7), so CI overlap is
+  easy to achieve and is weak evidence of equivalence.
+- Best-scoring repeat = highest hierarchy F1, ties -> flag accuracy -> issue
+  recall -> lowest repeat index. Random repeat = numpy default_rng(2026)
+  choice among the 5, drawn once per condition.
