@@ -372,3 +372,64 @@ onboarding_design_judgements.csv, onboarding_manual_edits.csv,
 onboarding_downstream_selection.csv, onboarding_downstream_specs.csv,
 onboarding_downstream_trials.csv, onboarding_downstream_summary.csv; code in
 src/onboarding/.
+
+## Phase 9 — Can an LLM agent decide "retrain" vs "ignore" for a detected drift?
+
+### Pre-registration (written and committed 2026-10-10, BEFORE any run)
+
+LABEL: harmful if MAE(drifted current window) >= 1.10 x MAE(same window
+without injection); else benign. Sensitivity at 1.05 and 1.20. Drift-free
+windows are benign by construction.
+SUPPORTED if in regime B the agent's balanced accuracy beats the best non-LLM
+baseline (McNemar p<0.05, paired trials) AND in regime A it is not worse than
+the threshold rule. Otherwise NOT SUPPORTED; a tie with a cheaper rule is NOT
+SUPPORTED.
+LIMITATIONS: M5 only; injections modify sales directly so error rise is
+partly built in; temperature-0 repeats are identical, one run per trial.
+
+#### Addendum: operational definitions (fixed before any run)
+- Model under monitoring: the existing outputs/demand_model_real.joblib
+  (LightGBM, Poisson; features sell_price, calendar, item/dept/cat/store/state
+  IDs; NO lagged sales). Its training window is not recorded anywhere; its
+  relative MAE is flat (0.81-0.95) across 2013-2016, so in-sample vs
+  out-of-sample cannot be told apart. Because it has no sales features, a
+  sales injection moves the target but never the predictions.
+- MAE = mean |sales - prediction| over ALL item-store-day rows of the window
+  (the whole monitored model, not just the drifted slice). Reference MAE =
+  the trial's 60-day rolling reference window; clean current MAE = same
+  current window, same model, no injection (counterfactual).
+- Trials: same generator, seeds, 200-day pool, 60-day rolling reference and
+  30-day window as all earlier M5 work; sudden/gradual/intermittent use the
+  existing injectors unchanged (so seeds 42/123 are the same trials as the M5
+  validation runs). Covariate-only drift: a NEW injector in a new module
+  (existing injectors untouched) multiplies sell_price by 1.30 on one random
+  slice (column drawn like the sudden injector) from day 10 of the current
+  window; sales unchanged. Drift-free: 50 windows per seed, offsets drawn from
+  the same seeded generator, no injection.
+- Detection/localisation: the frozen `_detect_and_localize`, plus the frozen
+  Sentinel's per-feature global scan (sales, sell_price, revenue, cat_id,
+  state_id) as the "drift alert". On M5 the full pipeline alarms on every
+  window (Phase 7), so every trial, drift-free ones included, reaches the
+  decision step.
+- Agent: same model/provider as the frozen investigator (gpt-oss-120b,
+  Cerebras, temperature 0, seed 0, reasoning medium), one call per trial per
+  regime, no tools. Regime A input: per-feature alert, top-3 slices (score,
+  share of window), reference MAE, current MAE. Regime B input: per-feature
+  alert, top-3 slices with share of window, divergence score, and magnitude =
+  the slice's observed mean-sales % change reference -> current; no residual,
+  error or MAE of the current window. Neither regime sees drift type,
+  injection log, counterfactual MAE or the label. No prompt tuning: the
+  prompts are fixed now; seed 7 is used only to fit baselines.
+- Baselines (fit on seed 7 only, objective = balanced accuracy at the 1.10
+  label): always-retrain; always-ignore; regime A threshold on current/
+  reference MAE ratio; regime B threshold on (top divergence x top slice
+  share). Thresholds chosen from the seed-7 values' midpoints.
+- "Best non-LLM baseline" = the baseline with the highest balanced accuracy on
+  the pooled seed-42/123 trials within the regime (a deliberately strict bar
+  for the agent). McNemar = exact two-sided on correct/incorrect, paired by
+  trial, agent-answered trials only. "Not worse than the threshold rule" in
+  regime A = agent balanced accuracy >= rule's, or McNemar p >= 0.05.
+- Primary analysis: label at 1.10, pooled seeds 42+123, all five trial types
+  (incl. drift-free). Class balance per seed and drift type is reported
+  before any agent call; the run stops if either class is below 15% for any
+  injected drift type (drift-free is 100% benign by design and exempt).
