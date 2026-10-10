@@ -1,0 +1,248 @@
+{
+ "meta": {
+  "condition": "named",
+  "actor": "baseline",
+  "llm": null
+ },
+ "ok": true,
+ "config": {
+  "column_roles": [
+   {
+    "file": "train.csv",
+    "column": "id",
+    "role": "row_id"
+   },
+   {
+    "file": "train.csv",
+    "column": "date",
+    "role": "date"
+   },
+   {
+    "file": "train.csv",
+    "column": "store_nbr",
+    "role": "store_key"
+   },
+   {
+    "file": "train.csv",
+    "column": "item_nbr",
+    "role": "item_key"
+   },
+   {
+    "file": "train.csv",
+    "column": "unit_sales",
+    "role": "sales_target"
+   },
+   {
+    "file": "train.csv",
+    "column": "onpromotion",
+    "role": "other"
+   },
+   {
+    "file": "items.csv",
+    "column": "item_nbr",
+    "role": "item_key"
+   },
+   {
+    "file": "items.csv",
+    "column": "family",
+    "role": "item_attribute"
+   },
+   {
+    "file": "items.csv",
+    "column": "class",
+    "role": "item_attribute"
+   },
+   {
+    "file": "items.csv",
+    "column": "perishable",
+    "role": "item_attribute"
+   },
+   {
+    "file": "stores.csv",
+    "column": "store_nbr",
+    "role": "store_key"
+   },
+   {
+    "file": "stores.csv",
+    "column": "city",
+    "role": "store_attribute"
+   },
+   {
+    "file": "stores.csv",
+    "column": "state",
+    "role": "store_attribute"
+   },
+   {
+    "file": "stores.csv",
+    "column": "type",
+    "role": "store_attribute"
+   },
+   {
+    "file": "stores.csv",
+    "column": "cluster",
+    "role": "store_attribute"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "date",
+    "role": "calendar_event"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "type",
+    "role": "calendar_event"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "locale",
+    "role": "calendar_event"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "locale_name",
+    "role": "calendar_event"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "description",
+    "role": "calendar_event"
+   },
+   {
+    "file": "holidays_events.csv",
+    "column": "transferred",
+    "role": "calendar_event"
+   },
+   {
+    "file": "transactions.csv",
+    "column": "date",
+    "role": "date"
+   },
+   {
+    "file": "transactions.csv",
+    "column": "store_nbr",
+    "role": "store_key"
+   },
+   {
+    "file": "transactions.csv",
+    "column": "transactions",
+    "role": "other"
+   }
+  ],
+  "hierarchy_edges": [
+   {
+    "parent": {
+     "file": "items.csv",
+     "column": "family"
+    },
+    "child": {
+     "file": "items.csv",
+     "column": "class"
+    }
+   },
+   {
+    "parent": {
+     "file": "items.csv",
+     "column": "perishable"
+    },
+    "child": {
+     "file": "items.csv",
+     "column": "family"
+    }
+   },
+   {
+    "parent": {
+     "file": "items.csv",
+     "column": "class"
+    },
+    "child": {
+     "file": "items.csv",
+     "column": "item_nbr"
+    }
+   },
+   {
+    "parent": {
+     "file": "stores.csv",
+     "column": "state"
+    },
+    "child": {
+     "file": "stores.csv",
+     "column": "city"
+    }
+   },
+   {
+    "parent": {
+     "file": "stores.csv",
+     "column": "city"
+    },
+    "child": {
+     "file": "stores.csv",
+     "column": "store_nbr"
+    }
+   },
+   {
+    "parent": {
+     "file": "stores.csv",
+     "column": "cluster"
+    },
+    "child": {
+     "file": "stores.csv",
+     "column": "store_nbr"
+    }
+   },
+   {
+    "parent": {
+     "file": "stores.csv",
+     "column": "type"
+    },
+    "child": {
+     "file": "stores.csv",
+     "column": "store_nbr"
+    }
+   }
+  ],
+  "zero_inflated": {
+   "value": true,
+   "rationale": "fraction_zero=0.0, mean per-group missing-day share=0.354"
+  },
+  "fractional_sales": {
+   "value": true,
+   "rationale": "fraction fractional=0.082646"
+  },
+  "bin_strategy_per_feature": [
+   {
+    "file": "train.csv",
+    "column": "unit_sales",
+    "path": "quantile",
+    "rationale": "integer path only if every value is an integer"
+   }
+  ],
+  "data_quality_issues": [
+   {
+    "issue": "negative values in the sales target",
+    "evidence": "270 negative rows",
+    "handling": "clip to 0 or treat as returns"
+   },
+   {
+    "issue": "per-group date gaps: rows absent for some item-store-days",
+    "evidence": "mean share of days missing per group 0.354",
+    "handling": "reindex to a full daily grid and fill absent days with 0"
+   },
+   {
+    "issue": "calendar dates absent for every group",
+    "evidence": "4 dates missing from the whole file",
+    "handling": "decide whether to fill these dates"
+   },
+   {
+    "issue": "nulls in fact column onpromotion",
+    "evidence": "null rate 0.170",
+    "handling": "fill or drop"
+   },
+   {
+    "issue": "no price-like column (no non-target fractional numeric column)",
+    "evidence": "checked fact and item files",
+    "handling": "fill price with a neutral constant"
+   }
+  ],
+  "rationale": "rule-based baseline; see module docstring"
+ }
+}

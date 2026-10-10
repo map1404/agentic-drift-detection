@@ -1,0 +1,6 @@
+condition,n_runs,hierarchy_f1,flag_accuracy,bin_path_correct,bin_path_on_own_claimed_target,issue_recall_keyword,issue_recall_audited,run_to_run_agreement,downstream_strict_top1,downstream_hier_top1,manual_edits,edit_types
+agent / named,5.0,1.0,0.5,5/5,5/5,0.6666666666666666,0.3333333333333333,1.00 (5/5 identical configs),"0% [0%, 6%]","5% [2%, 14%]",0,
+agent / obscured,5.0,0.0,0.0,5/5,0/5,0.6666666666666666,0.3333333333333333,1.00 (5/5 identical configs),"8% [4%, 18%]","17% [9%, 28%]",4,"E4b,E4b,E2,E2"
+baseline / named,1.0,1.0,1.0,1/1,1/1,1.0,1.0,n/a (deterministic rules),"0% [0%, 6%]","5% [2%, 14%]",1,E1
+baseline / obscured,1.0,1.0,1.0,1/1,1/1,1.0,1.0,n/a (deterministic rules),"0% [0%, 6%] (same config as named)","5% [2%, 14%]",1,E1
+hand-written adapter (reference),,,,,,,,,"3% [1%, 11%]","15% [8%, 26%]",0,

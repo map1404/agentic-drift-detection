@@ -1,0 +1,12 @@
+named rep0: ok=True fallback=None calls=18 tokens={'prompt': 46368, 'completion': 4418, 'cached': 35328} 443s
+obscured rep0: ok=True fallback=None calls=29 tokens={'prompt': 133555, 'completion': 7076, 'cached': 106368} 737s
+named rep1: ok=True fallback=None calls=18 tokens={'prompt': 46368, 'completion': 4418, 'cached': 43264} 443s
+obscured rep1: ok=True fallback=None calls=29 tokens={'prompt': 133555, 'completion': 7076, 'cached': 115968} 736s
+named rep2: ok=True fallback=None calls=18 tokens={'prompt': 46368, 'completion': 4418, 'cached': 40832} 443s
+obscured rep2: ok=True fallback=None calls=29 tokens={'prompt': 133555, 'completion': 7076, 'cached': 123648} 736s
+named rep3: ok=True fallback=None calls=18 tokens={'prompt': 46368, 'completion': 4418, 'cached': 43136} 442s
+obscured rep3: ok=True fallback=None calls=29 tokens={'prompt': 133555, 'completion': 7076, 'cached': 119168} 737s
+named rep4: ok=True fallback=None calls=18 tokens={'prompt': 46368, 'completion': 4418, 'cached': 44032} 443s
+obscured rep4: ok=True fallback=None calls=29 tokens={'prompt': 133555, 'completion': 7076, 'cached': 120448} 737s
+COMPLETE
+exit=0

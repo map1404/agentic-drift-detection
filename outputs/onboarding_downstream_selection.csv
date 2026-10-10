@@ -1,0 +1,6 @@
+label,condition,repeat,why
+agent_named_rep0,named,0.0,best-scoring
+agent_named_rep4,named,4.0,random (rng 2026)
+agent_obscured_rep0,obscured,0.0,best-scoring
+agent_obscured_rep4,obscured,4.0,random (rng 2026)
+baseline_named,named,,non-LLM baseline (extra)

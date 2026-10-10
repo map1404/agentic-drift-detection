@@ -1,0 +1,13 @@
+condition,actor,category,keyword_rule_match,audited_detected,audit_rationale
+named,agent,negative_sales,True,True,"has_negative(unit_sales) evidence: 270 negative rows; handling clips/drops them"
+named,agent,omitted_zero_days,True,False,"Evidence is the global calendar gap only (date_gaps without group_cols: 4 of 1688 days = 0.24%, the store-closure days); date_gaps per item/store was never called; zero_inflated set False ('0% zero values'). The proposed handling (zero-fill per store-item) is correct but is not supported by the evidence it cites."
+named,agent,absent_prices,False,False,"No issue mentions prices."
+obscured,agent,negative_sales,True,True,"has_negative(col_r=unit_sales): 270 negative rows; although it mislabelled col_r as a non-target feature, the issue itself is correctly found."
+obscured,agent,omitted_zero_days,True,False,"Same as named: evidence is the 0.24% global calendar gap; never checked per item/store; zero_inflated False."
+obscured,agent,absent_prices,False,False,"No issue mentions prices."
+named,baseline,negative_sales,True,True,"rule: has_negative on target"
+named,baseline,omitted_zero_days,True,True,"rule: per-(store,item) date_gaps, mean 35% of days missing"
+named,baseline,absent_prices,True,True,"rule: no non-target fractional numeric column (heuristic; name-agnostic)"
+obscured,baseline,negative_sales,True,True,"identical to named (name-agnostic)"
+obscured,baseline,omitted_zero_days,True,True,"identical to named"
+obscured,baseline,absent_prices,True,True,"identical to named"

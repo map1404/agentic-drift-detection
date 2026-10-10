@@ -1,0 +1,248 @@
+{
+ "meta": {
+  "condition": "obscured",
+  "actor": "baseline",
+  "llm": null
+ },
+ "ok": true,
+ "config": {
+  "column_roles": [
+   {
+    "file": "file_3.csv",
+    "column": "col_g",
+    "role": "row_id"
+   },
+   {
+    "file": "file_3.csv",
+    "column": "col_d",
+    "role": "date"
+   },
+   {
+    "file": "file_3.csv",
+    "column": "col_n",
+    "role": "store_key"
+   },
+   {
+    "file": "file_3.csv",
+    "column": "col_h",
+    "role": "item_key"
+   },
+   {
+    "file": "file_3.csv",
+    "column": "col_r",
+    "role": "sales_target"
+   },
+   {
+    "file": "file_3.csv",
+    "column": "col_k",
+    "role": "other"
+   },
+   {
+    "file": "file_2.csv",
+    "column": "col_h",
+    "role": "item_key"
+   },
+   {
+    "file": "file_2.csv",
+    "column": "col_f",
+    "role": "item_attribute"
+   },
+   {
+    "file": "file_2.csv",
+    "column": "col_b",
+    "role": "item_attribute"
+   },
+   {
+    "file": "file_2.csv",
+    "column": "col_l",
+    "role": "item_attribute"
+   },
+   {
+    "file": "file_4.csv",
+    "column": "col_n",
+    "role": "store_key"
+   },
+   {
+    "file": "file_4.csv",
+    "column": "col_a",
+    "role": "store_attribute"
+   },
+   {
+    "file": "file_4.csv",
+    "column": "col_m",
+    "role": "store_attribute"
+   },
+   {
+    "file": "file_4.csv",
+    "column": "col_q",
+    "role": "store_attribute"
+   },
+   {
+    "file": "file_4.csv",
+    "column": "col_c",
+    "role": "store_attribute"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_d",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_q",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_i",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_j",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_e",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_1.csv",
+    "column": "col_p",
+    "role": "calendar_event"
+   },
+   {
+    "file": "file_5.csv",
+    "column": "col_d",
+    "role": "date"
+   },
+   {
+    "file": "file_5.csv",
+    "column": "col_n",
+    "role": "store_key"
+   },
+   {
+    "file": "file_5.csv",
+    "column": "col_o",
+    "role": "other"
+   }
+  ],
+  "hierarchy_edges": [
+   {
+    "parent": {
+     "file": "file_2.csv",
+     "column": "col_f"
+    },
+    "child": {
+     "file": "file_2.csv",
+     "column": "col_b"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_2.csv",
+     "column": "col_l"
+    },
+    "child": {
+     "file": "file_2.csv",
+     "column": "col_f"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_2.csv",
+     "column": "col_b"
+    },
+    "child": {
+     "file": "file_2.csv",
+     "column": "col_h"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_4.csv",
+     "column": "col_m"
+    },
+    "child": {
+     "file": "file_4.csv",
+     "column": "col_a"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_4.csv",
+     "column": "col_a"
+    },
+    "child": {
+     "file": "file_4.csv",
+     "column": "col_n"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_4.csv",
+     "column": "col_c"
+    },
+    "child": {
+     "file": "file_4.csv",
+     "column": "col_n"
+    }
+   },
+   {
+    "parent": {
+     "file": "file_4.csv",
+     "column": "col_q"
+    },
+    "child": {
+     "file": "file_4.csv",
+     "column": "col_n"
+    }
+   }
+  ],
+  "zero_inflated": {
+   "value": true,
+   "rationale": "fraction_zero=0.0, mean per-group missing-day share=0.354"
+  },
+  "fractional_sales": {
+   "value": true,
+   "rationale": "fraction fractional=0.082646"
+  },
+  "bin_strategy_per_feature": [
+   {
+    "file": "file_3.csv",
+    "column": "col_r",
+    "path": "quantile",
+    "rationale": "integer path only if every value is an integer"
+   }
+  ],
+  "data_quality_issues": [
+   {
+    "issue": "negative values in the sales target",
+    "evidence": "270 negative rows",
+    "handling": "clip to 0 or treat as returns"
+   },
+   {
+    "issue": "per-group date gaps: rows absent for some item-store-days",
+    "evidence": "mean share of days missing per group 0.354",
+    "handling": "reindex to a full daily grid and fill absent days with 0"
+   },
+   {
+    "issue": "calendar dates absent for every group",
+    "evidence": "4 dates missing from the whole file",
+    "handling": "decide whether to fill these dates"
+   },
+   {
+    "issue": "nulls in fact column col_k",
+    "evidence": "null rate 0.170",
+    "handling": "fill or drop"
+   },
+   {
+    "issue": "no price-like column (no non-target fractional numeric column)",
+    "evidence": "checked fact and item files",
+    "handling": "fill price with a neutral constant"
+   }
+  ],
+  "rationale": "rule-based baseline; see module docstring"
+ }
+}

@@ -1,0 +1,12 @@
+label,edit_type,problem,applied
+agent_named_rep0,none,,
+agent_named_rep4,none,,
+agent_obscured_rep0,E4b,"item_key: config says 'id', adapter uses 'item_nbr'",item_nbr
+agent_obscured_rep0,E4b,"sales_target: config says 'item_nbr', adapter uses 'unit_sales'",unit_sales
+agent_obscured_rep0,E2,dept_id: no parent of item_nbr,ALL
+agent_obscured_rep0,E2,cat_id: no dept level to take a parent of,ALL
+agent_obscured_rep4,E4b,"item_key: config says 'id', adapter uses 'item_nbr'",item_nbr
+agent_obscured_rep4,E4b,"sales_target: config says 'item_nbr', adapter uses 'unit_sales'",unit_sales
+agent_obscured_rep4,E2,dept_id: no parent of item_nbr,ALL
+agent_obscured_rep4,E2,cat_id: no dept level to take a parent of,ALL
+baseline_named,E1,"state_id: several parents of store_nbr: ['city', 'cluster', 'type']",city

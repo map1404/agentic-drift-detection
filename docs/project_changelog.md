@@ -272,3 +272,103 @@ manual edit count only.
 - Best-scoring repeat = highest hierarchy F1, ties -> flag accuracy -> issue
   recall -> lowest repeat index. Random repeat = numpy default_rng(2026)
   choice among the 5, drawn once per condition.
+
+### Results (2026-10-10)
+
+Run: gpt-oss-120b on Cerebras, temperature 0, seed = repeat (0-4), reasoning
+medium; 10 runs, all completed, 0 fallbacks (named: 18 tool calls / ~7 min per
+run; obscured: 29 calls / ~12 min). Raw outputs: outputs/onboarding/raw/;
+tool log with timestamps: outputs/onboarding/toolcalls.jsonl. Sandbox escape
+attempts (parent dir, project code, /etc/passwd, the private mapping) were all
+refused in testing.
+
+| condition | hier. F1 | flag acc. | bin path (pre-reg.) | bin path on own target | issue recall keyword / audited | run-to-run | downstream strict / hier top-1 | manual edits |
+|---|---|---|---|---|---|---|---|---|
+| agent, named | 1.00 | 0.50 | 5/5 | 5/5 | 0.67 / 0.33 | 1.00 (identical) | 0% [0,6] / 5% [2,14] | 0 |
+| agent, obscured | 0.00 | 0.00 | 5/5 | 0/5 | 0.67 / 0.33 | 1.00 (identical) | 8% [4,18] / 17% [9,28] | 4 |
+| baseline (no LLM), named | 1.00 | 1.00 | correct | correct | 1.00 / 1.00 | deterministic | 0% [0,6] / 5% [2,14] | 1 |
+| baseline (no LLM), obscured | 1.00 | 1.00 | correct | correct | 1.00 / 1.00 | deterministic | same config as named | 1 |
+| hand-written adapter | ref. | ref. | ref. | ref. | ref. | -- | 3% [1,11] / 15% [8,26] | 0 |
+
+**Pre-registered verdict: NOT SUPPORTED** (obscured hierarchy F1 0.00 < 0.9;
+obscured needs 4 manual edits > 3). **Not formally REFUTED** (named F1 1.00;
+no config's CI lies entirely below the hand-written CI). Per the
+pre-registered interpretation, the named pass is not evidence of inference,
+and the obscured condition -- the only one that counts -- failed. The
+non-LLM baseline beat the agent on every config-quality measure in both
+conditions.
+
+What happened:
+- **Run-to-run agreement is 1.00 because all 5 repeats per condition are
+  byte-identical** (same tokens, same config hash): at temperature 0 the seed
+  had no effect. This measures decoding determinism, not robustness.
+- **Obscured: the agent misidentified the keys.** It took the row-id column as
+  the item key and item_nbr as the sales quantity, then built its hierarchy on
+  the row id (family -> id, not a real dependency), reversed class/family
+  (class -> family, false), and chose store cluster as the region. Flags
+  followed from the wrong target (item numbers are integers with no zeros):
+  both wrong. It did assign the quantile path to the true sales column, which
+  the pre-registered bin-path rule counts as correct (5/5), but the column it
+  believed was sales got the integer path (0/5) -- reported as an extra,
+  post-hoc measure.
+- **Named:** correct roles and a correct chain (item -> class -> family,
+  store -> state); zero_inflated wrongly False ("0% zero values").
+- **Omitted zero-sales days were not actually detected in either condition.**
+  The agent only ran date_gaps without group columns, saw the 4 store-closure
+  days (0.24% of the calendar) and reported "sparse date coverage", while ~35%
+  of each item-store pair's days are absent. Its proposed handling (zero-fill
+  per store-item) happens to be correct, so the pre-registered keyword rule
+  credits it (recall 0.67); the evidence does not support detection, so the
+  audited recall is 0.33 (outputs/onboarding_issue_audit.csv). Absent prices
+  were never mentioned.
+- **LLM-only findings vs the baseline: none of substance.** The agent's only
+  findings outside the baseline's categories are "fractional sales values"
+  (a restated flag) and "transactions.csv: date does not determine store"
+  (trivially expected). The baseline additionally found absent prices, the
+  calendar-wide closure days and the true per-pair gaps.
+- **Downstream accuracy ran opposite to config quality.** The obscured config
+  (dept and cat collapsed to a constant after edits, region = cluster) scored
+  highest (8% strict, 17% hier); the correct named config and the baseline
+  (dept = class: 337 mostly single-item classes) scored 0% strict. Breakdown:
+  the obscured gains come from region-level trials (4/11 strict vs 1/11) and
+  item top-3 (7/30 vs 0/30) -- removing a noisy, sparse dept level lets the
+  frozen pipeline's burst path answer (cf. Phase 7: sparse single-item
+  families derail it); none came from trials injected on the constant level
+  (0/13). With the frozen pipeline at near-floor accuracy on Favorita,
+  downstream accuracy is NOT a valid proxy for config correctness, and the CI-
+  overlap criterion cannot distinguish configs (as flagged in the
+  pre-registration). Trials use the same seeds and the same injected slice
+  column as the hand-written run, but the injected value differs when the
+  level is defined differently (78% identical true slices for the named
+  config).
+
+Deviations and post-hoc changes (all disclosed):
+- Issue-matching rule tightened before any agent output existed (a
+  calendar-wide-gap finding no longer counts as omitted zero-sales days
+  unless it mentions zeros or per item/store gaps).
+- Converter bug found in review before the agent downstream runs: the panel
+  builder used the adapter's columns regardless of the config's roles, which
+  would have silently fixed the obscured config. Fixed; a new edit type E4b
+  (role assigned to a different column than the adapter uses) was ADDED AFTER
+  seeing agent outputs, because the pre-registered policy did not anticipate
+  wrong-but-present roles. The obscured config's 4 edits = 2 x E4b + 2 x E2
+  (no dept/cat level -> constant "ALL").
+- Extra measures added after seeing outputs: bin path on the config's own
+  claimed target; audited issue recall. Pre-registered measures are reported
+  unchanged alongside.
+- Best and random repeats coincide in content (identical configs), so their
+  downstream results are identical.
+
+Design judgements (not penalised; for human rating, see
+outputs/onboarding_design_judgements.csv): perishable as cat_id (adapter);
+class as the dept level (agent named, baseline); city vs state as region
+(baseline: city; agent named: state); store cluster as region (agent
+obscured); the baseline also lists store type and cluster as parents of store.
+
+Outputs: outputs/onboarding_summary.csv, onboarding_scores.csv,
+onboarding_agreement.csv, onboarding_issue_matches.csv,
+onboarding_issue_audit.csv, onboarding_llm_only_findings.csv,
+onboarding_design_judgements.csv, onboarding_manual_edits.csv,
+onboarding_downstream_selection.csv, onboarding_downstream_specs.csv,
+onboarding_downstream_trials.csv, onboarding_downstream_summary.csv; code in
+src/onboarding/.

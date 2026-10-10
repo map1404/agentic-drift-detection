@@ -1,0 +1,3 @@
+condition,n_ok_repeats,mean_pairwise_edge_jaccard,identical_edge_sets_share,modal_share_edge_f1,modal_share_zero_flag,modal_share_fractional_flag,modal_share_bin_path,modal_share_issue_recall,bin_path_correct_count
+named,5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,5
+obscured,5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,5
