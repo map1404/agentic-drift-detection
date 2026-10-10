@@ -1,0 +1,120 @@
+[retuned] seed=42 sudden       t= 0 true=store_id=17                  . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 sudden       t= 1 true=state_id=Chimborazo          . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 sudden       t= 2 true=state_id=Manabi              . [item_id=2086882|item_id=2101795|item_id=1370548] 1.8s
+[retuned] seed=42 sudden       t= 3 true=cat_id=PERISHABLE            . [item_id=2049003|item_id=589403|item_id=1368479] 1.8s
+[retuned] seed=42 sudden       t= 4 true=dept_id=AUTOMOTIVE           . [item_id=2081161|item_id=2056876|item_id=1503117] 1.7s
+[retuned] seed=42 sudden       t= 5 true=cat_id=PERISHABLE            . [item_id=2056876|item_id=1717271|item_id=1717269] 1.4s
+[retuned] seed=42 sudden       t= 6 true=store_id=54                  . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 sudden       t= 7 true=item_id=509877               . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.8s
+[retuned] seed=42 sudden       t= 8 true=item_id=1366212              . [item_id=2056876|item_id=1717271|item_id=1717269] 1.7s
+[retuned] seed=42 sudden       t= 9 true=state_id=Los Rios            . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=33|state_id=Los Rios] 1.8s
+[retuned] seed=42 sudden       t=10 true=state_id=Bolivar             Y [state_id=Bolivar|store_id=19|dept_id=HOME APPLIANCES] 1.8s
+[retuned] seed=42 sudden       t=11 true=cat_id=NON_PERISHABLE        . [item_id=2081161|item_id=1717269|item_id=2056876] 2.0s
+[retuned] seed=42 sudden       t=12 true=item_id=804098               . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.8s
+[retuned] seed=42 sudden       t=13 true=item_id=2010972              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=HOME APPLIANCES] 1.7s
+[retuned] seed=42 sudden       t=14 true=item_id=1348487              . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=42 sudden       t=15 true=dept_id=MAGAZINES            . [item_id=2101795|item_id=2081161|item_id=1717269] 1.7s
+[retuned] seed=42 sudden       t=16 true=dept_id=AUTOMOTIVE           . [dept_id=HOME APPLIANCES|dept_id=PRODUCE|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.9s
+[retuned] seed=42 sudden       t=17 true=state_id=El Oro              . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=42 sudden       t=18 true=cat_id=PERISHABLE            . [item_id=2049003|item_id=1368479|item_id=261053] 1.7s
+[retuned] seed=42 sudden       t=19 true=store_id=30                  . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=42 gradual      t= 0 true=state_id=Guayas              . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=29|store_id=24] 1.8s
+[retuned] seed=42 gradual      t= 1 true=item_id=511394               . [item_id=2049003|item_id=1368479|item_id=261053] 1.7s
+[retuned] seed=42 gradual      t= 2 true=cat_id=PERISHABLE            . [dept_id=DAIRY|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.8s
+[retuned] seed=42 gradual      t= 3 true=state_id=Esmeraldas          . [item_id=2086882|item_id=2101795|item_id=2054291] 1.8s
+[retuned] seed=42 gradual      t= 4 true=store_id=32                  . [item_id=2086882|item_id=2101795|item_id=2054291] 1.8s
+[retuned] seed=42 gradual      t= 5 true=state_id=Chimborazo          . [item_id=2056876|item_id=1717271|item_id=1717269] 1.7s
+[retuned] seed=42 gradual      t= 6 true=item_id=1913055              . [item_id=2049003|item_id=1368479|item_id=546043] 1.8s
+[retuned] seed=42 gradual      t= 7 true=dept_id=HOME APPLIANCES      . [item_id=2086882|item_id=2101795|item_id=2054291] 1.8s
+[retuned] seed=42 gradual      t= 8 true=dept_id=LADIESWEAR           . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=42 gradual      t= 9 true=dept_id=CLEANING             . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=CLEANING|dept_id=BOOKS] 1.7s
+[retuned] seed=42 gradual      t=10 true=state_id=Bolivar             . [dept_id=SCHOOL AND OFFICE SUPPLIES|state_id=Bolivar|store_id=19] 1.8s
+[retuned] seed=42 gradual      t=11 true=state_id=Cotopaxi            . [store_id=13|state_id=Cotopaxi|store_id=12] 1.8s
+[retuned] seed=42 gradual      t=12 true=state_id=Pastaza             . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|state_id=Pastaza] 1.8s
+[retuned] seed=42 gradual      t=13 true=cat_id=NON_PERISHABLE        . [dept_id=CELEBRATION|dept_id=HOME APPLIANCES|dept_id=PERSONAL CARE] 1.2s
+[retuned] seed=42 gradual      t=14 true=item_id=1366212              . [item_id=2101795|item_id=1717269|item_id=1717271] 1.7s
+[retuned] seed=42 gradual      t=15 true=item_id=1913055              . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 gradual      t=16 true=item_id=1974848              . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=42 gradual      t=17 true=dept_id=HARDWARE             . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=42 gradual      t=18 true=store_id=47                  . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=42 gradual      t=19 true=store_id=24                  . [item_id=2056876|item_id=1695873|item_id=546043] 1.8s
+[retuned] seed=42 intermittent t= 0 true=item_id=850388               . [item_id=2049003|item_id=261053|item_id=1963740] 1.8s
+[retuned] seed=42 intermittent t= 1 true=item_id=315463               . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=42 intermittent t= 2 true=item_id=1386120              Y [item_id=1386120|item_id=546043|item_id=1368479] 1.8s
+[retuned] seed=42 intermittent t= 3 true=item_id=2004738              . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 intermittent t= 4 true=item_id=583973               . [item_id=2049003|item_id=583973|item_id=261053] 1.8s
+[retuned] seed=42 intermittent t= 5 true=item_id=2045280              . [item_id=2049003|item_id=2045280|item_id=1368479] 1.8s
+[retuned] seed=42 intermittent t= 6 true=item_id=818590               Y [item_id=818590|item_id=850388|item_id=2045280] 1.8s
+[retuned] seed=42 intermittent t= 7 true=item_id=2002043              . [item_id=2056876|item_id=2002043|item_id=1717269] 1.8s
+[retuned] seed=42 intermittent t= 8 true=item_id=2054291              Y [item_id=2054291|item_id=546043|item_id=1368479] 1.8s
+[retuned] seed=42 intermittent t= 9 true=item_id=1584295              Y [item_id=1584295|item_id=850388|item_id=2045280] 1.7s
+[retuned] seed=42 intermittent t=10 true=item_id=1386120              . [item_id=2081161|item_id=2056876|item_id=1386120] 1.8s
+[retuned] seed=42 intermittent t=11 true=item_id=741201               . [item_id=2049003|item_id=741201|item_id=261053] 1.8s
+[retuned] seed=42 intermittent t=12 true=item_id=813769               . [item_id=2086882|item_id=2101795|item_id=813769] 1.8s
+[retuned] seed=42 intermittent t=13 true=item_id=1167188              . [item_id=2081161|item_id=2056876|item_id=1167188] 1.8s
+[retuned] seed=42 intermittent t=14 true=item_id=1695956              . [item_id=2049003|item_id=1368479|item_id=1695956] 1.7s
+[retuned] seed=42 intermittent t=15 true=item_id=2086882              Y [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=42 intermittent t=16 true=item_id=1717269              . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=DAIRY] 1.8s
+[retuned] seed=42 intermittent t=17 true=item_id=1584307              . [item_id=2056876|item_id=1584307|item_id=546043] 1.8s
+[retuned] seed=42 intermittent t=18 true=item_id=857332               . [item_id=2049003|item_id=1368479|item_id=857332] 1.7s
+[retuned] seed=42 intermittent t=19 true=item_id=1247036              Y [item_id=1247036|item_id=546043|item_id=1368479] 1.7s
+[retuned] seed=123 sudden       t= 0 true=state_id=Pastaza             . [item_id=2081161|item_id=2056876|item_id=1717269] 1.8s
+[retuned] seed=123 sudden       t= 1 true=cat_id=PERISHABLE            . [item_id=2056876|item_id=1717271|item_id=1717269] 1.4s
+[retuned] seed=123 sudden       t= 2 true=dept_id=PREPARED FOODS       . [item_id=2049003|item_id=1368479|item_id=261053] 1.8s
+[retuned] seed=123 sudden       t= 3 true=item_id=1576328              . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=123 sudden       t= 4 true=cat_id=NON_PERISHABLE        . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=123 sudden       t= 5 true=state_id=Imbabura            . [dept_id=BOOKS|state_id=Imbabura|store_id=15] 1.8s
+[retuned] seed=123 sudden       t= 6 true=store_id=1                   . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=1|dept_id=BOOKS] 1.8s
+[retuned] seed=123 sudden       t= 7 true=store_id=46                  . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 sudden       t= 8 true=state_id=Loja                . [item_id=2101795|item_id=2010972|item_id=557241] 1.8s
+[retuned] seed=123 sudden       t= 9 true=state_id=Los Rios            . [item_id=2101795|item_id=1717269|item_id=1717271] 1.8s
+[retuned] seed=123 sudden       t=10 true=dept_id=MEATS                . [item_id=2049003|item_id=1368479|item_id=1062374] 1.8s
+[retuned] seed=123 sudden       t=11 true=state_id=Manabi              . [item_id=2081161|item_id=2056876|item_id=1503117] 1.7s
+[retuned] seed=123 sudden       t=12 true=item_id=1047756              . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=123 sudden       t=13 true=store_id=25                  . [item_id=2049003|item_id=1368479|item_id=261053] 1.8s
+[retuned] seed=123 sudden       t=14 true=cat_id=PERISHABLE            . [item_id=2101795|item_id=2086882|item_id=2010972] 1.8s
+[retuned] seed=123 sudden       t=15 true=cat_id=PERISHABLE            . [item_id=2049003|item_id=1368479|item_id=261053] 1.8s
+[retuned] seed=123 sudden       t=16 true=dept_id=AUTOMOTIVE           . [dept_id=BOOKS|dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES] 1.7s
+[retuned] seed=123 sudden       t=17 true=item_id=357962               . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=123 sudden       t=18 true=store_id=17                  . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 sudden       t=19 true=item_id=2049003              Y [item_id=2049003|item_id=1368479|item_id=546043] 1.8s
+[retuned] seed=123 gradual      t= 0 true=item_id=1457338              . [item_id=2081161|item_id=2056876|item_id=1503117] 1.7s
+[retuned] seed=123 gradual      t= 1 true=dept_id=LADIESWEAR           . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 gradual      t= 2 true=item_id=1062374              . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=123 gradual      t= 3 true=store_id=45                  . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=123 gradual      t= 4 true=state_id=Cotopaxi            . [store_id=13|dept_id=FROZEN FOODS|state_id=Cotopaxi] 1.7s
+[retuned] seed=123 gradual      t= 5 true=dept_id=PERSONAL CARE        . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=123 gradual      t= 6 true=item_id=1253708              . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 gradual      t= 7 true=dept_id=PLAYERS AND ELECTRONICS . [item_id=2056876|item_id=1695873|item_id=546043] 1.8s
+[retuned] seed=123 gradual      t= 8 true=dept_id=DAIRY                . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.8s
+[retuned] seed=123 gradual      t= 9 true=item_id=167437               . [item_id=2049003|item_id=1368479|item_id=261053] 1.8s
+[retuned] seed=123 gradual      t=10 true=state_id=Santa Elena         . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=123 gradual      t=11 true=item_id=1457344              . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 gradual      t=12 true=item_id=673496               . [item_id=2081161|item_id=2056876|item_id=546043] 1.8s
+[retuned] seed=123 gradual      t=13 true=cat_id=PERISHABLE            . [item_id=2049003|item_id=1368479|item_id=1693645] 1.8s
+[retuned] seed=123 gradual      t=14 true=dept_id=CLEANING             . [item_id=2081161|item_id=1717269|item_id=1717271] 1.8s
+[retuned] seed=123 gradual      t=15 true=cat_id=NON_PERISHABLE        . [item_id=2086882|item_id=2101795|item_id=2010972] 1.2s
+[retuned] seed=123 gradual      t=16 true=item_id=857332               . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=123 gradual      t=17 true=cat_id=NON_PERISHABLE        . [item_id=1370548|item_id=850388|item_id=2045280] 1.3s
+[retuned] seed=123 gradual      t=18 true=cat_id=NON_PERISHABLE        . [item_id=2049003|item_id=546043|item_id=1368479] 1.2s
+[retuned] seed=123 gradual      t=19 true=state_id=Loja                . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.8s
+[retuned] seed=123 intermittent t= 0 true=item_id=1366212              . [item_id=2081161|item_id=2056876|item_id=1366212] 1.8s
+[retuned] seed=123 intermittent t= 1 true=item_id=1976349              . [item_id=2081161|item_id=1976349|item_id=1717269] 1.8s
+[retuned] seed=123 intermittent t= 2 true=item_id=1584293              Y [item_id=1584293|item_id=850388|item_id=261053] 1.8s
+[retuned] seed=123 intermittent t= 3 true=item_id=1392262              . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 intermittent t= 4 true=item_id=1576318              . [item_id=2081161|item_id=1576318|item_id=1717269] 1.8s
+[retuned] seed=123 intermittent t= 5 true=item_id=214862               . [item_id=2056876|item_id=1717271|item_id=1717269] 1.8s
+[retuned] seed=123 intermittent t= 6 true=item_id=509877               . [item_id=2101795|item_id=509877|item_id=1717269] 1.8s
+[retuned] seed=123 intermittent t= 7 true=item_id=732007               . [item_id=2081161|item_id=1717269|item_id=732007] 1.8s
+[retuned] seed=123 intermittent t= 8 true=item_id=818590               . [item_id=2081161|item_id=2056876|item_id=818590] 1.8s
+[retuned] seed=123 intermittent t= 9 true=item_id=1412379              Y [item_id=1412379|item_id=850388|item_id=261053] 1.8s
+[retuned] seed=123 intermittent t=10 true=item_id=589403               . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 intermittent t=11 true=item_id=1356038              . [item_id=2081161|item_id=2056876|item_id=1356038] 1.8s
+[retuned] seed=123 intermittent t=12 true=item_id=1584293              . [item_id=2086882|item_id=2101795|item_id=1584293] 1.8s
+[retuned] seed=123 intermittent t=13 true=item_id=2004738              . [item_id=2049003|item_id=2004738|item_id=1368479] 1.8s
+[retuned] seed=123 intermittent t=14 true=item_id=1911336              Y [item_id=1911336|item_id=261053|item_id=1695873] 1.8s
+[retuned] seed=123 intermittent t=15 true=item_id=1489880              . [item_id=2086882|item_id=2101795|item_id=1489880] 1.8s
+[retuned] seed=123 intermittent t=16 true=item_id=2048874              . [item_id=2081161|item_id=2056876|item_id=2048874] 1.8s
+[retuned] seed=123 intermittent t=17 true=item_id=557241               . [item_id=2086882|item_id=2101795|item_id=2010972] 1.8s
+[retuned] seed=123 intermittent t=18 true=item_id=2045280              . [item_id=2081161|item_id=2056876|item_id=1503117] 1.8s
+[retuned] seed=123 intermittent t=19 true=item_id=1944828              . [item_id=2049003|item_id=1944828|item_id=261053] 1.8s

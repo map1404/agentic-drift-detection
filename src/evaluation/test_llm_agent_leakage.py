@@ -51,7 +51,7 @@ def check_static():
             assert "drift" not in mod and "evaluation" not in mod and not any("inject" in n for n in names), mod
         if isinstance(node, ast.Name):
             assert node.id not in ("log", "drift_type"), node.id
-    text = A.SYSTEM_PROMPT_TEMPLATE + json.dumps(A.TOOL_DEFS) + A.USER_KICKOFF + A.NUDGE + A.BUDGET_DONE
+    text = A.SYSTEM_PROMPT_TEMPLATE + json.dumps(A.TOOL_DEFS) + A.USER_KICKOFF + A.NUDGE + A.BUDGET_DONE + json.dumps(A.DATASET_PROMPT_FIELDS)
     hit = FORBIDDEN.search(text)
     assert hit is None, f"forbidden word in prompt/tool defs: {hit.group(0)!r}"
     print("static leakage checks: OK")

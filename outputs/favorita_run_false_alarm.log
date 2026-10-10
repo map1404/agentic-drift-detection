@@ -1,0 +1,7 @@
+               feature  n_windows  false_alarm_count  false_alarm_rate         ci_lo     ci_hi
+0                sales         50                  0               0.0  6.938894e-18  0.071348
+1           sell_price         50                  0               0.0  6.938894e-18  0.071348
+2              revenue         50                  0               0.0  6.938894e-18  0.071348
+3               cat_id         50                  0               0.0  6.938894e-18  0.071348
+4             state_id         50                  0               0.0  6.938894e-18  0.071348
+5  sales_full_pipeline         50                 50               1.0  9.286524e-01  1.000000

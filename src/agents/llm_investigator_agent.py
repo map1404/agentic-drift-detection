@@ -71,6 +71,7 @@ class SliceTools:
         hist_start = self.cur_start - pd.Timedelta(days=HISTORY_DAYS + 90)
         self.df = df[(df["date"] >= hist_start) & (df["date"] <= self.cur_end)]
         self.alert = DriftAlert("sales", float("nan"), float("nan"), True, reference_window, current_window)
+        self.dataset = df.attrs.get("dataset", "m5")  # selects DATASET_PROMPT_FIELDS only
         self.values = {c: sorted(self.df[c].dropna().astype(str).unique()) for c in SLICE_COLUMNS}
         self._daily_mean: dict[str, pd.DataFrame] = {}
         self._daily_sum: dict[str, pd.DataFrame] = {}
@@ -410,13 +411,13 @@ TOOL_DEFS = [
 SYSTEM_PROMPT_TEMPLATE = """\
 You are the root-cause investigator for a retail demand-forecasting monitor.
 
-DATA: daily unit sales for {n_items} products in {n_stores} stores (Walmart M5 sample). One row = one item in one store on one day.
+DATA: daily unit sales for {n_items} products in {n_stores} stores ({dataset_name}). One row = one item in one store on one day.
 Hierarchy: item_id -> dept_id -> cat_id, and store_id -> state_id.
 - cat_id: {cat_vals}
 - dept_id: {dept_vals}
 - state_id: {state_vals}
 - store_id: {store_vals}
-- item_id: {n_items} items named <dept_id>_<3-digit number> (e.g. FOODS_3_NNN). Screen item_id (omit val) to find specific item ids.
+- item_id: {n_items} items {item_id_format}. Screen item_id (omit val) to find specific item ids.
 
 SITUATION: the monitor compared the current window ({cur_start} to {cur_end}) with the reference window ({ref_start} to {ref_end}, the days immediately before).
 Whole-panel sales shift: JS divergence = {js:.6f}, L-infinity distance = {linf:.6f}; alert threshold exceeded: {is_drift}.
@@ -433,9 +434,20 @@ TASK: find the single slice (one column = one value) that most plausibly contain
 BUDGET: at most {max_calls} investigation tool calls; each result reports how many remain. Then call submit_answer with exactly 3 distinct slices (most likely first) and your reasoning. Only submit slices that exist in the data."""
 
 
+# Dataset-specific wording (prompt-audit hits 1 and 2, 2026-10-07). The M5
+# entry is the exact text of the frozen M5 prompt, so M5 renders unchanged.
+DATASET_PROMPT_FIELDS = {
+    "m5": dict(dataset_name="Walmart M5 sample",
+               item_id_format="named <dept_id>_<3-digit number> (e.g. FOODS_3_NNN)"),
+    "favorita": dict(dataset_name="Corporacion Favorita sample, Ecuador",
+                     item_id_format="identified by integer item numbers (e.g. NNNNNN)"),
+}
+
+
 def build_system_prompt(tools: SliceTools, js: float, linf: float, is_drift: bool, max_calls: int) -> str:
     v = tools.values
     return SYSTEM_PROMPT_TEMPLATE.format(
+        **DATASET_PROMPT_FIELDS[tools.dataset],
         n_items=len(v["item_id"]), n_stores=len(v["store_id"]),
         cat_vals=", ".join(v["cat_id"]), dept_vals=", ".join(v["dept_id"]),
         state_vals=", ".join(v["state_id"]), store_vals=", ".join(v["store_id"]),
@@ -777,7 +789,9 @@ def dump_prompt_and_tools(path: str):
                 "Generated from `src/agents/llm_investigator_agent.py`. `{...}` fields are filled per trial "
                 "from the panel's own value lists, the window dates, and the Sentinel's whole-panel "
                 "JS / L-inf scores; nothing else is substituted.\n\n## System prompt template\n\n```\n"
-                + SYSTEM_PROMPT_TEMPLATE + "\n```\n\n## Other messages\n\n"
+                + SYSTEM_PROMPT_TEMPLATE + "\n```\n\n## Dataset-specific fields\n\n"
+                "`{dataset_name}` and `{item_id_format}` are filled from the panel's dataset tag:\n\n```json\n"
+                + json.dumps(DATASET_PROMPT_FIELDS, indent=2) + "\n```\n\n## Other messages\n\n"
                 f"- first user message: `{USER_KICKOFF}`\n- if the model replies without a tool call: `{NUDGE}`\n"
                 f"- when the tool budget is used up (only submit_answer is then offered, and forced): `{BUDGET_DONE}`\n\n"
                 f"Request settings: provider {DEFAULT_PROVIDER} ({PROVIDERS[DEFAULT_PROVIDER]['model']}), "

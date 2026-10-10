@@ -1,0 +1,30 @@
+{
+ "window_start": "2015-02-15",
+ "window_end": "2017-08-15",
+ "n_families": 33,
+ "items_per_family_quota": 6,
+ "n_items": 181,
+ "families_below_quota": [
+  "BABY CARE",
+  "BOOKS",
+  "HARDWARE",
+  "HOME APPLIANCES"
+ ],
+ "n_negative_sales_clipped": 423,
+ "n_pairs": 7269,
+ "n_rows": 6636597,
+ "share_zero_filled": 0.6190723950844085,
+ "n_stores": 54,
+ "n_states": 16,
+ "cat_values": [
+  "NON_PERISHABLE",
+  "PERISHABLE"
+ ],
+ "event_day_share": 0.09066694873893955,
+ "build_seconds": 127,
+ "shape": [
+  6636597,
+  15
+ ],
+ "memory_mb": 1092
+}

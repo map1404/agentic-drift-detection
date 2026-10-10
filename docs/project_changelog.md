@@ -106,3 +106,97 @@ or ROI model (business section) — flagged as the natural next increment.
 - Updated `README.md` with honest, run-verified results
 - This changelog update
 - `docs/defense_qa.md`
+
+## Phase 7 — Cross-dataset transfer to Corporación Favorita (2026-10-07)
+
+**Question:** does the M5-built pipeline (and the LLM tool-calling
+investigator) transfer to a second retail dataset without re-tuning?
+
+### Setup
+- M5 state frozen first: annotated git tag `m5-frozen` on commit `98a9635`
+  (thresholds, scoring, LLM prompt/tools as validated on M5).
+- `src/data/load_favorita.py` builds the M5 panel schema from Kaggle
+  "favorita-grocery-sales-forecasting". Documented choices: `dept_id` = family
+  (33); `cat_id` = perishable group from `items.perishable` (verified constant
+  within every family, so a true hierarchy; using family for both levels would
+  make cat and dept slices identical rows); `store_id` = store_nbr (54);
+  `state_id` = Ecuadorian province (16); negative unit_sales (returns, 423
+  rows) clipped to 0; zero-sales days, which Favorita omits, zero-filled on the
+  (item, store) x date grid of pairs with any sale in the window (62% of rows);
+  `event_flag` from holidays_events (National/Regional/Local, not transferred,
+  excl. Work Day; 9.1% of store-days); extra `onpromotion` column (unused).
+  Neutral fills: `sell_price`=1.0, `revenue`=sales, `snap`=0. Same window/sample
+  logic as M5: last 913 days (2015-02-15..2017-08-15), 200//33 = 6 items per
+  family -> 181 items (4 families have fewer), 6.64M rows.
+- `src/agents/hierarchy.py` now takes a per-dataset spec (`HIERARCHY_SPECS`);
+  M5 behaviour verified identical on all 49,284 M5 slice-value pairs.
+- Prompt audit (agent prompt + tool descriptions): 3 M5-specific hits, all in
+  the system prompt -- "(Walmart M5 sample)", "items named
+  <dept_id>_<3-digit number> (e.g. FOODS_3_NNN)", and "daily unit sales"
+  (Favorita sales are fractional for weighed items). With the user's approval
+  (option B) the first two became per-dataset fields; the M5 rendering was
+  verified byte-identical against all 120 M5 validation prompts. "unit sales"
+  left as is. Tools unchanged.
+- Protocol identical to M5: n=20 per drift type, seeds 42 and 123, 200-day
+  pool, 60-day rolling reference, 30-day window, same injectors.
+
+### (a) Frozen deterministic pipeline: transfers poorly
+Strict top-1 2.5% [1, 7] (M5: 20%), hier top-1 13% [8, 21] (M5: 50%), strict
+top-3 15% [10, 22] (M5: 48%); intermittent 0/40 strict. It never ranks an
+item first although 61/120 true slices are items; its top answers are
+dominated by sparse single-item families (BOOKS, HOME APPLIANCES) and store
+52, which opened during the window (organic ramp from zero).
+
+### (c) Deterministic pipeline re-tuned on Favorita seed 7 only
+Grid: slice set {coarse, coarse+item} x COARSE_SCORE_BAR {0..0.05, inf} x
+BURST_SCORE_BAR {10..250, inf}; pre-declared rule: max pooled strict top-1 on
+seed 7, ties -> hier top-1 -> strict top-3 -> fewest changes
+(outputs/favorita_tuning_grid_seed7.csv). Changed: COARSE_SCORE_BAR
+0.005 -> inf and BURST_SCORE_BAR 60 -> 10 (outputs/favorita_tuning_changes.csv),
+i.e. effectively "answer with the item burst ranking". Both values sit at the
+edge of the grid. Not tuned: Sentinel thresholds, min_slice_size, fallback.
+On seeds 42/123 vs (a), paired McNemar: strict top-1 9% vs 2.5% (p=0.04),
+strict top-3 35% vs 15% (p=0.0002), but hier top-1 unchanged (14% vs 13%).
+All of the gain is intermittent (strict top-3 0% -> 78%); sudden hier top-1
+fell 18% -> 5% (p=0.125). The same coarse-vs-item trade-off seen on M5.
+
+### False-alarm test, (a), 50 drift-free windows
+Global Sentinel: 0/50 on every feature. Full pipeline (global scan +
+within-slice fallback): **50/50 = 100% [93, 100]** -- every alarm via the
+fallback. M5's saved result is identical (50/50), so the "100% detection" in
+drift trials on BOTH datasets does not separate drift from no drift. This
+pre-existing limitation was not headlined in earlier write-ups.
+
+### (b) Frozen LLM agent (gpt-oss-120b via Cerebras, temp 0, max 10 calls)
+120 trials, 118 answered by the agent; 2 fallbacks (`no_tool_call`, gradual)
+excluded from agent rates. Config fingerprinted (outputs/llm_agent/
+FROZEN_fav_val.sha256) and unchanged for the whole run. Infrastructure notes:
+the Cerebras free trial ended mid-run (HTTP 402 from 2026-10-09 01:31) after
+101 trials; the last 19 (all seed 123 intermittent) were run on 2026-10-09
+with a new key for the same model. An earlier resume loop wasted quota by
+starting trials it could not finish; cut-off trials are never recorded, so
+results are unaffected.
+Results: strict top-1 8% [4, 14], hier top-1 18% [12, 26], strict top-3 19%
+[13, 28]. Paired vs (a) on the same 118 trials (exact McNemar): strict top-1
+8% vs 2.5% (p=0.11), hier top-1 18% vs 14% (p=0.30), strict top-3 19% vs 15%
+(p=0.40) -- **no significant difference overall**. By drift type: sudden and
+gradual about equal; intermittent better for the agent (strict top-3 15% vs
+0%, p=0.03; strict top-1 10% vs 0%, p=0.125). Unlike on M5 (where the agent
+was significantly worse than the pipeline on hier top-1), on Favorita it is
+not worse -- but only because the frozen pipeline itself collapsed.
+The M5 failure mode persists: the agent put an item first in 79/118 trials
+(true slice is an item in 59), and one item (885543) was its top answer in 34
+unrelated trials. ~9 tool calls per trial; 36/118 hit the 10-call budget;
+5.3M total tokens.
+Neither frozen arm transfers: compared with M5, (a) fell from 20% to 2.5%
+strict top-1 and from 50% to 13% hier top-1; (b) fell from 19% to 8% and from
+34% to 18%. The re-tuned pipeline (c) is the best Favorita arm on strict
+top-3 (35%), entirely through intermittent drift.
+
+### Outputs
+outputs/favorita_trials_frozen.csv, favorita_trials_retuned.csv,
+favorita_trials_llm_agent.csv, favorita_llm_tool_calls.csv, favorita_summary.csv,
+favorita_mcnemar.csv, favorita_tuning_grid_seed7.csv,
+favorita_tuning_changes.csv, favorita_retuned_config.json,
+favorita_false_alarm_summary.csv, favorita_false_alarm_windows.csv,
+favorita_panel_report.json.

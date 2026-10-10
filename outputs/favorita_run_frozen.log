@@ -1,0 +1,121 @@
+[frozen] seed=42 sudden       t= 0 true=store_id=17                  . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.0s
+[frozen] seed=42 sudden       t= 1 true=state_id=Chimborazo          . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.0s
+[frozen] seed=42 sudden       t= 2 true=state_id=Manabi              . [store_id=52|state_id=Manabi|dept_id=BOOKS] 1.0s
+[frozen] seed=42 sudden       t= 3 true=cat_id=PERISHABLE            . [dept_id=FROZEN FOODS|dept_id=SEAFOOD|dept_id=BOOKS] 1.0s
+[frozen] seed=42 sudden       t= 4 true=dept_id=AUTOMOTIVE           . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=AUTOMOTIVE] 1.0s
+[frozen] seed=42 sudden       t= 5 true=cat_id=PERISHABLE            . [dept_id=DELI|dept_id=EGGS|dept_id=HOME APPLIANCES] 0.7s
+[frozen] seed=42 sudden       t= 6 true=store_id=54                  . [store_id=52|dept_id=PREPARED FOODS|dept_id=BOOKS] 1.0s
+[frozen] seed=42 sudden       t= 7 true=item_id=509877               . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.2s
+[frozen] seed=42 sudden       t= 8 true=item_id=1366212              . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.2s
+[frozen] seed=42 sudden       t= 9 true=state_id=Los Rios            . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=33|state_id=Los Rios] 1.1s
+[frozen] seed=42 sudden       t=10 true=state_id=Bolivar             Y [state_id=Bolivar|store_id=19|dept_id=HOME APPLIANCES] 1.1s
+[frozen] seed=42 sudden       t=11 true=cat_id=NON_PERISHABLE        . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.2s
+[frozen] seed=42 sudden       t=12 true=item_id=804098               . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.2s
+[frozen] seed=42 sudden       t=13 true=item_id=2010972              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=HOME APPLIANCES] 1.2s
+[frozen] seed=42 sudden       t=14 true=item_id=1348487              . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.2s
+[frozen] seed=42 sudden       t=15 true=dept_id=MAGAZINES            . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.2s
+[frozen] seed=42 sudden       t=16 true=dept_id=AUTOMOTIVE           . [dept_id=HOME APPLIANCES|dept_id=PRODUCE|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=42 sudden       t=17 true=state_id=El Oro              . [store_id=40|dept_id=BOOKS|state_id=El Oro] 1.0s
+[frozen] seed=42 sudden       t=18 true=cat_id=PERISHABLE            . [dept_id=FROZEN FOODS|dept_id=BREAD/BAKERY|dept_id=CLEANING] 1.0s
+[frozen] seed=42 sudden       t=19 true=store_id=30                  . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=PERSONAL CARE] 1.0s
+[frozen] seed=42 gradual      t= 0 true=state_id=Guayas              . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=29|store_id=24] 1.0s
+[frozen] seed=42 gradual      t= 1 true=item_id=511394               . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.0s
+[frozen] seed=42 gradual      t= 2 true=cat_id=PERISHABLE            . [dept_id=DAIRY|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.0s
+[frozen] seed=42 gradual      t= 3 true=state_id=Esmeraldas          . [store_id=52|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=42 gradual      t= 4 true=store_id=32                  . [store_id=52|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=42 gradual      t= 5 true=state_id=Chimborazo          . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.0s
+[frozen] seed=42 gradual      t= 6 true=item_id=1913055              . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.0s
+[frozen] seed=42 gradual      t= 7 true=dept_id=HOME APPLIANCES      . [store_id=52|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=42 gradual      t= 8 true=dept_id=LADIESWEAR           Y [dept_id=LADIESWEAR|dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=42 gradual      t= 9 true=dept_id=CLEANING             . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=CLEANING|dept_id=BOOKS] 1.0s
+[frozen] seed=42 gradual      t=10 true=state_id=Bolivar             . [dept_id=SCHOOL AND OFFICE SUPPLIES|state_id=Bolivar|store_id=19] 1.0s
+[frozen] seed=42 gradual      t=11 true=state_id=Cotopaxi            . [store_id=13|state_id=Cotopaxi|store_id=12] 1.0s
+[frozen] seed=42 gradual      t=12 true=state_id=Pastaza             . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|state_id=Pastaza] 1.0s
+[frozen] seed=42 gradual      t=13 true=cat_id=NON_PERISHABLE        . [dept_id=CELEBRATION|dept_id=HOME APPLIANCES|dept_id=PERSONAL CARE] 0.5s
+[frozen] seed=42 gradual      t=14 true=item_id=1366212              . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=42 gradual      t=15 true=item_id=1913055              . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.0s
+[frozen] seed=42 gradual      t=16 true=item_id=1974848              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=PREPARED FOODS] 1.0s
+[frozen] seed=42 gradual      t=17 true=dept_id=HARDWARE             . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.0s
+[frozen] seed=42 gradual      t=18 true=store_id=47                  . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.0s
+[frozen] seed=42 gradual      t=19 true=store_id=24                  . [dept_id=HOME APPLIANCES|dept_id=BOOKS|dept_id=PRODUCE] 1.0s
+[frozen] seed=42 intermittent t= 0 true=item_id=850388               . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=BOOKS] 1.1s
+[frozen] seed=42 intermittent t= 1 true=item_id=315463               . [dept_id=HOME APPLIANCES|dept_id=PRODUCE|dept_id=BOOKS] 1.1s
+[frozen] seed=42 intermittent t= 2 true=item_id=1386120              . [dept_id=BOOKS|dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES] 1.1s
+[frozen] seed=42 intermittent t= 3 true=item_id=2004738              . [store_id=52|dept_id=PREPARED FOODS|dept_id=BOOKS] 1.1s
+[frozen] seed=42 intermittent t= 4 true=item_id=583973               . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=BOOKS] 1.1s
+[frozen] seed=42 intermittent t= 5 true=item_id=2045280              . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.1s
+[frozen] seed=42 intermittent t= 6 true=item_id=818590               . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=52] 1.1s
+[frozen] seed=42 intermittent t= 7 true=item_id=2002043              . [dept_id=HOME APPLIANCES|dept_id=BOOKS|dept_id=PRODUCE] 1.1s
+[frozen] seed=42 intermittent t= 8 true=item_id=2054291              . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=HOME APPLIANCES] 1.0s
+[frozen] seed=42 intermittent t= 9 true=item_id=1584295              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=42 intermittent t=10 true=item_id=1386120              . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.0s
+[frozen] seed=42 intermittent t=11 true=item_id=741201               . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=BOOKS] 1.0s
+[frozen] seed=42 intermittent t=12 true=item_id=813769               . [store_id=52|dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=42 intermittent t=13 true=item_id=1167188              . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.0s
+[frozen] seed=42 intermittent t=14 true=item_id=1695956              . [dept_id=FROZEN FOODS|dept_id=CLEANING|dept_id=BOOKS] 1.0s
+[frozen] seed=42 intermittent t=15 true=item_id=2086882              . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.0s
+[frozen] seed=42 intermittent t=16 true=item_id=1717269              . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=DAIRY] 1.2s
+[frozen] seed=42 intermittent t=17 true=item_id=1584307              . [dept_id=BOOKS|dept_id=HOME APPLIANCES|dept_id=BREAD/BAKERY] 1.3s
+[frozen] seed=42 intermittent t=18 true=item_id=857332               . [dept_id=FROZEN FOODS|dept_id=CLEANING|dept_id=HOME APPLIANCES] 1.2s
+[frozen] seed=42 intermittent t=19 true=item_id=1247036              . [dept_id=BOOKS|dept_id=SEAFOOD|dept_id=HOME APPLIANCES] 1.1s
+[frozen] seed=123 sudden       t= 0 true=state_id=Pastaza             . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.2s
+[frozen] seed=123 sudden       t= 1 true=cat_id=PERISHABLE            . [dept_id=DELI|dept_id=EGGS|dept_id=DAIRY] 0.8s
+[frozen] seed=123 sudden       t= 2 true=dept_id=PREPARED FOODS       . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.1s
+[frozen] seed=123 sudden       t= 3 true=item_id=1576328              . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.0s
+[frozen] seed=123 sudden       t= 4 true=cat_id=NON_PERISHABLE        . [dept_id=CLEANING|dept_id=HOME CARE|dept_id=BOOKS] 1.1s
+[frozen] seed=123 sudden       t= 5 true=state_id=Imbabura            . [dept_id=BOOKS|state_id=Imbabura|store_id=15] 1.1s
+[frozen] seed=123 sudden       t= 6 true=store_id=1                   . [dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=1|dept_id=BOOKS] 1.1s
+[frozen] seed=123 sudden       t= 7 true=store_id=46                  . [store_id=52|dept_id=BOOKS|store_id=46] 1.1s
+[frozen] seed=123 sudden       t= 8 true=state_id=Loja                . [store_id=52|dept_id=PREPARED FOODS|state_id=Loja] 1.1s
+[frozen] seed=123 sudden       t= 9 true=state_id=Los Rios            . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 sudden       t=10 true=dept_id=MEATS                . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=CLEANING] 1.1s
+[frozen] seed=123 sudden       t=11 true=state_id=Manabi              . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 sudden       t=12 true=item_id=1047756              . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.1s
+[frozen] seed=123 sudden       t=13 true=store_id=25                  . [dept_id=FROZEN FOODS|state_id=Santa Elena|store_id=25] 1.1s
+[frozen] seed=123 sudden       t=14 true=cat_id=PERISHABLE            . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.1s
+[frozen] seed=123 sudden       t=15 true=cat_id=PERISHABLE            . [dept_id=FROZEN FOODS|dept_id=BREAD/BAKERY|dept_id=CLEANING] 1.1s
+[frozen] seed=123 sudden       t=16 true=dept_id=AUTOMOTIVE           . [dept_id=BOOKS|dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES] 1.1s
+[frozen] seed=123 sudden       t=17 true=item_id=357962               . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 sudden       t=18 true=store_id=17                  . [store_id=52|dept_id=BOOKS|dept_id=PREPARED FOODS] 1.1s
+[frozen] seed=123 sudden       t=19 true=item_id=2049003              . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.1s
+[frozen] seed=123 gradual      t= 0 true=item_id=1457338              . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=PREPARED FOODS] 1.1s
+[frozen] seed=123 gradual      t= 1 true=dept_id=LADIESWEAR           . [store_id=52|dept_id=BOOKS|dept_id=PREPARED FOODS] 1.1s
+[frozen] seed=123 gradual      t= 2 true=item_id=1062374              . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.1s
+[frozen] seed=123 gradual      t= 3 true=store_id=45                  . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.1s
+[frozen] seed=123 gradual      t= 4 true=state_id=Cotopaxi            . [store_id=13|dept_id=FROZEN FOODS|state_id=Cotopaxi] 1.1s
+[frozen] seed=123 gradual      t= 5 true=dept_id=PERSONAL CARE        Y [dept_id=PERSONAL CARE|dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 gradual      t= 6 true=item_id=1253708              . [store_id=52|dept_id=PREPARED FOODS|dept_id=BOOKS] 1.0s
+[frozen] seed=123 gradual      t= 7 true=dept_id=PLAYERS AND ELECTRONICS . [dept_id=HOME APPLIANCES|dept_id=BOOKS|dept_id=PRODUCE] 1.0s
+[frozen] seed=123 gradual      t= 8 true=dept_id=DAIRY                . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=123 gradual      t= 9 true=item_id=167437               . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=CLEANING] 1.0s
+[frozen] seed=123 gradual      t=10 true=state_id=Santa Elena         . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.0s
+[frozen] seed=123 gradual      t=11 true=item_id=1457344              . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.0s
+[frozen] seed=123 gradual      t=12 true=item_id=673496               . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BREAD/BAKERY] 1.1s
+[frozen] seed=123 gradual      t=13 true=cat_id=PERISHABLE            . [dept_id=FROZEN FOODS|dept_id=BREAD/BAKERY|dept_id=CLEANING] 1.0s
+[frozen] seed=123 gradual      t=14 true=dept_id=CLEANING             . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=123 gradual      t=15 true=cat_id=NON_PERISHABLE        . [store_id=52|dept_id=CELEBRATION|dept_id=HOME APPLIANCES] 0.5s
+[frozen] seed=123 gradual      t=16 true=item_id=857332               . [dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=PREPARED FOODS] 1.0s
+[frozen] seed=123 gradual      t=17 true=cat_id=NON_PERISHABLE        . [dept_id=CELEBRATION|dept_id=HOME APPLIANCES|dept_id=PERSONAL CARE] 0.5s
+[frozen] seed=123 gradual      t=18 true=cat_id=NON_PERISHABLE        . [dept_id=BOOKS|dept_id=CELEBRATION|dept_id=HOME APPLIANCES] 0.5s
+[frozen] seed=123 gradual      t=19 true=state_id=Loja                . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=123 intermittent t= 0 true=item_id=1366212              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=PREPARED FOODS] 1.0s
+[frozen] seed=123 intermittent t= 1 true=item_id=1976349              . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=123 intermittent t= 2 true=item_id=1584293              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.0s
+[frozen] seed=123 intermittent t= 3 true=item_id=1392262              . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.1s
+[frozen] seed=123 intermittent t= 4 true=item_id=1576318              . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 intermittent t= 5 true=item_id=214862               . [dept_id=HOME APPLIANCES|dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS] 1.0s
+[frozen] seed=123 intermittent t= 6 true=item_id=509877               . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=123 intermittent t= 7 true=item_id=732007               . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 intermittent t= 8 true=item_id=818590               . [store_id=52|dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.0s
+[frozen] seed=123 intermittent t= 9 true=item_id=1412379              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=DAIRY] 1.1s
+[frozen] seed=123 intermittent t=10 true=item_id=589403               . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.1s
+[frozen] seed=123 intermittent t=11 true=item_id=1356038              . [dept_id=PREPARED FOODS|dept_id=SCHOOL AND OFFICE SUPPLIES|store_id=52] 1.1s
+[frozen] seed=123 intermittent t=12 true=item_id=1584293              . [store_id=52|dept_id=PREPARED FOODS|state_id=Manabi] 1.1s
+[frozen] seed=123 intermittent t=13 true=item_id=2004738              . [dept_id=FROZEN FOODS|dept_id=BOOKS|dept_id=CLEANING] 1.1s
+[frozen] seed=123 intermittent t=14 true=item_id=1911336              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=PRODUCE] 1.1s
+[frozen] seed=123 intermittent t=15 true=item_id=1489880              . [store_id=52|dept_id=BOOKS|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 intermittent t=16 true=item_id=2048874              . [dept_id=PREPARED FOODS|store_id=52|dept_id=SCHOOL AND OFFICE SUPPLIES] 1.1s
+[frozen] seed=123 intermittent t=17 true=item_id=557241               . [store_id=52|dept_id=PREPARED FOODS|dept_id=BOOKS] 1.0s
+[frozen] seed=123 intermittent t=18 true=item_id=2045280              . [dept_id=SCHOOL AND OFFICE SUPPLIES|dept_id=BOOKS|dept_id=PREPARED FOODS] 1.1s
+[frozen] seed=123 intermittent t=19 true=item_id=1944828              . [dept_id=FROZEN FOODS|dept_id=HOME APPLIANCES|dept_id=BOOKS] 1.1s
+exit=0

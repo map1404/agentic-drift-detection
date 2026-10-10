@@ -1,0 +1,4 @@
+drift_type,n,mean_calls,median_calls,forced_submit,fallbacks
+gradual,40,8.85,9.0,9,2
+intermittent,40,9.1,9.0,15,0
+sudden,40,9.0,9.0,12,0

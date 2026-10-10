@@ -56,6 +56,8 @@ INJECTORS = {
     "intermittent": (inject_intermittent_drift, dict(magnitude=3.0, n_spikes=4, spike_len_days=2, slice_col="item_id")),
 }
 OUT_DIR = "outputs/llm_agent"
+PANELS = {"m5": "data/raw/real_m5_panel_cache.parquet",
+          "favorita": "data/raw/favorita_panel_cache.parquet"}  # built by data/load_favorita.py
 POOL_DAYS, REF_DAYS, WINDOW_DAYS = 200, 60, 30
 
 
@@ -96,6 +98,7 @@ def _fmt(ranking):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--dataset", default="m5", choices=list(PANELS))
     ap.add_argument("--seeds", type=int, nargs="+", required=True)
     ap.add_argument("--n", type=int, default=20, help="trials per drift type per seed")
     ap.add_argument("--provider", default=DEFAULT_PROVIDER, choices=list(PROVIDERS))
@@ -140,7 +143,8 @@ def main(argv=None):
             print(f"STOP (auth_failed: {e}). Put the key in .env at the project root.", flush=True)
             return 3
 
-    df = pd.read_parquet("data/raw/real_m5_panel_cache.parquet")
+    df = pd.read_parquet(PANELS[args.dataset])
+    df.attrs["dataset"] = args.dataset  # read by Hierarchy and the agent's dataset-specific prompt fields
     hierarchy = Hierarchy(df)
     sentinel = Sentinel()
     investigator = Investigator()

@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
+
+# all raw/derived Kaggle data (incl. data/raw/favorita/); Kaggle rules forbid redistribution
+data/raw/
+# onboarding sandbox holds a sample of raw Favorita data
+outputs/onboarding/sandbox/
