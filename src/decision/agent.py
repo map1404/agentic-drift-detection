@@ -47,8 +47,7 @@ DECISION_DEF = (
 
 REGIME_NOTE = {
     "A": "You also see the model's mean absolute error on the reference window and on the current window.",
-    "B": ("You do NOT see the model's error on the current window (actual sales for it are not available yet); "
-          "decide from the drift evidence alone. 'mean_sales_pct_change' is the slice's observed mean-sales change "
+    "B": ("You are NOT shown the model's error on the current window; decide from the drift evidence alone. 'mean_sales_pct_change' is the slice's observed mean-sales change "
           "from reference to current; 'score' is its within-slice divergence; 'share_of_window' is the share of "
           "rows the slice covers."),
 }

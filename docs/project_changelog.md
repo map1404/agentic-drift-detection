@@ -453,3 +453,8 @@ Consequential changes (mine, applied with the amendment, before any run):
 - Class balance (outputs/decision_class_balance.csv), seeds 42/123 at 1.05:
   sudden 55%/45%, gradual 55%/50% harmful; intermittent, covariate and
   drift-free 0%. Seed 7 (tuning): sudden 65%, gradual 30%, others 0%.
+- Pre-run prompt fix (2026-10-10, before any agent call): regime B's prompt
+  said current-window sales were "not available yet", which contradicts the
+  payload (the slice's mean-sales change is computed from them, and the
+  drift was detected on them). Reworded to "You are NOT shown the model's
+  error on the current window".
