@@ -577,3 +577,15 @@ on seed 7 only.
 - The agent prompt names and defines the five fault types plus "none"
   generically (they are the answer set); prompt tuning, if any, uses seed 7
   only and is logged.
+
+#### Checker fitted on seed 7 and committed (2026-10-12, before any agent run)
+src/faults/checker.py (rules for stale_feed, zero_fill, duplicated_rows only).
+First grid hit its edge on 3 of 4 thresholds (k_zero=14, m_ref=1.0, n_min=5;
+seed-7 score 0.625, clean-window specificity only 0.30 -- M5 has ~500 of 1,980
+series ending any window on a 7+ day zero run). Widened ONCE on seed 7
+(outputs/faults_checker_grid_seed7_v1_narrow.csv kept). Final thresholds:
+k_zero=10, m_ref=2.0, k_stale=4, n_min=15 (n_min and k_stale still at the
+edge of the widened grid; not widened again). Seed-7 accuracy: stale_feed
+0.55, zero_fill 0.40, duplicated_rows 1.00, clean specificity 0.94.
+Observation: on sparse M5 series a stale feed mostly repeats 0, so stale_feed
+and zero_fill are inherently hard to tell apart.

@@ -1,0 +1,44 @@
+{
+ "params": {
+  "k_zero": 10,
+  "m_ref": 2.0,
+  "k_stale": 4,
+  "n_min": 15
+ },
+ "seed7_score": 0.7225,
+ "grid": {
+  "k_zero": [
+   5,
+   7,
+   10,
+   14,
+   17,
+   21
+  ],
+  "m_ref": [
+   0.2,
+   0.5,
+   1.0,
+   2.0,
+   3.0,
+   5.0
+  ],
+  "k_stale": [
+   4,
+   5,
+   7,
+   10,
+   14
+  ],
+  "n_min": [
+   1,
+   3,
+   5,
+   8,
+   10,
+   15
+  ]
+ },
+ "tuned_on": "seed 7 only",
+ "objective": "mean of covered-fault type-and-location accuracy and clean-window specificity"
+}
