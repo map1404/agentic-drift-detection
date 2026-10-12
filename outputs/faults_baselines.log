@@ -1,0 +1,300 @@
+seed=42 stale_feed           t= 0 true=item_id=HOBBIES_2_034 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 stale_feed           t= 1 true=item_id=FOODS_3_608 checker=stale_feed:item_id=FOODS_3_608 pipeline=dept_id=HOBBIES_2
+seed=42 stale_feed           t= 2 true=store_id=TX_3 checker=stale_feed:store_id=TX_3 pipeline=store_id=TX_3
+seed=42 stale_feed           t= 3 true=item_id=HOBBIES_1_257 checker=none:None=None pipeline=item_id=FOODS_1_069
+seed=42 stale_feed           t= 4 true=store_id=CA_1 checker=stale_feed:store_id=CA_1 pipeline=dept_id=HOBBIES_2
+seed=42 stale_feed           t= 5 true=item_id=HOBBIES_2_139 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 stale_feed           t= 6 true=store_id=CA_3 checker=stale_feed:store_id=CA_3 pipeline=store_id=CA_3
+seed=42 stale_feed           t= 7 true=store_id=TX_1 checker=stale_feed:store_id=TX_1 pipeline=store_id=TX_1
+seed=42 stale_feed           t= 8 true=store_id=CA_3 checker=stale_feed:store_id=CA_3 pipeline=dept_id=HOBBIES_2
+seed=42 stale_feed           t= 9 true=store_id=WI_2 checker=stale_feed:store_id=WI_2 pipeline=store_id=WI_2
+seed=42 stale_feed           t=10 true=store_id=CA_3 checker=stale_feed:store_id=CA_3 pipeline=store_id=CA_3
+seed=42 stale_feed           t=11 true=item_id=HOUSEHOLD_2_053 checker=none:None=None pipeline=item_id=FOODS_1_069
+seed=42 stale_feed           t=12 true=store_id=CA_1 checker=stale_feed:store_id=CA_1 pipeline=store_id=CA_1
+seed=42 stale_feed           t=13 true=item_id=FOODS_3_273 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 stale_feed           t=14 true=store_id=TX_1 checker=stale_feed:store_id=TX_1 pipeline=store_id=TX_1
+seed=42 stale_feed           t=15 true=store_id=TX_1 checker=stale_feed:store_id=TX_1 pipeline=store_id=TX_1
+seed=42 stale_feed           t=16 true=store_id=WI_1 checker=stale_feed:store_id=WI_1 pipeline=store_id=WI_1
+seed=42 stale_feed           t=17 true=store_id=CA_2 checker=stale_feed:store_id=CA_2 pipeline=dept_id=FOODS_3
+seed=42 stale_feed           t=18 true=item_id=HOBBIES_1_003 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 stale_feed           t=19 true=store_id=TX_2 checker=stale_feed:store_id=TX_2 pipeline=store_id=TX_2
+seed=42 mislabeled_category  t= 0 true=item_id=HOBBIES_1_158 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 mislabeled_category  t= 1 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=cat_id=HOUSEHOLD
+seed=42 mislabeled_category  t= 2 true=dept_id=FOODS_3 checker=none:None=None pipeline=cat_id=HOUSEHOLD
+seed=42 mislabeled_category  t= 3 true=item_id=HOUSEHOLD_2_180 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 mislabeled_category  t= 4 true=item_id=HOBBIES_1_137 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 mislabeled_category  t= 5 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 mislabeled_category  t= 6 true=item_id=HOUSEHOLD_2_490 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 mislabeled_category  t= 7 true=item_id=HOUSEHOLD_2_294 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 mislabeled_category  t= 8 true=item_id=HOUSEHOLD_1_398 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 mislabeled_category  t= 9 true=item_id=HOUSEHOLD_2_324 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 mislabeled_category  t=10 true=dept_id=FOODS_2 checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 mislabeled_category  t=11 true=item_id=FOODS_3_304 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 mislabeled_category  t=12 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 mislabeled_category  t=13 true=item_id=FOODS_2_128 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 mislabeled_category  t=14 true=item_id=HOUSEHOLD_1_079 checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=42 mislabeled_category  t=15 true=item_id=HOUSEHOLD_2_216 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 mislabeled_category  t=16 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 mislabeled_category  t=17 true=item_id=FOODS_2_267 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 mislabeled_category  t=18 true=item_id=FOODS_3_131 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 mislabeled_category  t=19 true=item_id=HOBBIES_1_073 checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t= 0 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=item_id=FOODS_1_069
+seed=42 unit_change          t= 1 true=dept_id=FOODS_1 checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 unit_change          t= 2 true=store_id=TX_3 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 unit_change          t= 3 true=store_id=TX_3 checker=none:None=None pipeline=store_id=TX_3
+seed=42 unit_change          t= 4 true=dept_id=FOODS_3 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t= 5 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t= 6 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t= 7 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=HOUSEHOLD_1
+seed=42 unit_change          t= 8 true=store_id=TX_3 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t= 9 true=dept_id=HOUSEHOLD_2 checker=none:None=None pipeline=dept_id=HOUSEHOLD_2
+seed=42 unit_change          t=10 true=dept_id=FOODS_1 checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=FOODS_1
+seed=42 unit_change          t=11 true=dept_id=FOODS_3 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 unit_change          t=12 true=store_id=TX_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 unit_change          t=13 true=store_id=TX_3 checker=stale_feed:item_id=HOUSEHOLD_1_033 pipeline=store_id=TX_3
+seed=42 unit_change          t=14 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 unit_change          t=15 true=store_id=TX_1 checker=none:None=None pipeline=store_id=TX_1
+seed=42 unit_change          t=16 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=HOUSEHOLD_1
+seed=42 unit_change          t=17 true=store_id=TX_2 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 unit_change          t=18 true=store_id=WI_2 checker=none:None=None pipeline=store_id=WI_2
+seed=42 unit_change          t=19 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 zero_fill            t= 0 true=dept_id=FOODS_3 checker=zero_fill:dept_id=FOODS_3 pipeline=dept_id=FOODS_3
+seed=42 zero_fill            t= 1 true=dept_id=HOUSEHOLD_2 checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=HOUSEHOLD_2
+seed=42 zero_fill            t= 2 true=item_id=FOODS_3_539 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 zero_fill            t= 3 true=store_id=TX_1 checker=zero_fill:item_id=FOODS_2_128 pipeline=store_id=TX_1
+seed=42 zero_fill            t= 4 true=item_id=HOBBIES_1_263 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 zero_fill            t= 5 true=store_id=TX_2 checker=zero_fill:store_id=TX_2 pipeline=store_id=TX_2
+seed=42 zero_fill            t= 6 true=store_id=CA_2 checker=zero_fill:store_id=CA_2 pipeline=store_id=CA_2
+seed=42 zero_fill            t= 7 true=dept_id=HOBBIES_1 checker=zero_fill:item_id=HOBBIES_1_158 pipeline=dept_id=HOBBIES_1
+seed=42 zero_fill            t= 8 true=store_id=WI_3 checker=zero_fill:item_id=FOODS_2_128 pipeline=store_id=WI_3
+seed=42 zero_fill            t= 9 true=item_id=HOBBIES_1_073 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 zero_fill            t=10 true=dept_id=FOODS_1 checker=zero_fill:item_id=FOODS_1_046 pipeline=dept_id=FOODS_1
+seed=42 zero_fill            t=11 true=dept_id=FOODS_3 checker=zero_fill:dept_id=FOODS_3 pipeline=dept_id=FOODS_3
+seed=42 zero_fill            t=12 true=store_id=WI_1 checker=zero_fill:item_id=FOODS_2_128 pipeline=store_id=WI_1
+seed=42 zero_fill            t=13 true=item_id=FOODS_2_380 checker=stale_feed:item_id=HOBBIES_1_086 pipeline=item_id=FOODS_2_128
+seed=42 zero_fill            t=14 true=dept_id=HOUSEHOLD_2 checker=zero_fill:item_id=HOUSEHOLD_2_294 pipeline=dept_id=HOUSEHOLD_2
+seed=42 zero_fill            t=15 true=store_id=CA_4 checker=zero_fill:store_id=CA_4 pipeline=store_id=CA_4
+seed=42 zero_fill            t=16 true=item_id=HOUSEHOLD_2_083 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 zero_fill            t=17 true=item_id=HOBBIES_1_373 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 zero_fill            t=18 true=dept_id=FOODS_2 checker=zero_fill:dept_id=FOODS_2 pipeline=dept_id=FOODS_2
+seed=42 zero_fill            t=19 true=dept_id=FOODS_1 checker=zero_fill:item_id=FOODS_1_046 pipeline=dept_id=FOODS_1
+seed=42 duplicated_rows      t= 0 true=store_id=CA_2 checker=duplicated_rows:store_id=CA_2 pipeline=item_id=FOODS_3_150
+seed=42 duplicated_rows      t= 1 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t= 2 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=dept_id=FOODS_3
+seed=42 duplicated_rows      t= 3 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t= 4 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=item_id=FOODS_3_764
+seed=42 duplicated_rows      t= 5 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=item_id=FOODS_3_296
+seed=42 duplicated_rows      t= 6 true=store_id=CA_1 checker=duplicated_rows:store_id=CA_1 pipeline=dept_id=FOODS_3
+seed=42 duplicated_rows      t= 7 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t= 8 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=item_id=FOODS_2_128
+seed=42 duplicated_rows      t= 9 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t=10 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t=11 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=item_id=FOODS_3_764
+seed=42 duplicated_rows      t=12 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=dept_id=FOODS_3
+seed=42 duplicated_rows      t=13 true=store_id=TX_2 checker=duplicated_rows:store_id=TX_2 pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t=14 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=item_id=FOODS_3_152
+seed=42 duplicated_rows      t=15 true=store_id=WI_2 checker=duplicated_rows:store_id=WI_2 pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t=16 true=store_id=TX_3 checker=duplicated_rows:store_id=TX_3 pipeline=dept_id=HOBBIES_2
+seed=42 duplicated_rows      t=17 true=store_id=TX_2 checker=duplicated_rows:store_id=TX_2 pipeline=dept_id=FOODS_3
+seed=42 duplicated_rows      t=18 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=dept_id=FOODS_2
+seed=42 duplicated_rows      t=19 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=FOODS_3
+seed=42 clean                t= 0 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=42 clean                t= 1 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_150
+seed=42 clean                t= 2 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t= 3 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t= 4 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t= 5 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t= 6 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t= 7 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t= 8 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t= 9 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=10 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=11 true=None=None checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=12 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=13 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 clean                t=14 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=15 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=16 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=17 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=18 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=19 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=20 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=21 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=22 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=23 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=24 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=25 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=26 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=27 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 clean                t=28 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=29 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=42 clean                t=30 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=31 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=32 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=42 clean                t=33 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=34 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=35 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=36 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=37 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 clean                t=38 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=39 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=42 clean                t=40 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=41 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=42 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=42 clean                t=43 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=44 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=42 clean                t=45 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=42 clean                t=46 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=47 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=48 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=42 clean                t=49 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 stale_feed           t= 0 true=item_id=FOODS_3_608 checker=stale_feed:item_id=FOODS_3_608 pipeline=dept_id=FOODS_2
+seed=123 stale_feed           t= 1 true=store_id=TX_3 checker=stale_feed:store_id=TX_3 pipeline=store_id=TX_3
+seed=123 stale_feed           t= 2 true=item_id=HOBBIES_2_145 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 stale_feed           t= 3 true=store_id=CA_3 checker=stale_feed:store_id=CA_3 pipeline=store_id=CA_3
+seed=123 stale_feed           t= 4 true=store_id=CA_1 checker=stale_feed:store_id=CA_1 pipeline=store_id=CA_1
+seed=123 stale_feed           t= 5 true=store_id=WI_2 checker=stale_feed:store_id=WI_2 pipeline=dept_id=HOBBIES_2
+seed=123 stale_feed           t= 6 true=store_id=CA_3 checker=stale_feed:store_id=CA_3 pipeline=store_id=CA_3
+seed=123 stale_feed           t= 7 true=store_id=TX_2 checker=stale_feed:store_id=TX_2 pipeline=dept_id=FOODS_3
+seed=123 stale_feed           t= 8 true=store_id=TX_2 checker=stale_feed:store_id=TX_2 pipeline=dept_id=FOODS_2
+seed=123 stale_feed           t= 9 true=store_id=WI_2 checker=stale_feed:store_id=WI_2 pipeline=store_id=WI_2
+seed=123 stale_feed           t=10 true=store_id=CA_1 checker=stale_feed:store_id=CA_1 pipeline=store_id=CA_1
+seed=123 stale_feed           t=11 true=item_id=FOODS_2_059 checker=stale_feed:item_id=FOODS_2_059 pipeline=dept_id=FOODS_2
+seed=123 stale_feed           t=12 true=store_id=WI_1 checker=stale_feed:store_id=WI_1 pipeline=item_id=FOODS_3_150
+seed=123 stale_feed           t=13 true=store_id=TX_3 checker=stale_feed:store_id=TX_3 pipeline=dept_id=FOODS_3
+seed=123 stale_feed           t=14 true=item_id=FOODS_3_668 checker=stale_feed:item_id=FOODS_3_668 pipeline=dept_id=HOBBIES_2
+seed=123 stale_feed           t=15 true=store_id=WI_3 checker=stale_feed:store_id=WI_3 pipeline=store_id=WI_3
+seed=123 stale_feed           t=16 true=item_id=HOUSEHOLD_2_211 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 stale_feed           t=17 true=store_id=CA_1 checker=stale_feed:store_id=CA_1 pipeline=store_id=CA_1
+seed=123 stale_feed           t=18 true=item_id=HOUSEHOLD_2_313 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 stale_feed           t=19 true=item_id=HOBBIES_1_373 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 mislabeled_category  t= 0 true=dept_id=HOUSEHOLD_2 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 mislabeled_category  t= 1 true=dept_id=FOODS_3 checker=none:None=None pipeline=cat_id=HOBBIES
+seed=123 mislabeled_category  t= 2 true=item_id=FOODS_1_051 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 mislabeled_category  t= 3 true=dept_id=HOUSEHOLD_1 checker=zero_fill:item_id=FOODS_2_128 pipeline=cat_id=HOUSEHOLD
+seed=123 mislabeled_category  t= 4 true=dept_id=FOODS_2 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 mislabeled_category  t= 5 true=dept_id=FOODS_2 checker=stale_feed:item_id=FOODS_3_140 pipeline=dept_id=HOBBIES_2
+seed=123 mislabeled_category  t= 6 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 mislabeled_category  t= 7 true=item_id=HOBBIES_1_393 checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 mislabeled_category  t= 8 true=dept_id=FOODS_1 checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 mislabeled_category  t= 9 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 mislabeled_category  t=10 true=dept_id=FOODS_2 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 mislabeled_category  t=11 true=item_id=HOUSEHOLD_1_090 checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 mislabeled_category  t=12 true=item_id=HOUSEHOLD_2_324 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 mislabeled_category  t=13 true=item_id=HOBBIES_2_001 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 mislabeled_category  t=14 true=dept_id=FOODS_2 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 mislabeled_category  t=15 true=item_id=FOODS_3_406 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 mislabeled_category  t=16 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 mislabeled_category  t=17 true=dept_id=FOODS_3 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 mislabeled_category  t=18 true=item_id=FOODS_3_420 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 mislabeled_category  t=19 true=item_id=FOODS_3_485 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 unit_change          t= 0 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=123 unit_change          t= 1 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 2 true=dept_id=FOODS_3 checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 unit_change          t= 3 true=dept_id=HOBBIES_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 4 true=dept_id=FOODS_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 5 true=dept_id=FOODS_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 6 true=store_id=WI_3 checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 unit_change          t= 7 true=store_id=TX_3 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 8 true=store_id=CA_1 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t= 9 true=dept_id=HOUSEHOLD_1 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 unit_change          t=10 true=store_id=WI_3 checker=none:None=None pipeline=store_id=WI_3
+seed=123 unit_change          t=11 true=dept_id=FOODS_2 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 unit_change          t=12 true=store_id=CA_2 checker=none:None=None pipeline=store_id=CA_2
+seed=123 unit_change          t=13 true=store_id=CA_4 checker=none:None=None pipeline=store_id=CA_4
+seed=123 unit_change          t=14 true=dept_id=FOODS_3 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t=15 true=dept_id=FOODS_2 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 unit_change          t=16 true=dept_id=FOODS_3 checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 unit_change          t=17 true=store_id=WI_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t=18 true=dept_id=HOBBIES_2 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 unit_change          t=19 true=dept_id=FOODS_1 checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 zero_fill            t= 0 true=item_id=FOODS_3_152 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 zero_fill            t= 1 true=item_id=HOUSEHOLD_2_083 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 zero_fill            t= 2 true=store_id=CA_2 checker=zero_fill:item_id=FOODS_2_128 pipeline=store_id=CA_2
+seed=123 zero_fill            t= 3 true=store_id=WI_2 checker=zero_fill:store_id=WI_2 pipeline=store_id=WI_2
+seed=123 zero_fill            t= 4 true=item_id=HOBBIES_2_001 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 zero_fill            t= 5 true=dept_id=HOUSEHOLD_2 checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=HOUSEHOLD_2
+seed=123 zero_fill            t= 6 true=store_id=WI_2 checker=zero_fill:store_id=WI_2 pipeline=store_id=WI_2
+seed=123 zero_fill            t= 7 true=item_id=HOBBIES_1_109 checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 zero_fill            t= 8 true=store_id=TX_2 checker=zero_fill:store_id=TX_2 pipeline=store_id=TX_2
+seed=123 zero_fill            t= 9 true=store_id=CA_3 checker=zero_fill:store_id=CA_3 pipeline=store_id=CA_3
+seed=123 zero_fill            t=10 true=store_id=TX_2 checker=zero_fill:store_id=TX_2 pipeline=store_id=TX_2
+seed=123 zero_fill            t=11 true=store_id=CA_2 checker=zero_fill:store_id=CA_2 pipeline=store_id=CA_2
+seed=123 zero_fill            t=12 true=store_id=WI_1 checker=zero_fill:store_id=WI_1 pipeline=store_id=WI_1
+seed=123 zero_fill            t=13 true=store_id=CA_1 checker=zero_fill:store_id=CA_1 pipeline=store_id=CA_1
+seed=123 zero_fill            t=14 true=store_id=CA_4 checker=zero_fill:item_id=HOUSEHOLD_1_033 pipeline=store_id=CA_4
+seed=123 zero_fill            t=15 true=dept_id=FOODS_1 checker=zero_fill:item_id=FOODS_1_046 pipeline=dept_id=FOODS_1
+seed=123 zero_fill            t=16 true=item_id=FOODS_3_764 checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 zero_fill            t=17 true=dept_id=HOUSEHOLD_1 checker=zero_fill:dept_id=HOUSEHOLD_1 pipeline=dept_id=HOUSEHOLD_1
+seed=123 zero_fill            t=18 true=item_id=HOUSEHOLD_1_011 checker=stale_feed:item_id=FOODS_3_140 pipeline=dept_id=HOBBIES_2
+seed=123 zero_fill            t=19 true=store_id=CA_2 checker=zero_fill:store_id=CA_2 pipeline=store_id=CA_2
+seed=123 duplicated_rows      t= 0 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=item_id=FOODS_3_646
+seed=123 duplicated_rows      t= 1 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t= 2 true=store_id=CA_3 checker=duplicated_rows:store_id=CA_3 pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t= 3 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t= 4 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t= 5 true=state_id=WI checker=duplicated_rows:state_id=WI pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t= 6 true=store_id=TX_1 checker=duplicated_rows:store_id=TX_1 pipeline=item_id=FOODS_3_764
+seed=123 duplicated_rows      t= 7 true=store_id=TX_2 checker=duplicated_rows:store_id=TX_2 pipeline=item_id=FOODS_2_128
+seed=123 duplicated_rows      t= 8 true=store_id=WI_3 checker=duplicated_rows:store_id=WI_3 pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t= 9 true=store_id=TX_3 checker=duplicated_rows:store_id=TX_3 pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t=10 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t=11 true=store_id=TX_2 checker=duplicated_rows:store_id=TX_2 pipeline=item_id=FOODS_2_128
+seed=123 duplicated_rows      t=12 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=item_id=FOODS_3_646
+seed=123 duplicated_rows      t=13 true=store_id=CA_2 checker=duplicated_rows:store_id=CA_2 pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t=14 true=state_id=TX checker=duplicated_rows:state_id=TX pipeline=item_id=FOODS_2_128
+seed=123 duplicated_rows      t=15 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t=16 true=store_id=CA_3 checker=duplicated_rows:store_id=CA_3 pipeline=dept_id=FOODS_2
+seed=123 duplicated_rows      t=17 true=store_id=TX_2 checker=duplicated_rows:store_id=TX_2 pipeline=dept_id=FOODS_3
+seed=123 duplicated_rows      t=18 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=HOBBIES_2
+seed=123 duplicated_rows      t=19 true=state_id=CA checker=duplicated_rows:state_id=CA pipeline=dept_id=FOODS_2
+seed=123 clean                t= 0 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t= 1 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t= 2 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t= 3 true=None=None checker=stale_feed:item_id=FOODS_3_140 pipeline=dept_id=HOBBIES_2
+seed=123 clean                t= 4 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t= 5 true=None=None checker=stale_feed:item_id=FOODS_1_078 pipeline=dept_id=FOODS_3
+seed=123 clean                t= 6 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t= 7 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t= 8 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 clean                t= 9 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 clean                t=10 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=11 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=12 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=13 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=14 true=None=None checker=zero_fill:item_id=FOODS_2_128 pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=15 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 clean                t=16 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=17 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=18 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=19 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=20 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 clean                t=21 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=22 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=23 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=24 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=25 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=26 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=27 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=28 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=29 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=30 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=31 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=32 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=33 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=34 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=35 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=36 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=37 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=38 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=123 clean                t=39 true=None=None checker=none:None=None pipeline=dept_id=FOODS_3
+seed=123 clean                t=40 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_152
+seed=123 clean                t=41 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=42 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128
+seed=123 clean                t=43 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=44 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=45 true=None=None checker=none:None=None pipeline=dept_id=HOBBIES_2
+seed=123 clean                t=46 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_764
+seed=123 clean                t=47 true=None=None checker=none:None=None pipeline=item_id=FOODS_3_646
+seed=123 clean                t=48 true=None=None checker=none:None=None pipeline=dept_id=FOODS_2
+seed=123 clean                t=49 true=None=None checker=none:None=None pipeline=item_id=FOODS_2_128

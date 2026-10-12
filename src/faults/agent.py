@@ -1,6 +1,7 @@
-"""Phase 10 fault-diagnosis agent: same model/provider as the frozen
-investigator (reuses its ChatClient unchanged: Cerebras gpt-oss-120b,
-temperature 0, seed 0, reasoning medium). Tools are computed on the trial's
+"""Phase 10 fault-diagnosis agent: same model as the frozen investigator,
+reusing its ChatClient unchanged (gpt-oss-120b, temperature 0, seed 0,
+reasoning medium). Provider: Groq by AMENDMENT (2026-10-12, before any
+scored agent result) -- the pre-registered provider was Cerebras. Tools are computed on the trial's
 panel restricted to its reference + current windows; the fault log is never
 passed in. Strict-JSON answer through a forced `submit_diagnosis` call.
 
@@ -273,6 +274,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--seeds", type=int, nargs="+", default=[42, 123])
     ap.add_argument("--max-trials", type=int, default=None)
+    ap.add_argument("--provider", default="groq", choices=["groq", "cerebras"],
+                    help="AMENDMENT 2026-10-12: Groq (same open-weight gpt-oss-120b) instead of Cerebras")
     a = ap.parse_args(argv)
     assert 7 not in a.seeds or a.max_trials is not None, "seed 7 only for (logged) tuning"
     load_dotenv(".env", override=True)
@@ -281,7 +284,7 @@ def main(argv=None):
     if os.path.exists(OUT_CSV):
         p = pd.read_csv(OUT_CSV)
         done = set(zip(p.seed, p.kind, p.trial))
-    chat = ChatClient(provider="cerebras", reasoning_effort="medium", seed=0)
+    chat = ChatClient(provider=a.provider, reasoning_effort="medium", seed=0)
     n = 0
     for seed in a.seeds:
         for kind, i, ref, cur, make in iter_fault_trials(df, seed):

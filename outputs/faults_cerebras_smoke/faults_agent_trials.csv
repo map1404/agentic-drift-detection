@@ -1,0 +1,4 @@
+seed,kind,trial,ok,fallback,agent_type,agent_column,agent_slice_col,agent_slice_value,n_tool_calls,forced,model,temperature,tok_prompt,tok_completion,tok_cached
+42,stale_feed,0,True,,none,,,,12,True,gpt-oss-120b,0,35473,1868,22016
+42,stale_feed,1,True,,unit_change,sales,item_id,FOODS_3_150,12,True,gpt-oss-120b,0,49931,2700,35712
+42,stale_feed,2,True,,stale_feed,sales,store_id,TX_3,12,True,gpt-oss-120b,0,38193,1811,26624

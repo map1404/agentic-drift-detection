@@ -589,3 +589,15 @@ edge of the widened grid; not widened again). Seed-7 accuracy: stale_feed
 0.55, zero_fill 0.40, duplicated_rows 1.00, clean specificity 0.94.
 Observation: on sparse M5 series a stale feed mostly repeats 0, so stale_feed
 and zero_fill are inherently hard to tell apart.
+
+#### AMENDMENT (2026-10-12, before any scored agent result): provider Cerebras -> Groq
+The agent arm runs on Groq's openai/gpt-oss-120b (Developer plan) instead of
+Cerebras: same open-weight model, different serving stack. Reason: cost and
+time -- a 3-trial smoke test measured ~13 requests and ~15k quota tokens per
+trial, i.e. ~4.5 days on the Cerebras free tier vs a few hours on Groq.
+Temperature 0, seed 0, reasoning medium and the prompt/tools are unchanged.
+All 300 validation trials run on Groq; the 3 Cerebras smoke trials (all
+stale_feed, seed 42; 1 fully correct, 1 "none", 1 wrong type and slice) are
+set aside in outputs/faults_cerebras_smoke/ and not scored. Deviation from
+the user's "same model/provider as the frozen agent": the model is the same,
+the provider is not.
