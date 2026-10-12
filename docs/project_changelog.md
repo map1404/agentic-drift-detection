@@ -516,3 +516,64 @@ decision_class_balance.csv, decision_agent.csv, decision_agent_raw.jsonl
 (full reasoning), decision_baseline_fit.csv, decision_metrics.csv,
 decision_by_drift_type.csv, decision_mcnemar.csv, decision_fallbacks.csv,
 decision_summary.csv; code in src/decision/ and src/drift/inject_covariate.py.
+
+## Phase 10 — Can an LLM tool-using agent diagnose data-pipeline faults better than a non-LLM checker?
+
+### Pre-registration (written and committed 2026-10-12, BEFORE any run)
+
+FAULTS: stale_feed, mislabeled_category, unit_change, zero_fill,
+duplicated_rows. HELD-OUT (not covered by the checker's rules):
+mislabeled_category and unit_change.
+SUPPORTED if agent beats the best non-LLM method on type-and-location
+accuracy on held-out faults (McNemar p<0.05, paired trials) AND is not worse
+on covered faults. Otherwise NOT SUPPORTED; a tie is NOT SUPPORTED.
+LIMITATIONS: M5 only, one model/prompt, injected (not natural) faults, tuned
+on seed 7 only.
+
+#### Addendum: operational definitions (fixed before any run)
+- Data and windows: real M5 panel; same trial protocol as all earlier M5 work
+  (200-day pool, 60-day rolling reference, 30-day current window). Per seed
+  (7 tuning; 42 and 123 validation): 20 trials per fault type + 50 clean
+  windows; trial RNG = seed*1000 + crc32(type)%1000 + trial.
+- Faults (src/drift/inject_faults.py; new file, inject_drift.py untouched).
+  Each starts on a random day d0 = 5..15 of the current window and lasts to
+  its end, on one random slice:
+  - stale_feed: slice in {store_id, item_id}; from d0 every item-store
+    series in the slice repeats its last value before d0 (column sales).
+  - zero_fill: slice in {store_id, dept_id, item_id}; sales set to 0 from d0.
+  - duplicated_rows: slice in {store_id, state_id}; every row of the slice
+    from d0 appended a second time (exact duplicates; column "rows").
+  - unit_change: slice in {store_id, dept_id}; 50/50 either sales x12 or
+    sell_price x100 from d0 (revenue recomputed).
+  - mislabeled_category: 50/50 either (a) slice = a dept_id whose rows get a
+    different cat_id from d0 (column cat_id), or (b) slice = an item_id whose
+    rows get a dept_id from a different category from d0 (column dept_id).
+  Ground-truth location = (slice column, slice value) injected; the fault
+  log is never visible to any method.
+- Methods: (1) frozen pipeline `_detect_and_localize`: location only (its
+  top-1 slice), no fault type; (2) the non-LLM checker, written and committed
+  before any agent run, with rules ONLY for stale_feed, zero_fill and
+  duplicated_rows, thresholds fit on seed 7; (3) the agent: gpt-oss-120b on
+  Cerebras (same as the frozen investigator), temperature 0, seed 0, at most
+  12 tool calls, the nine listed tools over the trial's reference + current
+  windows, strict-JSON submission; fallbacks logged and excluded, counted.
+- Primary metric "type-and-location accuracy" = fault type correct AND strict
+  location (slice column and value) correct. Also reported: type accuracy,
+  strict and hierarchy-aware location accuracy (hierarchy from the clean
+  panel), column accuracy, false-alarm rate on clean windows (any type other
+  than "none"). Wilson 95% CIs; exact McNemar, paired by trial, on
+  agent-answered trials.
+- "Best non-LLM method" = the higher of pipeline/checker on pooled
+  seed-42/123 type-and-location accuracy within the stratum (held-out or
+  covered). "Not worse on covered" = agent >= best non-LLM, or McNemar
+  p >= 0.05.
+- KNOWN WEAKNESS of the held-out criterion: neither non-LLM method can name
+  mislabeled_category or unit_change (the checker has no rules for them; the
+  pipeline outputs no type), so both score 0 type-and-location on held-out
+  faults by construction. "Beats the best non-LLM method" there reduces to
+  the agent getting enough of the 80 held-out trials right (with no
+  baseline-only wins, roughly 6 or more give p<0.05). It is a low bar, and a
+  pass would show only that the agent names these faults at all.
+- The agent prompt names and defines the five fault types plus "none"
+  generically (they are the answer set); prompt tuning, if any, uses seed 7
+  only and is logged.
