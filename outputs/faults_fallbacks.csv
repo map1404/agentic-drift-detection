@@ -1,0 +1,7 @@
+kind,n,fallbacks,reasons
+clean,100,4,tool_use_failed
+duplicated_rows,40,0,
+mislabeled_category,40,0,
+stale_feed,40,3,tool_use_failed
+unit_change,40,4,tool_use_failed
+zero_fill,40,3,tool_use_failed

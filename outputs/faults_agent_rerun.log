@@ -1,0 +1,78 @@
+seed=42 stale_feed           t= 5 true=stale_feed:item_id=HOBBIES_2_139 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t= 7 true=stale_feed:store_id=TX_1 -> stale_feed:store_id=TX_1 calls=12
+seed=42 stale_feed           t= 8 true=stale_feed:store_id=CA_3 -> stale_feed:store_id=CA_3 calls=12
+seed=42 stale_feed           t= 9 true=stale_feed:store_id=WI_2 -> stale_feed:dept_id=FOODS_3 calls=12
+seed=42 stale_feed           t=12 true=stale_feed:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=13 true=stale_feed:item_id=FOODS_3_273 -> none:None=None calls=12
+seed=42 stale_feed           t=14 true=stale_feed:store_id=TX_1 -> stale_feed:store_id=CA_1 calls=12
+seed=42 stale_feed           t=15 true=stale_feed:store_id=TX_1 -> stale_feed:store_id=TX_1 calls=12
+seed=42 stale_feed           t=16 true=stale_feed:store_id=WI_1 -> unit_change:item_id=FOODS_2_128 calls=12
+seed=42 stale_feed           t=19 true=stale_feed:store_id=TX_2 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 5 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 6 true=mislabeled_category:item_id=HOUSEHOLD_2_490 -> none:None=None calls=12
+seed=42 mislabeled_category  t=10 true=mislabeled_category:dept_id=FOODS_2 -> mislabeled_category:dept_id=FOODS_2 calls=11
+seed=42 mislabeled_category  t=16 true=mislabeled_category:dept_id=HOBBIES_2 -> mislabeled_category:dept_id=HOBBIES_2 calls=11
+seed=42 unit_change          t= 4 true=unit_change:dept_id=FOODS_3 -> unit_change:sell_price=6.77 calls=12
+seed=42 unit_change          t= 5 true=unit_change:dept_id=HOBBIES_2 -> stale_feed:store_id=CA_1 calls=12
+seed=42 unit_change          t= 6 true=unit_change:dept_id=HOBBIES_2 -> none:None=None calls=12
+seed=42 unit_change          t= 7 true=unit_change:dept_id=HOUSEHOLD_1 -> unit_change:None=None calls=12
+seed=42 unit_change          t=11 true=unit_change:dept_id=FOODS_3 -> unit_change:sales=732 calls=12
+seed=42 unit_change          t=13 true=unit_change:store_id=TX_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t=15 true=unit_change:store_id=TX_1 -> none:None=None calls=12
+seed=42 unit_change          t=17 true=unit_change:store_id=TX_2 -> unit_change:sell_price=max=2798.0 calls=12
+seed=42 zero_fill            t= 3 true=zero_fill:store_id=TX_1 -> none:None=None calls=12
+seed=42 zero_fill            t= 7 true=zero_fill:dept_id=HOBBIES_1 -> zero_fill:store_id=CA_1 calls=12
+seed=42 zero_fill            t=10 true=zero_fill:dept_id=FOODS_1 -> none:None=None calls=12
+seed=42 zero_fill            t=12 true=zero_fill:store_id=WI_1 -> none:None=None calls=12
+seed=42 zero_fill            t=13 true=zero_fill:item_id=FOODS_2_380 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t=14 true=zero_fill:dept_id=HOUSEHOLD_2 -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t= 6 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t= 8 true=none:None=None -> stale_feed:store_id=WI_3 calls=12
+seed=42 clean                t=10 true=none:None=None -> zero_fill:item_id=FOODS_1_126 calls=12
+seed=42 clean                t=29 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=30 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=36 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=44 true=none:None=None -> unit_change:sell_price=0.25 calls=12
+seed=42 clean                t=47 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t= 4 true=stale_feed:store_id=CA_1 -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t= 6 true=stale_feed:store_id=CA_3 -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t= 8 true=stale_feed:store_id=TX_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t= 9 true=stale_feed:store_id=WI_2 -> stale_feed:item_id=FOODS_3_668 calls=12
+seed=123 stale_feed           t=11 true=stale_feed:item_id=FOODS_2_059 -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t=12 true=stale_feed:store_id=WI_1 -> stale_feed:store_id=WI_1 calls=12
+seed=123 stale_feed           t=15 true=stale_feed:store_id=WI_3 -> stale_feed:store_id=WI_3 calls=12
+seed=123 stale_feed           t=17 true=stale_feed:store_id=CA_1 -> stale_feed:store_id=CA_1 calls=12
+seed=123 mislabeled_category  t= 0 true=mislabeled_category:dept_id=HOUSEHOLD_2 -> mislabeled_category:dept_id=HOUSEHOLD_2 calls=12
+seed=123 mislabeled_category  t= 4 true=mislabeled_category:dept_id=FOODS_2 -> mislabeled_category:dept_id=FOODS_2 calls=10
+seed=123 mislabeled_category  t=14 true=mislabeled_category:dept_id=FOODS_2 -> none:None=None calls=12
+seed=123 unit_change          t= 1 true=unit_change:dept_id=HOBBIES_2 -> none:None=None calls=12
+seed=123 unit_change          t= 6 true=unit_change:store_id=WI_3 -> unit_change:sell_price=2996 calls=12
+seed=123 unit_change          t= 8 true=unit_change:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t= 9 true=unit_change:dept_id=HOUSEHOLD_1 -> unit_change:item_id=HOUSEHOLD_1_090 calls=12
+seed=123 unit_change          t=11 true=unit_change:dept_id=FOODS_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=12 true=unit_change:store_id=CA_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=16 true=unit_change:dept_id=FOODS_3 -> stale_feed:store_id=CA_1 calls=12
+seed=123 unit_change          t=17 true=unit_change:store_id=WI_2 -> unit_change:store_id=CA_3 calls=12
+seed=123 unit_change          t=19 true=unit_change:dept_id=FOODS_1 -> unit_change:revenue=1034.1 calls=12
+seed=123 zero_fill            t= 3 true=zero_fill:store_id=WI_2 -> none:None=None calls=12
+seed=123 zero_fill            t= 4 true=zero_fill:item_id=HOBBIES_2_001 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 5 true=zero_fill:dept_id=HOUSEHOLD_2 -> none:None=None calls=12
+seed=123 zero_fill            t= 6 true=zero_fill:store_id=WI_2 -> none:None=None calls=12
+seed=123 zero_fill            t= 8 true=zero_fill:store_id=TX_2 -> none:None=None calls=12
+seed=123 zero_fill            t=11 true=zero_fill:store_id=CA_2 -> none:None=None calls=12
+seed=123 zero_fill            t=16 true=zero_fill:item_id=FOODS_3_764 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 duplicated_rows      t= 7 true=duplicated_rows:store_id=TX_2 -> duplicated_rows:store_id=TX_2 calls=8
+seed=123 duplicated_rows      t=16 true=duplicated_rows:store_id=CA_3 -> duplicated_rows:dept_id=HOBBIES_1 calls=4
+seed=123 clean                t=11 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=12 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=14 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=20 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=21 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=27 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=28 true=none:None=None -> stale_feed:item_id=FOODS_3_525 calls=12
+seed=123 clean                t=29 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=35 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=36 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=38 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=39 true=none:None=None -> none:None=None calls=12
+COMPLETE

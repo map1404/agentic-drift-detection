@@ -1,0 +1,302 @@
+seed=42 stale_feed           t= 0 true=stale_feed:item_id=HOBBIES_2_034 -> none:None=None calls=12
+seed=42 stale_feed           t= 1 true=stale_feed:item_id=FOODS_3_608 -> stale_feed:store_id=WI_3 calls=12
+seed=42 stale_feed           t= 2 true=stale_feed:store_id=TX_3 -> stale_feed:store_id=TX_3 calls=12
+seed=42 stale_feed           t= 3 true=stale_feed:item_id=HOBBIES_1_257 -> stale_feed:store_id=CA_1 calls=12
+seed=42 stale_feed           t= 4 true=stale_feed:store_id=CA_1 -> stale_feed:store_id=CA_1 calls=11
+seed=42 stale_feed           t= 5 true=stale_feed:item_id=HOBBIES_2_139 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t= 6 true=stale_feed:store_id=CA_3 -> stale_feed:store_id=CA_3 calls=12
+seed=42 stale_feed           t= 7 true=stale_feed:store_id=TX_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t= 8 true=stale_feed:store_id=CA_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t= 9 true=stale_feed:store_id=WI_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=10 true=stale_feed:store_id=CA_3 -> stale_feed:store_id=CA_3 calls=12
+seed=42 stale_feed           t=11 true=stale_feed:item_id=HOUSEHOLD_2_053 -> none:None=None calls=12
+seed=42 stale_feed           t=12 true=stale_feed:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=13 true=stale_feed:item_id=FOODS_3_273 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=14 true=stale_feed:store_id=TX_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=15 true=stale_feed:store_id=TX_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=16 true=stale_feed:store_id=WI_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 stale_feed           t=17 true=stale_feed:store_id=CA_2 -> stale_feed:store_id=CA_2 calls=12
+seed=42 stale_feed           t=18 true=stale_feed:item_id=HOBBIES_1_003 -> none:None=None calls=12
+seed=42 stale_feed           t=19 true=stale_feed:store_id=TX_2 -> FALLBACK:http_400:None=None calls=12
+seed=42 mislabeled_category  t= 0 true=mislabeled_category:item_id=HOBBIES_1_158 -> mislabeled_category:dept_id=HOUSEHOLD_2 calls=12
+seed=42 mislabeled_category  t= 1 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=11
+seed=42 mislabeled_category  t= 2 true=mislabeled_category:dept_id=FOODS_3 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 3 true=mislabeled_category:item_id=HOUSEHOLD_2_180 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 4 true=mislabeled_category:item_id=HOBBIES_1_137 -> mislabeled_category:dept_id=FOODS_1 calls=12
+seed=42 mislabeled_category  t= 5 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 mislabeled_category  t= 6 true=mislabeled_category:item_id=HOUSEHOLD_2_490 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 mislabeled_category  t= 7 true=mislabeled_category:item_id=HOUSEHOLD_2_294 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 8 true=mislabeled_category:item_id=HOUSEHOLD_1_398 -> none:None=None calls=12
+seed=42 mislabeled_category  t= 9 true=mislabeled_category:item_id=HOUSEHOLD_2_324 -> mislabeled_category:dept_id=HOBBIES_1 calls=12
+seed=42 mislabeled_category  t=10 true=mislabeled_category:dept_id=FOODS_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 mislabeled_category  t=11 true=mislabeled_category:item_id=FOODS_3_304 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=12
+seed=42 mislabeled_category  t=12 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=11
+seed=42 mislabeled_category  t=13 true=mislabeled_category:item_id=FOODS_2_128 -> none:None=None calls=12
+seed=42 mislabeled_category  t=14 true=mislabeled_category:item_id=HOUSEHOLD_1_079 -> none:None=None calls=12
+seed=42 mislabeled_category  t=15 true=mislabeled_category:item_id=HOUSEHOLD_2_216 -> mislabeled_category:dept_id=FOODS_1 calls=12
+seed=42 mislabeled_category  t=16 true=mislabeled_category:dept_id=HOBBIES_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 mislabeled_category  t=17 true=mislabeled_category:item_id=FOODS_2_267 -> mislabeled_category:dept_id=HOBBIES_1 calls=12
+seed=42 mislabeled_category  t=18 true=mislabeled_category:item_id=FOODS_3_131 -> none:None=None calls=12
+seed=42 mislabeled_category  t=19 true=mislabeled_category:item_id=HOBBIES_1_073 -> mislabeled_category:dept_id=FOODS_2 calls=9
+seed=42 unit_change          t= 0 true=unit_change:dept_id=HOBBIES_2 -> unit_change:item_id=HOBBIES_2_136 calls=12
+seed=42 unit_change          t= 1 true=unit_change:dept_id=FOODS_1 -> unit_change:sell_price=514.0 calls=12
+seed=42 unit_change          t= 2 true=unit_change:store_id=TX_3 -> unit_change:sell_price=2798 calls=12
+seed=42 unit_change          t= 3 true=unit_change:store_id=TX_3 -> none:None=None calls=12
+seed=42 unit_change          t= 4 true=unit_change:dept_id=FOODS_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t= 5 true=unit_change:dept_id=HOBBIES_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t= 6 true=unit_change:dept_id=HOBBIES_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t= 7 true=unit_change:dept_id=HOUSEHOLD_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t= 8 true=unit_change:store_id=TX_3 -> unit_change:revenue=89622 calls=12
+seed=42 unit_change          t= 9 true=unit_change:dept_id=HOUSEHOLD_2 -> none:None=None calls=12
+seed=42 unit_change          t=10 true=unit_change:dept_id=FOODS_1 -> none:None=None calls=12
+seed=42 unit_change          t=11 true=unit_change:dept_id=FOODS_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t=12 true=unit_change:store_id=TX_1 -> unit_change:sell_price=2798 calls=12
+seed=42 unit_change          t=13 true=unit_change:store_id=TX_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t=14 true=unit_change:dept_id=HOUSEHOLD_1 -> unit_change:store_id=CA_4 calls=12
+seed=42 unit_change          t=15 true=unit_change:store_id=TX_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t=16 true=unit_change:dept_id=HOUSEHOLD_1 -> none:None=None calls=12
+seed=42 unit_change          t=17 true=unit_change:store_id=TX_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 unit_change          t=18 true=unit_change:store_id=WI_2 -> none:None=None calls=12
+seed=42 unit_change          t=19 true=unit_change:dept_id=HOUSEHOLD_1 -> unit_change:dept_id=HOUSEHOLD_1 calls=12
+seed=42 zero_fill            t= 0 true=zero_fill:dept_id=FOODS_3 -> none:None=None calls=12
+seed=42 zero_fill            t= 1 true=zero_fill:dept_id=HOUSEHOLD_2 -> none:None=None calls=12
+seed=42 zero_fill            t= 2 true=zero_fill:item_id=FOODS_3_539 -> none:None=None calls=12
+seed=42 zero_fill            t= 3 true=zero_fill:store_id=TX_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t= 4 true=zero_fill:item_id=HOBBIES_1_263 -> zero_fill:item_id=FOODS_3_350 calls=12
+seed=42 zero_fill            t= 5 true=zero_fill:store_id=TX_2 -> none:None=None calls=12
+seed=42 zero_fill            t= 6 true=zero_fill:store_id=CA_2 -> zero_fill:store_id=CA_2 calls=12
+seed=42 zero_fill            t= 7 true=zero_fill:dept_id=HOBBIES_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t= 8 true=zero_fill:store_id=WI_3 -> none:None=None calls=12
+seed=42 zero_fill            t= 9 true=zero_fill:item_id=HOBBIES_1_073 -> stale_feed:store_id=CA_1 calls=11
+seed=42 zero_fill            t=10 true=zero_fill:dept_id=FOODS_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t=11 true=zero_fill:dept_id=FOODS_3 -> none:None=None calls=12
+seed=42 zero_fill            t=12 true=zero_fill:store_id=WI_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t=13 true=zero_fill:item_id=FOODS_2_380 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t=14 true=zero_fill:dept_id=HOUSEHOLD_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 zero_fill            t=15 true=zero_fill:store_id=CA_4 -> none:None=None calls=12
+seed=42 zero_fill            t=16 true=zero_fill:item_id=HOUSEHOLD_2_083 -> none:None=None calls=12
+seed=42 zero_fill            t=17 true=zero_fill:item_id=HOBBIES_1_373 -> stale_feed:store_id=CA_1 calls=12
+seed=42 zero_fill            t=18 true=zero_fill:dept_id=FOODS_2 -> none:None=None calls=12
+seed=42 zero_fill            t=19 true=zero_fill:dept_id=FOODS_1 -> none:None=None calls=12
+seed=42 duplicated_rows      t= 0 true=duplicated_rows:store_id=CA_2 -> duplicated_rows:store_id=CA_2 calls=7
+seed=42 duplicated_rows      t= 1 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=11
+seed=42 duplicated_rows      t= 2 true=duplicated_rows:state_id=WI -> duplicated_rows:state_id=WI calls=8
+seed=42 duplicated_rows      t= 3 true=duplicated_rows:state_id=WI -> duplicated_rows:state_id=WI calls=10
+seed=42 duplicated_rows      t= 4 true=duplicated_rows:state_id=WI -> duplicated_rows:store_id=WI_1 calls=2
+seed=42 duplicated_rows      t= 5 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=9
+seed=42 duplicated_rows      t= 6 true=duplicated_rows:store_id=CA_1 -> duplicated_rows:dept_id=HOBBIES_1 calls=3
+seed=42 duplicated_rows      t= 7 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=9
+seed=42 duplicated_rows      t= 8 true=duplicated_rows:state_id=TX -> duplicated_rows:state_id=TX calls=8
+seed=42 duplicated_rows      t= 9 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=2
+seed=42 duplicated_rows      t=10 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=7
+seed=42 duplicated_rows      t=11 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=7
+seed=42 duplicated_rows      t=12 true=duplicated_rows:state_id=WI -> duplicated_rows:store_id=WI_1 calls=8
+seed=42 duplicated_rows      t=13 true=duplicated_rows:store_id=TX_2 -> duplicated_rows:store_id=TX_2 calls=9
+seed=42 duplicated_rows      t=14 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=5
+seed=42 duplicated_rows      t=15 true=duplicated_rows:store_id=WI_2 -> duplicated_rows:store_id=WI_2 calls=9
+seed=42 duplicated_rows      t=16 true=duplicated_rows:store_id=TX_3 -> duplicated_rows:dept_id=HOBBIES_1 calls=4
+seed=42 duplicated_rows      t=17 true=duplicated_rows:store_id=TX_2 -> duplicated_rows:store_id=TX_2 calls=9
+seed=42 duplicated_rows      t=18 true=duplicated_rows:state_id=WI -> duplicated_rows:store_id=WI_1 calls=5
+seed=42 duplicated_rows      t=19 true=duplicated_rows:state_id=CA -> duplicated_rows:state_id=CA calls=9
+seed=42 clean                t= 0 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 1 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 2 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 3 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 4 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 5 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t= 6 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t= 7 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t= 8 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t= 9 true=none:None=None -> stale_feed:item_id=FOODS_2_147 calls=12
+seed=42 clean                t=10 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=11 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=12 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=13 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=14 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=15 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=16 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=17 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=18 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=19 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=20 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=21 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=22 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=23 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=24 true=none:None=None -> stale_feed:store_id=CA_1 calls=9
+seed=42 clean                t=25 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=26 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=27 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=28 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=29 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=30 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=31 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=32 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=33 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=34 true=none:None=None -> stale_feed:item_id=FOODS_1_126 calls=12
+seed=42 clean                t=35 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=36 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=37 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=38 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=39 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=40 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=41 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=42 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=43 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=44 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=45 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=42 clean                t=46 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=47 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=42 clean                t=48 true=none:None=None -> none:None=None calls=12
+seed=42 clean                t=49 true=none:None=None -> none:None=None calls=12
+seed=123 stale_feed           t= 0 true=stale_feed:item_id=FOODS_3_608 -> none:None=None calls=12
+seed=123 stale_feed           t= 1 true=stale_feed:store_id=TX_3 -> stale_feed:store_id=TX_3 calls=12
+seed=123 stale_feed           t= 2 true=stale_feed:item_id=HOBBIES_2_145 -> zero_fill:item_id=FOODS_3_350 calls=12
+seed=123 stale_feed           t= 3 true=stale_feed:store_id=CA_3 -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t= 4 true=stale_feed:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t= 5 true=stale_feed:store_id=WI_2 -> stale_feed:store_id=WI_2 calls=10
+seed=123 stale_feed           t= 6 true=stale_feed:store_id=CA_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t= 7 true=stale_feed:store_id=TX_2 -> none:None=None calls=12
+seed=123 stale_feed           t= 8 true=stale_feed:store_id=TX_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t= 9 true=stale_feed:store_id=WI_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t=10 true=stale_feed:store_id=CA_1 -> stale_feed:store_id=CA_1 calls=12
+seed=123 stale_feed           t=11 true=stale_feed:item_id=FOODS_2_059 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t=12 true=stale_feed:store_id=WI_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t=13 true=stale_feed:store_id=TX_3 -> none:None=None calls=12
+seed=123 stale_feed           t=14 true=stale_feed:item_id=FOODS_3_668 -> none:None=None calls=12
+seed=123 stale_feed           t=15 true=stale_feed:store_id=WI_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t=16 true=stale_feed:item_id=HOUSEHOLD_2_211 -> stale_feed:store_id=CA_4 calls=12
+seed=123 stale_feed           t=17 true=stale_feed:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 stale_feed           t=18 true=stale_feed:item_id=HOUSEHOLD_2_313 -> none:None=None calls=12
+seed=123 stale_feed           t=19 true=stale_feed:item_id=HOBBIES_1_373 -> none:None=None calls=12
+seed=123 mislabeled_category  t= 0 true=mislabeled_category:dept_id=HOUSEHOLD_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 mislabeled_category  t= 1 true=mislabeled_category:dept_id=FOODS_3 -> mislabeled_category:dept_id=FOODS_3 calls=12
+seed=123 mislabeled_category  t= 2 true=mislabeled_category:item_id=FOODS_1_051 -> mislabeled_category:dept_id=HOUSEHOLD_2 calls=11
+seed=123 mislabeled_category  t= 3 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=12
+seed=123 mislabeled_category  t= 4 true=mislabeled_category:dept_id=FOODS_2 -> FALLBACK:http_400:None=None calls=12
+seed=123 mislabeled_category  t= 5 true=mislabeled_category:dept_id=FOODS_2 -> stale_feed:store_id=TX_2 calls=12
+seed=123 mislabeled_category  t= 6 true=mislabeled_category:dept_id=HOBBIES_2 -> mislabeled_category:dept_id=HOBBIES_2 calls=10
+seed=123 mislabeled_category  t= 7 true=mislabeled_category:item_id=HOBBIES_1_393 -> mislabeled_category:dept_id=FOODS_3 calls=10
+seed=123 mislabeled_category  t= 8 true=mislabeled_category:dept_id=FOODS_1 -> mislabeled_category:dept_id=FOODS_1 calls=12
+seed=123 mislabeled_category  t= 9 true=mislabeled_category:dept_id=HOUSEHOLD_1 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=9
+seed=123 mislabeled_category  t=10 true=mislabeled_category:dept_id=FOODS_2 -> none:None=None calls=12
+seed=123 mislabeled_category  t=11 true=mislabeled_category:item_id=HOUSEHOLD_1_090 -> mislabeled_category:dept_id=FOODS_2 calls=12
+seed=123 mislabeled_category  t=12 true=mislabeled_category:item_id=HOUSEHOLD_2_324 -> none:None=None calls=12
+seed=123 mislabeled_category  t=13 true=mislabeled_category:item_id=HOBBIES_2_001 -> mislabeled_category:dept_id=HOUSEHOLD_1 calls=12
+seed=123 mislabeled_category  t=14 true=mislabeled_category:dept_id=FOODS_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 mislabeled_category  t=15 true=mislabeled_category:item_id=FOODS_3_406 -> mislabeled_category:dept_id=HOBBIES_2 calls=12
+seed=123 mislabeled_category  t=16 true=mislabeled_category:dept_id=HOBBIES_2 -> none:None=None calls=12
+seed=123 mislabeled_category  t=17 true=mislabeled_category:dept_id=FOODS_3 -> mislabeled_category:dept_id=FOODS_3 calls=12
+seed=123 mislabeled_category  t=18 true=mislabeled_category:item_id=FOODS_3_420 -> none:None=None calls=12
+seed=123 mislabeled_category  t=19 true=mislabeled_category:item_id=FOODS_3_485 -> none:None=None calls=12
+seed=123 unit_change          t= 0 true=unit_change:dept_id=HOBBIES_2 -> unit_change:cat_id=HOBBIES calls=12
+seed=123 unit_change          t= 1 true=unit_change:dept_id=HOBBIES_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t= 2 true=unit_change:dept_id=FOODS_3 -> unit_change:dept_id=FOODS_3 calls=11
+seed=123 unit_change          t= 3 true=unit_change:dept_id=HOBBIES_1 -> unit_change:sell_price=788.0 calls=12
+seed=123 unit_change          t= 4 true=unit_change:dept_id=FOODS_1 -> unit_change:revenue=40.32 calls=12
+seed=123 unit_change          t= 5 true=unit_change:dept_id=FOODS_1 -> unit_change:dept_id=FOODS_1 calls=11
+seed=123 unit_change          t= 6 true=unit_change:store_id=WI_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t= 7 true=unit_change:store_id=TX_3 -> unit_change:item_id=FOODS_3_152 calls=12
+seed=123 unit_change          t= 8 true=unit_change:store_id=CA_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t= 9 true=unit_change:dept_id=HOUSEHOLD_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=10 true=unit_change:store_id=WI_3 -> none:None=None calls=12
+seed=123 unit_change          t=11 true=unit_change:dept_id=FOODS_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=12 true=unit_change:store_id=CA_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=13 true=unit_change:store_id=CA_4 -> unit_change:item_id=FOODS_2_128 calls=12
+seed=123 unit_change          t=14 true=unit_change:dept_id=FOODS_3 -> unit_change:cat_id=FOODS calls=12
+seed=123 unit_change          t=15 true=unit_change:dept_id=FOODS_2 -> none:None=None calls=12
+seed=123 unit_change          t=16 true=unit_change:dept_id=FOODS_3 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=17 true=unit_change:store_id=WI_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 unit_change          t=18 true=unit_change:dept_id=HOBBIES_2 -> none:None=None calls=12
+seed=123 unit_change          t=19 true=unit_change:dept_id=FOODS_1 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 0 true=zero_fill:item_id=FOODS_3_152 -> none:None=None calls=12
+seed=123 zero_fill            t= 1 true=zero_fill:item_id=HOUSEHOLD_2_083 -> stale_feed:store_id=WI_2 calls=12
+seed=123 zero_fill            t= 2 true=zero_fill:store_id=CA_2 -> none:None=None calls=12
+seed=123 zero_fill            t= 3 true=zero_fill:store_id=WI_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 4 true=zero_fill:item_id=HOBBIES_2_001 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 5 true=zero_fill:dept_id=HOUSEHOLD_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 6 true=zero_fill:store_id=WI_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 7 true=zero_fill:item_id=HOBBIES_1_109 -> none:None=None calls=12
+seed=123 zero_fill            t= 8 true=zero_fill:store_id=TX_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t= 9 true=zero_fill:store_id=CA_3 -> none:None=None calls=12
+seed=123 zero_fill            t=10 true=zero_fill:store_id=TX_2 -> none:None=None calls=12
+seed=123 zero_fill            t=11 true=zero_fill:store_id=CA_2 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t=12 true=zero_fill:store_id=WI_1 -> none:None=None calls=12
+seed=123 zero_fill            t=13 true=zero_fill:store_id=CA_1 -> none:None=None calls=12
+seed=123 zero_fill            t=14 true=zero_fill:store_id=CA_4 -> none:None=None calls=12
+seed=123 zero_fill            t=15 true=zero_fill:dept_id=FOODS_1 -> stale_feed:store_id=CA_1 calls=11
+seed=123 zero_fill            t=16 true=zero_fill:item_id=FOODS_3_764 -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 zero_fill            t=17 true=zero_fill:dept_id=HOUSEHOLD_1 -> none:None=None calls=12
+seed=123 zero_fill            t=18 true=zero_fill:item_id=HOUSEHOLD_1_011 -> stale_feed:store_id=CA_3 calls=12
+seed=123 zero_fill            t=19 true=zero_fill:store_id=CA_2 -> none:None=None calls=12
+seed=123 duplicated_rows      t= 0 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=2
+seed=123 duplicated_rows      t= 1 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=9
+seed=123 duplicated_rows      t= 2 true=duplicated_rows:store_id=CA_3 -> duplicated_rows:store_id=CA_3 calls=3
+seed=123 duplicated_rows      t= 3 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=2
+seed=123 duplicated_rows      t= 4 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=4
+seed=123 duplicated_rows      t= 5 true=duplicated_rows:state_id=WI -> duplicated_rows:store_id=WI_1 calls=6
+seed=123 duplicated_rows      t= 6 true=duplicated_rows:store_id=TX_1 -> duplicated_rows:store_id=TX_1 calls=3
+seed=123 duplicated_rows      t= 7 true=duplicated_rows:store_id=TX_2 -> FALLBACK:tool_use_failed:None=None calls=4
+seed=123 duplicated_rows      t= 8 true=duplicated_rows:store_id=WI_3 -> duplicated_rows:store_id=WI_3 calls=10
+seed=123 duplicated_rows      t= 9 true=duplicated_rows:store_id=TX_3 -> duplicated_rows:dept_id=HOBBIES_1 calls=4
+seed=123 duplicated_rows      t=10 true=duplicated_rows:state_id=TX -> duplicated_rows:store_id=TX_1 calls=2
+seed=123 duplicated_rows      t=11 true=duplicated_rows:store_id=TX_2 -> duplicated_rows:store_id=TX_2 calls=2
+seed=123 duplicated_rows      t=12 true=duplicated_rows:state_id=CA -> duplicated_rows:state_id=CA calls=2
+seed=123 duplicated_rows      t=13 true=duplicated_rows:store_id=CA_2 -> duplicated_rows:dept_id=HOBBIES_1 calls=9
+seed=123 duplicated_rows      t=14 true=duplicated_rows:state_id=TX -> duplicated_rows:state_id=TX calls=9
+seed=123 duplicated_rows      t=15 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=6
+seed=123 duplicated_rows      t=16 true=duplicated_rows:store_id=CA_3 -> FALLBACK:http_400:None=None calls=4
+seed=123 duplicated_rows      t=17 true=duplicated_rows:store_id=TX_2 -> duplicated_rows:dept_id=HOBBIES_1 calls=9
+seed=123 duplicated_rows      t=18 true=duplicated_rows:state_id=CA -> duplicated_rows:state_id=CA calls=8
+seed=123 duplicated_rows      t=19 true=duplicated_rows:state_id=CA -> duplicated_rows:store_id=CA_1 calls=9
+seed=123 clean                t= 0 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 1 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 2 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 3 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 4 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 5 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 6 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 7 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t= 8 true=none:None=None -> none:None=None calls=11
+seed=123 clean                t= 9 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=10 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=11 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=12 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=13 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=14 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=15 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=16 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=17 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=18 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=19 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=20 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=21 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=22 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=23 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=24 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=25 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=26 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=27 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=28 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=29 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=30 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=31 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=32 true=none:None=None -> stale_feed:store_id=CA_1 calls=12
+seed=123 clean                t=33 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=34 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=35 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=36 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=37 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=38 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=39 true=none:None=None -> FALLBACK:tool_use_failed:None=None calls=12
+seed=123 clean                t=40 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=41 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=42 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=43 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=44 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=45 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=46 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=47 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=48 true=none:None=None -> none:None=None calls=12
+seed=123 clean                t=49 true=none:None=None -> none:None=None calls=12
+COMPLETE
+exit=0

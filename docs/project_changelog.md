@@ -601,3 +601,76 @@ stale_feed, seed 42; 1 fully correct, 1 "none", 1 wrong type and slice) are
 set aside in outputs/faults_cerebras_smoke/ and not scored. Deviation from
 the user's "same model/provider as the frozen agent": the model is the same,
 the provider is not.
+
+### Results (2026-10-12)
+
+Agent: gpt-oss-120b on Groq (amendment), temperature 0, seed 0, max 12 tool
+calls, ~6 s per trial. 300 validation trials (seeds 42 + 123: 20 per fault
+type + 50 clean per seed). **14 fallbacks (4.7%) excluded**: clean 4,
+unit_change 4, stale_feed 3, zero_fill 3 -- all Groq `tool_use_failed` at the
+forced final step (the model tried to call value_counts when only
+submit_diagnosis was offered). All metrics below are paired on the 286
+agent-answered trials.
+
+Type-and-location accuracy (type correct AND strict slice correct), with
+type accuracy / strict / hierarchy-aware location in brackets:
+
+| fault | agent | checker | frozen pipeline (location only) |
+|---|---|---|---|
+| stale_feed (covered) | 15/37 = 41% (type 65%, loc 41% / 41%) | **28/37 = 76%** (76%, 76% / 76%) | -- (loc 46% / 51%) |
+| zero_fill (covered) | 1/37 = 3% (type 8%, loc 3% / 3%) | **16/37 = 43%** (76%, 43% / 57%) | -- (loc 76% / 76%) |
+| duplicated_rows (covered) | 16/40 = 40% (type 100%, loc 40% / 85%) | **40/40 = 100%** | -- (loc 0% / 0%) |
+| mislabeled_category (held-out) | **12/40 = 30%** (type 60%, loc 30% / 30%) | 0/40 (no rule) | -- (loc 5% / 18%) |
+| unit_change (held-out) | **3/36 = 8%** (type 64%, loc 8% / 19%) | 0/36 (no rule) | -- (loc 44% / 47%) |
+| clean windows: false-alarm rate | 17/96 = 18% | **4/96 = 4%** | 96/96 = 100% |
+
+McNemar, agent vs best non-LLM method (the checker in every stratum),
+type-and-location: held-out 15 vs 0 discordant, **p = 6e-5 (agent better)**;
+covered 0 vs 52, **p = 4e-16 (agent worse)**; clean windows (no alarm) 4 vs 17,
+p = 0.007 (agent worse).
+
+**Verdict: NOT SUPPORTED.** The held-out criterion passes -- but, as flagged
+in the pre-registration, against methods that cannot name those faults at
+all, so it shows only that the agent names mislabeled categories (30% fully
+right) and, rarely, unit changes (8%). The covered criterion fails clearly:
+the agent is never right where the checker is wrong on stale_feed, zero_fill
+or duplicated_rows, and the checker is right on 52 trials the agent misses.
+
+What the agent gets wrong:
+- **Locations, more than types.** It names the fault type well for
+  duplicated_rows (100%), stale_feed (65%), unit_change (64%) and
+  mislabeled_category (60%), but rarely the exact slice: duplicates injected
+  per state are attributed to one store (strict 40%, hierarchy-aware 85%);
+  unit changes are typed 64% but located exactly 8%. The frozen pipeline,
+  which only localises, finds the unit_change slice more often (44%) than the
+  agent (8%).
+- **Zero-fill is called "none".** 28 of 37 zero-fill trials are diagnosed as
+  no fault -- real M5 data is full of long zero runs (~500 of 1,980 series end
+  any window on 7+ zero days), and the agent treats the injected zeros as
+  natural sparsity. The checker (76% type, 43% exact slice) does much better.
+- **False alarms.** 15 of its 17 clean-window false alarms are "stale_feed".
+- **It runs out of budget.** 228 of 286 answered trials used all 12 tool
+  calls and had the submission forced (mean 11.1 calls).
+
+Deviations (all logged above or here):
+- Provider changed Cerebras -> Groq (same open-weight model) before any
+  scored result; 3 Cerebras smoke trials set aside.
+- Checker grid widened once on seed 7 (first fit hit the grid edge).
+- **Retry policy added after the first Groq pass**: the first pass had 77/300
+  fallbacks (74 tool_use_failed, 3 http_400), concentrated at the forced final
+  step and uneven across fault types, so excluding them would bias the
+  comparison. Groq's rejection proved intermittent (a failed trial succeeded
+  when rerun), so the loop got the frozen investigator agent's policy (retry a
+  rejected turn up to twice) and exactly the 77 fallback trials were rerun.
+  Because a retry only fires on a failure, this is equivalent to having used
+  the policy from the start; no agent answer influenced which trials were
+  rerun. 63 recovered, 14 remain. First-pass rows kept in
+  outputs/faults_agent_first_pass_fallbacks.csv.
+
+Outputs: outputs/faults_baseline_trials.csv, faults_agent_trials.csv,
+faults_agent_raw.jsonl (full transcripts incl. reasoning and Groq errors),
+faults_agent_toolcalls.jsonl, faults_metrics.csv, faults_by_type.csv,
+faults_mcnemar.csv, faults_summary.csv, faults_fallbacks.csv,
+faults_checker_fit.json, faults_checker_grid_seed7*.csv,
+faults_agent_first_pass_fallbacks.csv, faults_cerebras_smoke/; code in
+src/faults/ and src/drift/inject_faults.py.

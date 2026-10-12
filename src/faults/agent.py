@@ -28,6 +28,7 @@ OUT_CSV = "outputs/faults_agent_trials.csv"
 OUT_RAW = "outputs/faults_agent_raw.jsonl"
 OUT_CALLS = "outputs/faults_agent_toolcalls.jsonl"
 MAX_CALLS = 12
+MAX_RETRIES = 2  # retries of a turn Groq rejects as tool_use_failed / http_400
 FAULTS = ["stale_feed", "mislabeled_category", "unit_change", "zero_fill", "duplicated_rows", "none"]
 NUMERIC = ["sales", "sell_price", "revenue"]
 MAX_CHARS = 3000
@@ -222,12 +223,19 @@ def run_trial(tools, chat, ctx, max_calls=MAX_CALLS, max_turns=30):
                 {"role": "user", "content": "Begin."}]
     transcript = [dict(m) for m in messages]
     used, budget_done, tok = 0, False, dict(prompt=0, completion=0, cached=0)
+    retries = 0
     for _ in range(max_turns):
         choice = {"type": "function", "function": {"name": "submit_diagnosis"}} if budget_done else "auto"
         out = chat(messages, [TOOL_DEFS[-1]] if budget_done else TOOL_DEFS, choice)
         tok["prompt"] += out.prompt_tokens; tok["completion"] += out.completion_tokens; tok["cached"] += out.cached_tokens
         if not out.ok:
-            return dict(ok=False, fallback=out.error, n_tool_calls=used, transcript=transcript, tokens=tok)
+            transcript.append({"role": "_harness", "content": f"{out.error}: {(out.detail or '')[:1500]}"})
+            # Same policy as the frozen investigator loop (added 2026-10-12 after the first
+            # Groq pass): Groq intermittently rejects a malformed tool call; retry the turn.
+            if out.error in ("tool_use_failed", "http_400") and retries < MAX_RETRIES:
+                retries += 1
+                continue
+            return dict(ok=False, fallback=out.error, n_tool_calls=used, retries=retries, transcript=transcript, tokens=tok)
         msg = out.message
         clean = {"role": "assistant", "content": msg.get("content") or ""}
         if msg.get("tool_calls"):
@@ -247,7 +255,7 @@ def run_trial(tools, chat, ctx, max_calls=MAX_CALLS, max_turns=30):
                 args = None
             if name == "submit_diagnosis":
                 if isinstance(args, dict) and args.get("fault_type") in FAULTS and isinstance(args.get("rationale"), str):
-                    return dict(ok=True, fallback=None, diagnosis=args, n_tool_calls=used, forced=budget_done,
+                    return dict(ok=True, fallback=None, diagnosis=args, n_tool_calls=used, forced=budget_done, retries=retries,
                                 transcript=transcript, tokens=tok)
                 return dict(ok=False, fallback="invalid_json", raw=args, n_tool_calls=used, transcript=transcript, tokens=tok)
             if args is None:
